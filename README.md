@@ -3,7 +3,7 @@ Trabalho de Engenharia de Software do Mestrado Profissional em Ciências da Comp
 
 #Equipe
 
-1 - Lucas Bacciotti Moreira
+1 - Lucas Bacciotti Moreira \n
 Gerente de Projetos e Líder Nato.
 
 2 - Welington Mothé de Oliveira
