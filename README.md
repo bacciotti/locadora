@@ -1,7 +1,7 @@
 # locadora
 Trabalho de Engenharia de Software do Mestrado Profissional em Ciências da Computação - CIN UFPE - 2018
 
-#Equipa
+#Equipe
 
 1 - Lucas Bacciotti Moreira
 Gerente de Projetos e Líder Nato.
