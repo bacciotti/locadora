@@ -20,7 +20,7 @@ Role: Gerente do Projeto e Desenvolvedor
 ii. GUSTAVO COSTA MEIRELES  
 gcm3@cin.ufpe.br
 Instagram: @gcmeireles 
-GitHub:@gcmeireles
+GitHub: @gcmeireles
 Role: Analista de Requisitos e Desenvolvedor Master
 
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
