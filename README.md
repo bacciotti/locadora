@@ -10,12 +10,12 @@ Prof. Dr. Vinícius C. Garcia
 
 ### DESCRIÇÃO
 
-### MEMBROS
-i. LUCAS BACCIOTTI MOREIRA  
-lbm5@cin.ufpe.br
-Twitter: @baciotti
-GitHub: @bacciotti
-Role: Gerente do Projeto e Desenvolvedor.
+### MEMBROS  
+i. LUCAS BACCIOTTI MOREIRA   
+lbm5@cin.ufpe.br  
+Twitter: @baciotti  
+GitHub: @bacciotti  
+Role: Gerente do Projeto e Desenvolvedor  
 
 ii. GUSTAVO COSTA MEIRELES  
 gcm3@cin.ufpe.br
