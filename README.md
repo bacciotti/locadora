@@ -29,9 +29,9 @@ GitHub: @wemomax
 Role: Analista de teste  
 
 iiii. DIEGO MENEGAZZI  
-dm5@cin.ufpe.br
-Website: https://cin.ufpe.br/~dm5/
-GitHub: @omenegazzi
+dm5@cin.ufpe.br<br />
+Website: https://cin.ufpe.br/~dm5/<br />
+GitHub: @omenegazzi<br />
 Role: Analista de Infra e Desenvolvedor 
 
 iiiii. CARLOS ALEXANDRE PORTO  
