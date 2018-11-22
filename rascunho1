@@ -1,0 +1,45 @@
+## Header ##
+#Rascunho 1
+#Solicitações professor
+#Lucas Bacciotti Moreira
+
+## Vídeo Locadora Imperial ##
+Objetivos: Documentação, análise, projeto, implementação, implantação
+
+## Relatório Técnico ##
+Link do Projeto no GitHub
+Contextualização
+Escopo
+Tomadas de decisão, 
+Documentação da arquitetura da solução, 
+Projeto de implantação, 
+Solução implantada em algum serviço de PaaS (Platform as a Service) como o Heroku 
+
+## Artefatos solicitados ##
+Repositório do Projeto
+
+## Readme ##
+Nome do projeto, 
+Justificativa do projeto
+Descrição do produto
+Especificação do papel de cada membro da equipe (com informações de contato como email)
+Demais informações que o time achar pertinentes
+
+## Desenvolvimento ##
+Explicar detalhadamente qual PROCESSO DE DESENVOLVIMENTO utilizado, selecionando
+as melhoras práticas e atividades dos modelos de processo apresentados em sala.
+
+## Rastreabilidade CV ##
+Identificação, análise, priorização, e eventual evolução dos objetivos do time
+Cadastrar como Issue no Issue Tracker
+
+## Postmortem ##
+Resumo do que funcionou ou não.
+
+## Testes ##
+Funcionais: Realizar os testes com base na metodologia TDD
+Aceitação: Realizar segundo tecnologia BDD
+
+
+
+
