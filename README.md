@@ -1,19 +1,39 @@
-# locadora
-Trabalho de Engenharia de Software do Mestrado Profissional em Ciências da Computação - CIN UFPE - 2018
+# #####################################
+# Vídeo Locadora Imperial
+# Projeto apresentado a disciplina de Engenharia de Software
+# Mestrado Profissional em Ciências da Computação
+# Turma 2018 - Gestão de TI
+# CIN UFPE
+# Prof. Dr. Vinícius C. Garcia
+# #####################################
 
-#Equipe
+# JUSTIFICATIVA
 
-1 - Lucas Bacciotti Moreira --
-Gerente de Projetos e Líder Nato.
+# DESCRIÇÃO
 
-2 - Welington Mothé de Oliveira --
-Representante de Turma e Arquiteto de Software.
+# MEMBROS
+i. LUCAS BACCIOTTI MOREIRA
+lbm5@cin.ufpe.br
+Twitter: @baciotti
+GitHub: @bacciotti
+Role: Gerente do Projeto e Desenvolvedor.
 
-3 - Diego Antônio Menegazzi --
-Corpo Sarado e Enhenheiro de Requisitos.
+ii. GUSTAVO COSTA MEIRELES
+gcm3@cin.ufpe.br
+GitHub:
+Role: 
 
-4 - Carlos Alexandre Porto --
-Mora em Camboriú, Não Come Peixe e Reclama das Coisas.
+iii. WELINGTON MOTHÉ DE OLIVEIRA
+aaa@cin.ufpe.br
+GitHub:
+Role: 
 
-5 - Gustavo Costa Meireles --
-Don Juan De Marco da Equipa e Programador Rails.
+iii. DIEGO MENEGAZZI
+aaa@cin.ufpe.br
+GitHub:
+Role: 
+
+iiii. CARLOS ALEXANDRE PORTO
+aaa@cin.ufpe.br
+GitHub:
+Role: 
