@@ -21,7 +21,7 @@ ii. GUSTAVO COSTA MEIRELES
 gcm3@cin.ufpe.br  
 Instagram: @gcmeireles   
 GitHub:@gcmeireles  
-Role: Analista de Requisitos e Desenvolvedor Master  
+Role: Analista de Requisitos e Desenvolvedor   
 
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
 wmo@cin.ufpe.br  
