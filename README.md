@@ -18,22 +18,22 @@ GitHub: @bacciotti
 Role: Gerente do Projeto e Desenvolvedor  
 
 ii. GUSTAVO COSTA MEIRELES  
-gcm3@cin.ufpe.br
-Instagram: @gcmeireles 
-GitHub: @gcmeireles
-Role: Analista de Requisitos e Desenvolvedor Master
+gcm3@cin.ufpe.br  
+Instagram: @gcmeireles   
+GitHub:@gcmeireles  
+Role: Analista de Requisitos e Desenvolvedor Master  
 
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
 wmo@cin.ufpe.br  
 GitHub: @wemomax  
 Role: Analista de teste  
 
-iii. DIEGO MENEGAZZI  
+iiii. DIEGO MENEGAZZI  
 aaa@cin.ufpe.br  
 GitHub:
 Role: 
 
-iiii. CARLOS ALEXANDRE PORTO
-aaa@cin.ufpe.br
-GitHub:
-Role: 
+iiiii. CARLOS ALEXANDRE PORTO  
+aaa@cin.ufpe.br  
+GitHub:  
+Role:   
