@@ -1,17 +1,17 @@
+### #####################################
+### Vídeo Locadora Imperial
+### Projeto apresentado a disciplina de Engenharia de Software
+### Mestrado Profissional em Ciências da Computação
+### Turma 2018 - Gestão de TI
+### CIN UFPE
+### Prof. Dr. Vinícius C. Garcia
 # #####################################
-# Vídeo Locadora Imperial
-# Projeto apresentado a disciplina de Engenharia de Software
-# Mestrado Profissional em Ciências da Computação
-# Turma 2018 - Gestão de TI
-# CIN UFPE
-# Prof. Dr. Vinícius C. Garcia
-# #####################################
 
-# JUSTIFICATIVA
+### JUSTIFICATIVA
 
-# DESCRIÇÃO
+### DESCRIÇÃO
 
-# MEMBROS
+### MEMBROS
 i. LUCAS BACCIOTTI MOREIRA
 lbm5@cin.ufpe.br
 Twitter: @baciotti
