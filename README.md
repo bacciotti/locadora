@@ -24,9 +24,9 @@ GitHub:@gcmeireles
 Role: Analista de Requisitos e Desenvolvedor Master
 
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
-aaa@cin.ufpe.br
-GitHub:
-Role: 
+wmo@cin.ufpe.br
+GitHub: @wemomax
+Role: Analista de teste  
 
 iii. DIEGO MENEGAZZI  
 aaa@cin.ufpe.br  
