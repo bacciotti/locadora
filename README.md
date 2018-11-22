@@ -1,11 +1,10 @@
-### #####################################
 ### Vídeo Locadora Imperial
-### Projeto apresentado a disciplina de Engenharia de Software
-### Mestrado Profissional em Ciências da Computação
-### Turma 2018 - Gestão de TI
-### CIN UFPE
-### Prof. Dr. Vinícius C. Garcia
-# #####################################
+Projeto apresentado a disciplina de Engenharia de Software
+Mestrado Profissional em Ciências da Computação
+Turma 2018 - Gestão de TI
+CIN UFPE
+Prof. Dr. Vinícius C. Garcia
+#####################################
 
 ### JUSTIFICATIVA
 
