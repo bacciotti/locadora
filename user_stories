@@ -3,3 +3,9 @@
 * Objetivo: Escrever Histórias de Usuário com base nos Requisitos Levantados
 * Documento origem (Requisitos): https://drive.google.com/file/d/16kJfE_s-CRvOfdSN1RvDyEjCLu34ErAx/view
 * Deadline: 10/12/18
+
+[US001] Como um funcionário da locadora, eu quero registrar todas as locações de cada cliente para que possa controlar as 
+datas de devolução.  
+[US002] Como um funcionário da locadora, eu quero registrar todas as devoluções para que eu tenha controle sobre os itens 
+devolvidos e os itens a devolver.
+[US003]
