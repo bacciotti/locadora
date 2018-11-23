@@ -20,7 +20,7 @@ As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...
 
 ### MEMBROS  
 i. LUCAS BACCIOTTI MOREIRA   
-lbm5@cin.ufpe.br
+lbm5@cin.ufpe.br  
 Website: https://cin.ufpe.br/~lbm5/    
 Twitter: @baciotti  
 GitHub: @bacciotti  
