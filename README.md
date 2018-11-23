@@ -5,6 +5,14 @@ Turma 2018 - Gestão de TI
 CIN UFPE  
 Prof. Dr. Vinícius C. Garcia  
 
+### METODOLOGIAS UTILZADAS  
+A metodologia de gerenciamento a ser utilizada é a Cascata, pois...  
+A ferramenta de gerenciamento utilizada será o Kanban do GitHub (aba "Projects" da plataforma), pois...  
+
+A metodologia de desenvolvimento a ser utilizada é XXXX, pois...  
+A tecnologia de desenvolvimento a ser utilizada é a XP, pois...
+As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
+
 
 ### JUSTIFICATIVA
 
@@ -35,6 +43,6 @@ GitHub: @omenegazzi
 Role: Analista de Infra e Desenvolvedor  
 
 iiiii. CARLOS ALEXANDRE PORTO  
-aaa@cin.ufpe.br  
-GitHub:  
-Role:   
+cap@cin.ufpe.br  
+GitHub: @capcin
+Role: Analista de Requisitos e Arquiteto de Software   
