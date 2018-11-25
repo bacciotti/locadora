@@ -32,15 +32,28 @@ Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram lev
 ### 4. METODOLOGIAS
 
 #### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
-A metodologia de gerenciamento a ser utilizada é a Cascata, pois...  
-A ferramenta de gerenciamento utilizada será o Kanban do GitHub (aba "Projects" da plataforma), pois...  
+Para gerir o projeto, a Equipe, em consenso, decidiu utilizar as principais ideias da Waterfall, combinada com alguns aspectos da Agile. Explicamos:  
+
+A metodologia Waterfall prega uma abordagem linear, com a fase seguinte dependendo da anterior para ser executada. Decidiu-se por esta metodologia pois a Equipe, por não ter muita experiência em Desenvolvimento de Software (ler no Relatório Final sobre os Membros da Equipe), achou mais fácil de se adaptar e de conceber o projeto, visto que até se aprender a implementar alguma outra metodologia como Scrum, por exemplo, levaria mais tempo, prejudicando o prazo final de entrega.  
+Um exemplo prático vivido pela equipe foi: a fase de codificação só começaria após o término da fase de documentação (User Stories e Diagramas de Classes, por exemplo).  
+
+Embora a principal metodologia de Gerenciamento do Projeto seja a Waterfall, não ficou-se limitado a esta. Alguns aspectos da Agile foram observados durante todo o projeto, a saber: dentro de um ciclo do projeto (especificação das User Stories, por exemplo) foi observado entregas rápidas (um membro finalizava a tarefa e já passava para a próxima, nada impedindo que esta tarefa retornasse a ele para correções ou refatoração) e alta colaboração (embora cada membro tenha ficado responsável por uma fase do projeto, todos contribuíram em todas as fases, mesmo que minimamente).  
+
+Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.
+
+Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
+
 
 #### 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
 A metodologia de desenvolvimento a ser utilizada é XP, pois...  
 
+Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
+
 ### 5. TECNOLOGIAS
 A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
 As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
+
+Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
 ### 6. MEMBROS DA EQUIPE
 i. LUCAS BACCIOTTI MOREIRA   
