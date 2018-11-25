@@ -69,7 +69,7 @@ Role: Analista de Testes e Desenvolvedor
 
 iiiii. CARLOS ALEXANDRE PORTO  
 cap@cin.ufpe.br  
-GitHub: @capcin
+GitHub: @capcin  
 Role: Analista de Requisitos e Engenheiro de Software   
 
 ### 7. ARQUIVOS IMPORTANTES
