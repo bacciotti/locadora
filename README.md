@@ -6,36 +6,41 @@ CIN UFPE
 Prof. Dr. Vinícius C. Garcia  
 
 ### ÍNDICE
-** 1. INTRODUÇÃO**  
-** 2. JUSTIFICATIVA**  
-** 3. DESCIÇÃO DO PRODUTO**  
-** 4. METODOLOGIAS**  
-** 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
-** 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
-** 5. TECNOLOGIAS**  
-** 6. MEMBROS DA EQUIPE**  
-** 7. ARQUIVOS IMPORTANTES**  
+**1. INTRODUÇÃO**  
+**2. JUSTIFICATIVA**  
+**3. DESCIÇÃO DO PRODUTO**  
+**4. METODOLOGIAS**  
+**4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
+**4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
+**5. TECNOLOGIAS**  
+**6. MEMBROS DA EQUIPE**  
+**7. ARQUIVOS IMPORTANTES**  
 
 ### 1. INTRODUÇÃO
-Este projeto tem como objetivo tratar os diversos aspectos do Ciclo de Vida do Desenvolvimento do Software para uma Locadora de Vídeos chamada Imperial.  
-As informações mais importantes estão neste arquivo README. As demais informações acerca do projeto estão no arquivo Relatório Final, referenciado no final deste texto. Todos os documentos relativos ao projeto estão neste repositório GitHub.  
+Este projeto tem como objetivo tratar os diversos aspectos do Ciclo de Vida do Desenvolvimento do Software para uma Locadora de Vídeos chamada Imperial, como: concepção, análise, desenvolvimento, implementação e implantação, não limitado a estes.  
+As informações mais importantes estão neste arquivo README.  
+As demais informações acerca do projeto estão no arquivo Relatório Final, referenciado no final deste texto. Todos os documentos relativos ao projeto estão neste repositório GitHub.   
+O projeto nos foi proposto em novembro/2018. A primeira reunião da equipe foi em 22/11 (a ata encontra-se no diretório "1 - Atas das Reuniões").
+
 ### 2. JUSTIFICATIVA
+A Vídeo Locadora Imperial ainda não possui um sistema informatizado para auxílio de seu negócio. A equipe foi procurada para desenvolver um sistema capaz de gerenciar os empréstimos, devoluções, cadastro de clientes, entre outros.  
+Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram levantadados. 
 
 ### 3. DESCRIÇÃO
-
+-- escrever quando o sistema estiver pronto -- 
 
 ### 4. METODOLOGIAS
+
 #### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
-#### 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
 A metodologia de gerenciamento a ser utilizada é a Cascata, pois...  
 A ferramenta de gerenciamento utilizada será o Kanban do GitHub (aba "Projects" da plataforma), pois...  
 
-A metodologia de desenvolvimento a ser utilizada é XXXX, pois...  
+#### 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
+A metodologia de desenvolvimento a ser utilizada é XP, pois...  
 
 ### 5. TECNOLOGIAS
-A tecnologia de desenvolvimento a ser utilizada é a XP, pois...
+A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
 As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
-
 
 ### 6. MEMBROS DA EQUIPE
 i. LUCAS BACCIOTTI MOREIRA   
@@ -54,18 +59,18 @@ Role: Analista de Requisitos e Desenvolvedor
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
 wmo@cin.ufpe.br  
 GitHub: @wemomax  
-Role: Analista de teste  
+Role: Engenheiro de Software e Desenvolvedor
 
 iiii. DIEGO MENEGAZZI  
 dm5@cin.ufpe.br  
 Website: https://cin.ufpe.br/~dm5/  
 GitHub: @omenegazzi  
-Role: Analista de Infra e Desenvolvedor  
+Role: Analista de Testes e Desenvolvedor  
 
 iiiii. CARLOS ALEXANDRE PORTO  
 cap@cin.ufpe.br  
 GitHub: @capcin
-Role: Analista de Requisitos e Arquiteto de Software   
+Role: Analista de Requisitos e Engenheiro de Software   
 
 ### 7. ARQUIVOS IMPORTANTES
 a. Introdução ao mini-mundo e Requisitos levantados: https://drive.google.com/file/d/16kJfE_s-CRvOfdSN1RvDyEjCLu34ErAx/view?usp=sharing  
