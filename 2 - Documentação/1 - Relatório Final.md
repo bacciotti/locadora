@@ -1,3 +1,25 @@
+--- TÓPICOS SOLICITADOS (REMOVER APÓS TÉRMINO) ---
+
+
+**O projeto deve compreender, não limitado a, os seguintes itens ou tópicos:**
+Introdução: Contendo a contextualização do domínio do negócio ao qual o projeto está inserido, o problema e motivação (mercadológica, digamos assim) para o investimento no projeto (você vão fazer uma venda do projeto pra mim, então, tem que estar claro que existe uma oportunidade aqui) e apresentação da proposta.
+
+Gerência de Configuração e Ambiente: Descrição das ferramentas e ambientes de desenvolvimento utilizados, com os respectivos links (i.e. ferramentas de desenvolvimento, linguagens, bancos de dados, bibliotecas, frameworks, repositórios de gerenciamento de versões e mudanças, servidores de implantação, entre outras).
+
+Características da aplicação: Elicitação das características da aplicação, suas funcionalidades, diferenciais, etc.
+Visão de Análise e Projeto (Arquitetura): Análise e Projeto do sistema a ser desenvolvido. podem ser utilizados especificações de casos de uso (para os mais 15% mais complexos) e diagramas para apoiar o projeto.
+
+Visão de Implantação: Visão e instruções de implantação do sistema. Um release notes com os erros, falhas e faltas conhecidos também é bem visto. Site onde ele está implantado e/ou um vídeo de demonstração promovendo o produto (pode estar no youtube ou outro serviço semelhante).
+
+Visão de Uso: Guia de uso da solução do ponto de vista de todos os stakeholders identificados.
+
+Revisão do Projeto: Descrição do processo de desenvolvimento, principais problemas e tomadas de decisão em relação ao projeto. Atribuição das atividades e técnicas de gerenciamento, monitoramento e controle.
+
+Revisão Individual: Lições aprendidas do ponto de vista individual dos membros do time em relação a execução do projeto em si.
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
 ### 4. METODOLOGIAS
 
 #### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
