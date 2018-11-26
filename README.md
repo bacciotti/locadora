@@ -32,12 +32,21 @@ Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram lev
 ### 4. METODOLOGIAS
 
 #### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
-Para gerir o projeto, a Equipe, em consenso, decidiu utilizar as principais ideias da Waterfall, combinada com alguns aspectos da Agile. Explicamos:  
+Workflow: sequencia de atividades
 
-A metodologia Waterfall prega uma abordagem linear, com a fase seguinte dependendo da anterior para ser executada. Decidiu-se por esta metodologia pois a Equipe, por não ter muita experiência em Desenvolvimento de Software (ler no Relatório Final sobre os Membros da Equipe), achou mais fácil de se adaptar e de conceber o projeto, visto que até se aprender a implementar alguma outra metodologia como Scrum, por exemplo, levaria mais tempo, prejudicando o prazo final de entrega.  
-Um exemplo prático vivido pela equipe foi: a fase de codificação só começaria após o término da fase de documentação (User Stories e Diagramas de Classes, por exemplo).  
+A metodologia de desenvolvimento de software escolhida pela equipe é a Cascata (ou Waterfall). Entende-se que esta metodologia é mais aplicável neste projeto pelos fatores a seguir:
 
-Embora a principal metodologia de Gerenciamento do Projeto seja a Waterfall, não ficou-se limitado a esta. Alguns aspectos da Agile foram observados durante todo o projeto, a saber: dentro de um ciclo do projeto (especificação das User Stories, por exemplo) foi observado entregas rápidas (um membro finalizava a tarefa e já passava para a próxima, nada impedindo que esta tarefa retornasse a ele para correções ou refatoração) e alta colaboração (embora cada membro tenha ficado responsável por uma fase do projeto, todos contribuíram em todas as fases, mesmo que minimamente).  
+a. Os membros da equipe possuem experiência neste modelo em questão. O entendimento e a posterior implantação de uma nova modalidade de desenvolvimento implicaria em possíveis atrasos no cronograma.
+b. Já possuímos os requisitos levantados: desta forma, poderemos prosseguir com a documentação e planejamento prévios antes de iniciarmos a codificação (característica da Waterfall/BDUF - Big Design Up Front).
+* c. O cliente (neste caso, o professor) não estará presente nas fases do ciclo de vida do projeto. Deste modo, a refatoração dos pequenos releases se torna complicada. O cliente não estará apto para analisar todas as versões.
+* d. Temos o controle de todo o processo, com visão adequada do cronograma, divisão de tarefas e papéis.
+* e. Não há a necessidade de se desenvolver a primeira versão o mais rápido possível. Entendemos que, pelo fato de o prazo para entrega ser curto, a entrega de versões periódicas atrasaria o projeto. Portanto, optamos por entregar apenas uma versão final ao cliente. isto não impede, é claro, que versões internas sejam refatoradas e testadas iterativamente entre os membros da equipe.
+* f. Dado o porte pequeno do projeto, não será desenvolvido um protótipo.
+* g. Nós possuímos uma visão detalhada do mini-mundo e dos requisitos, portanto possuímos uma especificação detalhada do sistema.
+
+* Características inerentes ao processo evolucionário de desenvolvimento de software.
+
+Embora utilizemos majoritariamente os princípios do método Waterfall, algumas ideias do processo evolucionário foram utilizadas, mesmo que minimamante: a implementação, os testes e a validação dos requisitos foram intercalados e iterados entre os membros da equipe.
 
 Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.
 
@@ -45,7 +54,36 @@ Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório 
 
 
 #### 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
-A metodologia de desenvolvimento a ser utilizada é XP, pois...  
+A metodologia de gerenciamento de projeto escolhida pela equipe em reunião foi a DP - Dirigida a Plano. Os seguintes fatores justificam a escolha:
+a. Em acordo entre os membros da equipe, sentiu-se a necessidade de se ter um Gerente de Projetos para ser facilitador: organizar o cronograma, cobrar as entregas da equipe, entender o contexto do problema, dividir as tarefas, auxiliar em todas as fases do projeto, estimar prazos, mobilizar o time, entre outros.
+b. O projeto possui grande documentação: atas de reuniões, diversas estórias de usuários, artefatos modelados, relatórios, etc.
+c. O gerente de projetos elaborou um extensivo planejamento.
+* d. Não há o envovimento do cliente.
+* e. Não há entrega incremental, pois o cliente não está envolvido nas fases de desenvolvimento. Ou seja, não há validação por parte do cliente antes da entrega da versão final.
+f. Não há entrega de incrementos pequenos. Dado o porte pequeno do projeto, não sentiu-se necessidade de entregas pequenas e periódicas (pequenos releases).
+* g. Não faremos uso da Programação em Pres (Pair Programming), devido a distância geográfica entre os membros da equipe.
+
+* Características do Método Ágil/XP.
+
+Embora utilizemos dos conceitos da DP em sua maioria, não dispensamos algumas ideias interessantes ao projeto do Método Àgil, a saber:
+a. Foco nas pessoas e suas capacidades, não no processo em si.
+b. Manter a simplicidade, sempre que possível.
+c. Utilização de Estórias de Usuário para validar os requisitos.
+d. Utilização de testes TDD e BDD dentro do ciclo de implementação.
+e. Ritmo sustentável: pequenas quantidade de horas-trabalho diárias, devido ao contexto do projeto (distância geográfica entre os membros da equipe somada ao fato de que os membros possuem outras atividades no decorrer do dia).
+
+
+Por fim, com base na documentação proposta no decorrer das aulas, conseguimos inferir que, de fato, a melhor metodologia a ser utilizada é a DP. Segundo o texto abaixo, notamos seis resposta SIM (que implica o uso de DP) e apenas três NÃO (que implica o uso de Ágil):
+1. É importante ter uma especificação e projeto? SIM
+2. Os clientes não estão disponíveis para feedback? SIM
+3. O Sistema a ser desenvolvido é grande? NÃO
+4. O Sistema é complexo (ex. tempo real)? NÃO
+5. Vai ter um ciclo de vida longo? SIM
+6. Está utilizando ferramentas “ruins”? NÃO
+7. O time está geograficamente distribuído? SIM
+8. A cultura do time é orientada a documentação? SIM
+9. O Time tem um perfil “fraco” de desenvolvimento? SIM
+10.O sistema está sujeito a regulamentação externa? SIM
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
