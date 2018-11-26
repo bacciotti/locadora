@@ -71,7 +71,7 @@ Embora utilizemos dos conceitos da DP em sua maioria, não dispensamos algumas i
 * e. Ritmo sustentável: pequenas quantidade de horas-trabalho diárias, devido ao contexto do projeto (distância geográfica entre os membros da equipe somada ao fato de que os membros possuem outras atividades no decorrer do dia).
 
 
-Por fim, com base na documentação proposta no decorrer das aulas, conseguimos inferir que, de fato, a melhor metodologia a ser utilizada é a DP. Segundo o texto abaixo, notamos seis respostas SIM (que implica o uso de DP) e apenas três NÃO (que implica o uso de Ágil):
+Por fim, com base em SOMMERVILLE (2011), conseguimos inferir que, de fato, a melhor metodologia a ser utilizada é a DP. Segundo o texto abaixo, notamos seis respostas SIM (que implica o uso de DP) e apenas três NÃO (que implica o uso de Ágil):
 * 1. É importante ter uma especificação e projeto? SIM
 * 2. Os clientes não estão disponíveis para feedback? SIM
 * 3. O Sistema a ser desenvolvido é grande? NÃO
