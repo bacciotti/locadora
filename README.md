@@ -21,6 +21,7 @@ O projeto nos foi proposto em novembro/2018. A primeira reunião da equipe foi e
 ### 2. JUSTIFICATIVA
 A Vídeo Locadora Imperial ainda não possui um sistema informatizado para auxílio de seu negócio. A equipe foi procurada para desenvolver um sistema capaz de gerenciar os empréstimos, devoluções, cadastro de clientes, entre outros.  
 Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram levantadados. 
+A equipe ficou a cargo de finalizar a documentação, elaborar a análise, planejar, projetar, implementar, testar e implantar o software.
 
 ### 3. DESCRIÇÃO
 -- escrever quando o sistema estiver pronto -- 
@@ -31,6 +32,7 @@ lbm5@cin.ufpe.br
 Website: https://cin.ufpe.br/~lbm5/    
 Twitter: @baciotti  
 GitHub: @bacciotti  
+Instagram: @lbacciotti
 Role: Gerente do Projeto e Desenvolvedor  
 
 ii. GUSTAVO COSTA MEIRELES  
