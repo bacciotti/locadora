@@ -29,11 +29,16 @@ Reuniões (online e presenciais).
 **1. SIGLAS UTILIZADAS**  
 **2. INTRODUÇÃO**    
 **3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE**    
-**4. CARACTERÍSTICAS DA APLICAÇÃO**    
-**5. VISÃO DE IMPLANTAÇÃO**    
-**6. VISÃO DE USO**    
-**7. REVISÃO DO PROJETO**    
-**8. REVISÃO INDIVIDUAL**
+**4. CARACTERÍSTICAS DA APLICAÇÃO**   
+**5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)**   
+   - **5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
+   - **5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
+   - **5.3 TECNOLOGIAS**  
+   - **5.4 FASES**  
+**6. VISÃO DE IMPLANTAÇÃO**    
+**7. VISÃO DE USO**    
+**8. REVISÃO DO PROJETO**    
+**9. REVISÃO INDIVIDUAL**
 
 ### 1. SIGLAS UTILIZADAS
 1 - GP: Gerente de Projetos  
@@ -92,9 +97,9 @@ Tela Y...
 Funcionalidade K...  
 Módulo Z...  
 
-### 4. METODOLOGIAS
+### 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)
 
-#### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
+#### 5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
 A metodologia de desenvolvimento de software escolhida pela equipe é a Cascata (ou Waterfall). Entende-se que esta metodologia é mais aplicável neste projeto pelos fatores a seguir:
 
 * a. Os membros da equipe possuem experiência neste modelo em questão. O entendimento e a posterior implantação de uma nova modalidade de desenvolvimento implicaria em possíveis atrasos no cronograma.
@@ -114,7 +119,7 @@ Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Pro
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
 
-#### 4.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
+#### 5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
 A metodologia de gerenciamento de projeto escolhida pela equipe em reunião foi a DP - Dirigida a Plano. Os seguintes fatores justificam a escolha:
 * a. Em acordo entre os membros da equipe, sentiu-se a necessidade de se ter um Gerente de Projetos para ser facilitador: organizar o cronograma, cobrar as entregas da equipe, entender o contexto do problema, dividir as tarefas, auxiliar em todas as fases do projeto, estimar prazos, mobilizar o time, entre outros.
 * b. O projeto possui grande documentação: atas de reuniões, diversas estórias de usuários, artefatos modelados, relatórios, etc.
@@ -148,7 +153,7 @@ Por fim, com base em SOMMERVILLE (2011), conseguimos inferir que, de fato, a mel
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
-### 5. TECNOLOGIAS
+### 5.3 TECNOLOGIAS
 A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
 As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
 
