@@ -30,7 +30,7 @@ Reuniões (online e presenciais).
 **2. INTRODUÇÃO**    
 **3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE**    
 **4. CARACTERÍSTICAS DA APLICAÇÃO**   
-**5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)** 
+**5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)**
 - **5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
 - **5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
 - **5.3 TECNOLOGIAS**  
@@ -98,6 +98,10 @@ Tela Y...
 Funcionalidade K...  
 Módulo Z...  
 
+### 3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE ###
+
+### 4. CARACTERÍSTICAS DA APLICAÇÃO ###
+
 ### 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)
 
 #### 5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
@@ -159,3 +163,12 @@ A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
 As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
+
+### 6. VISÃO DE IMPLANTAÇÃO  
+
+### 7. VISÃO DE USO  
+
+### 8. REVISÃO DO PROJETO  
+
+### 9. REVISÃO INDIVIDUAL  
+
