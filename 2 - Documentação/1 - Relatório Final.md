@@ -41,6 +41,8 @@ Reuniões (online e presenciais).
 **8. REVISÃO DO PROJETO**    
 **9. REVISÃO INDIVIDUAL**
 
+------------------------------------------------------------------
+
 ### 1. SIGLAS UTILIZADAS
 1 - GP: Gerente de Projetos  
 2 - DP: Dirigido a Plano  
