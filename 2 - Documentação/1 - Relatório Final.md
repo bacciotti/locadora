@@ -26,6 +26,58 @@ Reuniões (online e presenciais).
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 
+### 1. METODOLOGIAS
+A Vídeo Locadora Imperial ainda não possui um sistema computacional para registro de suas principais atividades, por exemplo: cadastro de clientes, cadastro de filmes, busca de filmes, cadsatro de empréstimos e devoluções.  
+
+Desta forma, a equipe foi procurada para desenvolver um sistema capaz de registrar tais informações, facilitando o gerenciamento do negócio em questão.  
+
+O carro-chefe do negócio é o empréstimo de vídeos/filmes, que possuem cópias em várias mídias diferentes (VHS e Blu-Ray, por exemplo) e vários gêneros. O registro destas informações no sistema a ser desenvolvido é necessário.  
+
+Os empréstimos tem um preço a depender do tipo de mídia e se o filme é lançamento ou não. Porém é possível aumentar ou diminuir o preço e o prazo de devolução em ocasiões extraordinárias.  
+
+Além disso, é necessário registrar as informações das distribuidoras e dos clientes. Os clientes podem ter dependentes.  
+
+Quanto à devolução, caso haja atraso é aplicada uma multa.  
+
+Consultas ao acervo de vídeos/filmes podem ser feitas pela internet.  
+
+Diante do citado, a Equipe precisa elaborar todas as fases do desenvolvimento deste projeto de software para entregar no prazo estipulado. O levantamento de requisitos foi realizado mediante entrevistas e reuniões com o cliente. Desta forma, se faz necessário a conclusão da análise de requisitos, a documentação, o planejamento, a implementação e, por fim, a implantação do sistema.  
+
+A Equipe irá se reunir periodicamente para discussão das tarefas. As reuniões serão tanto presenciais como online. Um Gerente de Projeto foi escolhido para ser facilitador da equipe: ajudar a organizar o cronograma, definir papéis e assistir as fases do projeto como um todo.  
+
+Para controle de versões (tanto do código como de todos os outros artefatos do projeto) será usado a tecnologia Git, com o cliente online GitHub, embora alguns desenvolvedores também façam uso de clientes locais, como SourceTree e Kraken.  
+
+A análise de requisitos será convertida em Estórias de Usuários, para facilitar a elaboração de cada uma das funcionalidades do sistema. Para cada requisito do cliente será feita uma ou mais Estórias de Usuários.  
+
+Na fase de documentação, alguns artefatos podem ser úteis aos desenvolvedores, como o Diagrama de Classes. Novos artefatos surgirão a medida que forem constatadas sua necessidade pela equipe.  
+
+Para resolver a problemática apresentada a Equipe desenvolveu um software leve, intuitivo, rápido e online.
+Com as tecnologias de desenvolvimento web utilizadas, o cliente terá um software capaz de ser executado em vários computadores com internet, ou seja, cada funcionário poderá utilizar um computador ao mesmo tempo que outros, sem prejudicar o armazenamento e recuperação de informações.  
+
+Os únicos requisitos são: possuir um computador com internet e com um navegador, visto que utilizamos técnicas que fazem o processamento de informações ficar toda no servidor, e não em sua máquina local. Seu computador apenas exibirá os resultados do processamento.  
+
+Além disso, o fato de o processamento e os dados estarem nas nuvens diminui o risco de perda de informações por sinistros (incêndios, alagamentos, quedas de energia, assaltos).  
+
+Sua interface amigável encurta o espaço entre o usuário leigo e a aplicação. Botões intuitivos e a forma que os itens estão dispostos na tela tornam a experiência facilitada, mesmo para aqueles que não tem muita bagagem em informática.  
+
+A velocidade é o diferencial: com uma conexão estável, o software faz o armazenamento e a recuperação das informações sem depender do disco rígido local.  
+
+O botão XXX, por exemplo,...  
+
+A tela YYY, ...  
+
+Já o módulo KKKKK...  
+
+Nosso software poderá ser utilizado por qualquer locadora de vídeos. Sua arquitetura flexível permite adaptar-se a contextos diferentes com pouca manutenção.  
+
+Como consequência de o software estar em um servidor externo, as atualizações se darão por meio da internet, sem a necessidade da visita de um técnico especializado no local.  
+
+Desta forma, apresentamos nosso produto a seguir:  
+Tela X...  
+Tela Y...  
+Funcionalidade K...  
+Módulo Z...  
+
 ### 4. METODOLOGIAS
 
 #### 4.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
