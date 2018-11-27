@@ -26,7 +26,7 @@ Reuniões (online e presenciais).
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 
-### 1. METODOLOGIAS
+### 1. INTRODUÇÃO
 A Vídeo Locadora Imperial ainda não possui um sistema computacional para registro de suas principais atividades, por exemplo: cadastro de clientes, cadastro de filmes, busca de filmes, cadsatro de empréstimos e devoluções.  
 
 Desta forma, a equipe foi procurada para desenvolver um sistema capaz de registrar tais informações, facilitando o gerenciamento do negócio em questão.  
