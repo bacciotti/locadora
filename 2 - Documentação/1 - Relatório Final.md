@@ -166,6 +166,8 @@ As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
+#### 5.4 FASES
+
 ### 6. VISÃO DE IMPLANTAÇÃO  
 
 ### 7. VISÃO DE USO  
