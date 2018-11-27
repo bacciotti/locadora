@@ -20,23 +20,25 @@ Visão de Análise e Projeto (Arquitetura): Análise e Projeto do sistema a ser 
 
 **RASCUNHO**  
 Explicar sobre o SourceTree eo Kraken.  
-Siglas (GP, DP, US...).  
 Reuniões (online e presenciais).  
 
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 
 ### ÍNDICE
-**1. SIGLAS UTILIZADAS  
-2. INTRODUÇÃO  
-3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE  
-4. CARACTERÍSTICAS DA APLICAÇÃO  
-5. VISÃO DE IMPLANTAÇÃO  
-6. VISÃO DE USO  
-7. REVISÃO DO PROJETO  
-8. REVISÃO INDIVIDUAL  **
+**1. SIGLAS UTILIZADAS**  
+**2. INTRODUÇÃO**    
+**3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE**    
+**4. CARACTERÍSTICAS DA APLICAÇÃO**    
+**5. VISÃO DE IMPLANTAÇÃO**    
+**6. VISÃO DE USO**    
+**7. REVISÃO DO PROJETO**    
+**8. REVISÃO INDIVIDUAL**
 
 ### 1. SIGLAS UTILIZADAS
+1 - GP: Gerente de Projetos  
+2 - DP: Dirigido a Plano  
+3 - US: User Stories (Estórias de Usuário)  
 
 ### 2. INTRODUÇÃO
 A Vídeo Locadora Imperial ainda não possui um sistema computacional para registro de suas principais atividades, por exemplo: cadastro de clientes, cadastro de filmes, busca de filmes, cadsatro de empréstimos e devoluções.  
