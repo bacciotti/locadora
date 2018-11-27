@@ -35,6 +35,7 @@ Reuniões (online e presenciais).
 - **5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
 - **5.3 TECNOLOGIAS**  
 - **5.4 FASES**  
+
 **6. VISÃO DE IMPLANTAÇÃO**    
 **7. VISÃO DE USO**    
 **8. REVISÃO DO PROJETO**    
