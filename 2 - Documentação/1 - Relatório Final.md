@@ -26,7 +26,19 @@ Reuniões (online e presenciais).
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 
-### 1. INTRODUÇÃO
+### ÍNDICE
+**1. SIGLAS UTILIZADAS  
+2. INTRODUÇÃO  
+3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE  
+4. CARACTERÍSTICAS DA APLICAÇÃO  
+5. VISÃO DE IMPLANTAÇÃO  
+6. VISÃO DE USO  
+7. REVISÃO DO PROJETO  
+8. REVISÃO INDIVIDUAL  **
+
+### 1. SIGLAS UTILIZADAS
+
+### 2. INTRODUÇÃO
 A Vídeo Locadora Imperial ainda não possui um sistema computacional para registro de suas principais atividades, por exemplo: cadastro de clientes, cadastro de filmes, busca de filmes, cadsatro de empréstimos e devoluções.  
 
 Desta forma, a equipe foi procurada para desenvolver um sistema capaz de registrar tais informações, facilitando o gerenciamento do negócio em questão.  
