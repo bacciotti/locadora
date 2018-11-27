@@ -160,7 +160,7 @@ Por fim, com base em SOMMERVILLE (2011), conseguimos inferir que, de fato, a mel
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
-### 5.3 TECNOLOGIAS
+#### 5.3 TECNOLOGIAS
 A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
 As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
 
