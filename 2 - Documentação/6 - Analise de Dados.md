@@ -23,6 +23,6 @@ Atributos apenas do Titular: CPF, endereço, telefone residencial, local onde tr
 Atributos: razão social, CNPJ, endereço, telefone e pessoa de contato  
 
 ### Regras  
-**3. Lançamentos têm um acréscimode 50% nos valores.**  
-**4. Prazo para devolução é de um dia para lançamentos e três dias para filmes do catálogo.**  
-**5. Contudo, o valor a ser efetivamente pago e a data de devolução prevista de um item locado podem ser alterados pelo atendente da locadora para aplicar descontos individualizados ou ampliar prazos de devolução.**  
+**1. Lançamentos têm um acréscimode 50% nos valores.**  
+**2. Prazo para devolução é de um dia para lançamentos e três dias para filmes do catálogo.**  
+**3. Contudo, o valor a ser efetivamente pago e a data de devolução prevista de um item locado podem ser alterados pelo atendente da locadora para aplicar descontos individualizados ou ampliar prazos de devolução.**  
