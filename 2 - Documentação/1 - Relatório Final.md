@@ -47,6 +47,7 @@ Reuniões (online e presenciais).
 1 - GP: Gerente de Projetos  
 2 - DP: Dirigido a Plano  
 3 - US: User Stories (Estórias de Usuário)  
+4 - BDUF: Big Design Up Front  
 
 ### 2. INTRODUÇÃO
 A Vídeo Locadora Imperial ainda não possui um sistema computacional para registro de suas principais atividades, por exemplo: cadastro de clientes, cadastro de filmes, busca de filmes, cadsatro de empréstimos e devoluções.  
