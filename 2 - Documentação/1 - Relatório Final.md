@@ -167,6 +167,56 @@ As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
 #### 5.4 FASES
+Houve a tentativa de se seguir os princípios da metodologia Waterfall. O projeto foi dividido em algumas fases, descritas abaixo. É importante salientar que a próxima fase só se iniciou no término da anterior, ou, pelo menos, quando a anterior esteve praticamente finalizada com suas tarefas mais importantes já concluídas. Além disso, destaca-se que embora a metodologia principal seja a Waterfall, alguns princípios do Processo Evolucionário foram lembrados.  
+
+##### ANÁLISE/PROJETO
+Nos primeiros momentos do projeto, inclusive na primeira reunião, houve confusão em relação às metodologias de desenvolvimento e de gerenciamento de projeto (ver ata da Meeting_1). Porém, após consulta ao material de apoio, as dúvidas foram sanadas e a confusão foi resolvida (ler seção de Metodologias).  
+
+Além disso, a equipe teve dúvidas para escolher a tecnologia de desenvolvimento. A princípio sugeriu-se utilizar o Framework PHP Laravel (para front-end) somado à algum CMS Headless (sem cabeça, para back-end). Porém, após pesquisa e discussão entre os desenvolvedores, ficou definido que será usado o CMS Headless para back-end e React (biblioteca JavaScript) para front-end (ver ata Meeting_2).  
+
+No que toca o gerenciamento do projeto, a equipe definiu os seguintes processos/princípios:
+- Reuniões periódicas (presencial e online) para discussão do trabalho feito e do trabalho a ser feito;
+- Divisão dos papéis, tendo cada tarefa um responsável principal (que contará com a ajuda dos outros);
+- Validação e refatoração dentro das fases ao surgir necessidade.  
+
+Para divisão e acompanhamento das tarefas utilizou-se o método Kanban, já incluído na aba "Projects" da plataforma GitHub. O Kanban fornece um meio de visualizar e limitar o progresso do trabalho durante o processo de desenvolvimento do software (MATHARU et al., 2015).  
+ 
+Alguns artefatos do software foram produzidos:  
+- Estórias de Usuário, com base no Levantamento de Requisitos;  
+- Diagrama de Classes, para facilitar a criação destas na etapa de codificação;  
+- Diagramas de Casos de Uso, para as Estórias de Usuário mais importantes;  
+...  
+...  
+
+##### DOCUMENTAÇÃO  
+A equipe sempre buscou ter uma documentação constante desde o primeiro dia de projeto (primeira reunião, Meeting_1). Há uma tentativa de contemplar a metodologia Waterfall, principalmente BDUF.  
+
+Toda a documentação pode ser encontrada no repositório GitHub. Abaixo descreve-se brevemente os principais pontos:  
+- Atas de Reunião:  
+- Estórias de Usuário:  
+- Diagramas:
+...  
+...  
+
+Terminadas as fases de análise e documentação, iniciou-se a Implementação/Codificação e Testes.  
+
+##### IMPLEMENTAÇÃO E TESTES
+Faz-se importante destacar que neste projeto os testes foram simultâneos, senão intercalados, a codificação, contemplando um dos aspectos da Metodologia Ágil (Utilização de testes TDD e BDD dentro do ciclo de implementação).   
+Tecnologia/linguagem de back-end utilizada:  
+Link:  
+
+Tecnologia/linguagem de front-end utilizada:  
+Link:  
+
+Tecnologia para o ambiente de testes TDD:  
+Link:  
+
+Tecnologia para o ambiente de testes BDD:  
+Link:  
+
+##### IMPLANTAÇÃO  
+Tecnologia para o ambiente de implantação (SaaS/PaaS):  
+Link:  
 
 ### 6. VISÃO DE IMPLANTAÇÃO  
 
