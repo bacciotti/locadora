@@ -1,28 +1,54 @@
-## 1. Item  
-Atributos: data de aquisição, número de série (código de barras) e formato de mídia.  
+## Dados
+### 1. Item  
+Atributos: data de aquisição, número de série (código de barras) e tipo de mídia.  
 
-## 2. Filme  
+### 2. Filme  
 Atributos: título original, título em português, países, ano, direção, elenco, sinopse, duração e gênero.  
 
-## 3. Gênero  
+### 3. Gênero  
 Atributos: ação, animação, aventura, comédia, documentário, drama, ficção, guerra, musical, policial, romance, suspense e terror.  
 
-## 4. Formato de Mídia  
+### 4. Tipo de Mídia  
 Atributos: DVD, VHS, HD-DVD e Blu-Ray.  
-Precificação por formato: DVD, VHS e HD-DVD: R$ 5,00 / Blu-Ray: R$ 7,50  
+Precificação por tipo: DVD, VHS e HD-DVD: R$ 5,00 / Blu-Ray: R$ 7,50  
 
-## 5. Cliente  
+### 5. Cliente  
 Atributos: número de inscrição, nome, email, sexo e data de nascimento.  
 Atributos apenas do Titular: CPF, endereço, telefone residencial, local onde trabalha, telefone comercial e telefone celular.  
 
-### Regras  
-**1. Apenas maior de idade pode ser titular.**  
-**2. Maximo três dependentes.**  
-
-## 6. Distribuidora  
+### 6. Distribuidora  
 Atributos: razão social, CNPJ, endereço, telefone e pessoa de contato  
 
-### Regras  
-**1. Lançamentos têm um acréscimode 50% nos valores.**  
-**2. Prazo para devolução é de um dia para lançamentos e três dias para filmes do catálogo.**  
-**3. Contudo, o valor a ser efetivamente pago e a data de devolução prevista de um item locado podem ser alterados pelo atendente da locadora para aplicar descontos individualizados ou ampliar prazos de devolução.**  
+### 7. Reserva de filmes  
+Atributos: data e hora, tipo de mídia.  
+
+### 8. Distribuidora  
+Atributos: x  
+
+### 9. Distribuidora  
+Atributos: x  
+
+### 10. Distribuidora  
+Atributos: x  
+  
+## Regras do Negócio  
+**1. Apenas maior de idade pode ser titular.**  
+**2. Maximo três dependentes.**  
+**3. Lançamentos têm um acréscimode 50% nos valores.**  
+**4. Prazo para devolução é de um dia para lançamentos e três dias para filmes do catálogo.**  
+**5. Contudo, o valor a ser efetivamente pago e a data de devolução prevista de um item locado podem ser alterados pelo atendente da locadora para aplicar descontos individualizados ou ampliar prazos de devolução.**  
+**6. Atendimendo das reservas será feito por ordem de chegada, por tipo de mídia.**  
+**7. Uma locação so ́́pode ser feita para um item, se não houver uma reserva não atendida para o seu filme e mídia.**  
+**8. Quando um item de um filme e tipo de mídia reservado é devolvido, comunica-se o cliente interessado por e-mail e, a partir desse momento, o cliente tem 24 horas para retirá-lo; caso contrário, expira-se a reserva e o item é liberado.**  
+**9. Não são aceitas reservas para filmes que não têm itens do tipo de mídia requerido disponível ou reservas para as datas específicas.**  
+**10. Quando a devolução de um item é feita com atraso, cobra-se multa.**  
+**11. A multa é calculada como sendo o valor da locação aplicado ao número de dias de atraso.**  
+**12. Caso a locação do item não tenha sido paga no ato da locação, terá́ de ser paga obrigatoriamente na devolução.**  
+**13. Não são aceitos pagamentos mensais ou em outros momentos que não a locação ou a devolução.**  
+**14. Pagamentos podem ser feitos em dinheiro, cheque ou cartão, sendo que para pagamentos com cheque deseja-se saber: banco, agência, conta e número do cheque.**  
+**15. Para pagamentos em cartão, registra-se apenas o valor, a operadora do cartão e o número e a data da autorização.**  
+**16. Consultas ao acervo da locadora devem poder ser feitas pela Internet.**  
+**17. Um cliente pode consultar os dados de um filme específico, informando o título (ou parte dele), original ou em português.**  
+**18. Também devem ser possíveis consultas por gênero, tipo de mídia disponível, ator, diretor, nacionalidade e lançamentos,bem como combinações dessas informações.**  
+**19. Quando.**  
+**20. Quando.**  
