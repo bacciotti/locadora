@@ -36,7 +36,7 @@ tenham realizado algum empréstimo não possam ser excluídos.
 [US017] Como proprietário de uma locadora, eu quero que, sempre que um cliente titular for desativado, todos os clientes dependentes  
 atrelados a ele devem ser também desativados.  
 [US018] Como proprietário de uma locadora, eu quero que cada cliente tenha um número de inscrição único no meu sistema de locação.  
-[US029] Como cliente de uma locadora, eu gostaria de poder registrar de zero até três dependentes, bem como excluir ou  
+[US019] Como cliente de uma locadora, eu gostaria de poder registrar de zero até três dependentes, bem como excluir ou  
 adicionar dependentes há qualquer tempo, dependendo das normas da empresa.  
 [US020] Como funcionário de uma locadora, eu posso permitir que os clientes paguem pelos itens locados no ato do aluguel ou no  
 momento da devolução dos filmes. Caso a segunda opção seja escolhida, o pagamento deverá ser obrigatóriamente realizado na devolução.  
