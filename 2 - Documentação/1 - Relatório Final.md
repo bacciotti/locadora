@@ -122,7 +122,9 @@ A metodologia de desenvolvimento de software escolhida pela equipe é a Cascata 
 
 Embora utilizemos majoritariamente os princípios do método Waterfall, algumas ideias do processo evolucionário foram utilizadas, mesmo que minimamante: a implementação, os testes e a validação dos requisitos foram intercalados e iterados entre os membros da equipe.
 
-Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.
+Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.  
+
+O Kanban oferece um board (quadro) que pode ser dividido visualmente. A equipe optou por seguir a sugestão do professor e fazer a divisão em To-Do (a fazer), In progress (sendo realizado) e Done (feito). Além disso, labels (etiquetas) foram utilizadas para definir cada uma das tarefas (issues): Priority 1 para as tarefas de prioridade mais alta, Priority 2 para as tarefas de prioridade média e Priority 3 para as tarefas de baixa prioridade. Etiquetas com o nome da fase ou tipo também foram adicionadas: Documentation para as issues referentes a Documentação, Development para Desenvolvimento e assim por diante. O board que utilizaremos para gerenciar o projeto como um todo é o board "Tasks".
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
@@ -157,7 +159,10 @@ Por fim, com base em SOMMERVILLE (2011), conseguimos inferir que, de fato, a mel
 * 7. O time está geograficamente distribuído? SIM
 * 8. A cultura do time é orientada a documentação? SIM
 * 9. O Time tem um perfil “fraco” de desenvolvimento? SIM
-* 10.O sistema está sujeito a regulamentação externa? SIM
+* 10.O sistema está sujeito a regulamentação externa? SIM  
+
+O board Kanban utilizado para o Desenvolvimento é o board "User stories". Optamos por criar um board específico para o desenvolvimento para o gerencimanento ser facilitado. As issues do boar "User Stories" foram divididas por labels de Prioridade (1, 2, 3) de acordo com o Documento de Requisitos (o qual classificava-as como Alta, Média ou Baixa). A prioridade 1 refere-se a Alta, a 2 a Média e a 3 a Baixa. Outros labels foram adicionadas as issues do board "User Stories" para identificar o tipo de Estória: se ela é derivada de um Requisito Funcional (RF), Regra de Negócio (RN) ou Requisito Não-Funcional (RNF).  
+
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
