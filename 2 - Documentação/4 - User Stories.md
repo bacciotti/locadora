@@ -11,7 +11,7 @@ devolvidos e os itens a devolver.
 [US003] Como funcionário da locadora, eu quero registrar quanto e quando o cliente irá pagar por cada locação, seja no ato  
 do aluguel ou na entrega.  
 [US004] Como funcionário da locadora, eu preciso registrar reservas de filmes para qualquer cliente, bem como o tipo de  
-midia que o cliente deseja reservar (BlueRay ou DVD).  
+mídia que o cliente deseja reservar (BlueRay ou DVD).  
 [US005] Como funcionário da locadora, eu quero que as reservas com prazo de retirada de filmes expirados sejam desfeitas  
 automaticamente, conforme as normas da empresa.  
 [US006] Como cliente de uma locadora, eu gostaria de cancelar as minhas reservas quando desejar, de acordo com as normas da  
@@ -31,7 +31,7 @@ aumentar o prazo de devolução de filmes, de acordo com as normas da empresa.
 [US014] Como proprietário de uma locadora, eu preciso que o sistema efetue a cobrança de multa por itens devolvidos com atraso.  
 O valor da multa se dará pelo número de dias em atraso multiplicados pelo valor da locação do Item (M = n * LV).  
 [US015] Como funcionário da locadora, eu quero que as reservas canceladas automaticamente pelo sistema não sejam excluídas, mas sim marcadas como expiradas para que possam ser consultadas em qualquer momento no futuro.  
-[US016] Como funcionário da locadora, eu quero manter um histórico de todas as locações e, é imprescindível, que clientes que  
+[US016] Como funcionário da locadora, eu quero manter um histórico de todas as locações e é imprescindível que clientes que  
 tenham realizado algum empréstimo não possam ser excluídos.  
 [US017] Como proprietário de uma locadora, eu quero que, sempre que um cliente titular for desativado, todos os clientes dependentes  
 atrelados a ele devem ser também desativados.  
@@ -56,7 +56,7 @@ importando a circunstância.
 [US029] Como proprietário de uma locadora, eu quero impedir clientes com débitos de realizar locações ou reservas, independente do  
 valor devido.  
 [US030] Como funcionário de uma locadora, eu não quero que o sistema aceite reservas de filmes que estejam disponíveis na locadora.  
-[US031] Como proprietário de uma locadora, eu quero que o sistema seja segnmentado e que determinadas funcionalidades não sejam  
+[US031] Como proprietário de uma locadora, eu quero que o sistema seja segmentado e que determinadas funcionalidades não sejam  
 visíveis por todos. A Manipulação ao acervo deve ser restrita os administradores da empresa, funcionalidades de atendimento ao cliente  
 devem ser visíveis por todos os funcionário da empresa, enquanto as funcionalidades de consulta ao acervo devem estar disponíveis a  
 todos, inclusive na internet.  
@@ -70,7 +70,7 @@ forem inseridos corretamente.
 sistema deve possuir um módulo de fácil integração com os Sistemas de Operadoras de Cartão de Crédito.  
 [US036] Como cliente de uma locadora, eu gostaria de receber as informação de disponibilidade de uma reserva automaticamente  
 através do e-mail registrado no sistema da locadora.  
-[US037] Como proprietário de uma locadora, eu quero que todos os meus registro sejam insediros em um sistema gerenciador de  
+[US037] Como proprietário de uma locadora, eu quero que todos os meus registro sejam inseridos em um sistema gerenciador de  
 banco de dados realacional. Entretanto, deve ser um sistema de fácil portabilidade para, sempre que houver necessidade, facilitar a  
 migração de todos os dados para qualquer outra plataforma de gerenciamento de dados.  
 [US038] Como funcionário de uma locadora, eu quero que o sistema seja de fácil utilização, evitando a digitação desnecessária de  
