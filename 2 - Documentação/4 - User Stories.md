@@ -55,7 +55,7 @@ importando a circunstância.
 [US027] Como funcionário de uma locadora, eu desejo que uma reserve expire após 24h da comunicação da mesma para o Cliente.  
 [US028] Como proprietário de uma locadora, eu quero impedir clientes com débitos de realizar locações ou reservas, independente do  
 valor devido.  
-[US029] Como funcionário de uma locadora, eu não quero que o sistema aceite reservas de filmes que estejam disponíveis na locadora.  
+[US029] Como funcionário de uma locadora, eu não quero que o sistema aceite reservas de filmes que não estejam disponíveis na locadora.  
 [US030] Como proprietário de uma locadora, eu quero que o sistema seja segmentado e que determinadas funcionalidades não sejam  
 visíveis por todos. A Manipulação ao acervo deve ser restrita os administradores da empresa, funcionalidades de atendimento ao cliente  
 devem ser visíveis por todos os funcionário da empresa, enquanto as funcionalidades de consulta ao acervo devem estar disponíveis a  
