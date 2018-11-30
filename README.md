@@ -14,14 +14,15 @@ Prof. Dr. Vinícius C. Garcia
 
 ### 1. INTRODUÇÃO
 Este projeto tem como objetivo tratar os diversos aspectos do Ciclo de Vida do Desenvolvimento do Software para uma Locadora de Vídeos chamada Imperial, como: concepção, análise, desenvolvimento, implementação e implantação, não limitado a estes.  
-As informações mais importantes estão neste arquivo README.  
+As informações iniciais estão neste arquivo README.  
 As demais informações acerca do projeto estão no arquivo Relatório Final, referenciado no final deste texto. Todos os documentos relativos ao projeto estão neste repositório GitHub.   
-O projeto nos foi proposto em novembro/2018. A primeira reunião da equipe foi em 22/11 (a ata encontra-se no diretório "1 - Atas das Reuniões").
+O projeto nos foi proposto em novembro/2018. A primeira reunião da equipe foi em 22/11 (a ata encontra-se no diretório "1 - Atas das Reuniões").  
+Tentou-se aplicar os conhecimentos obtidos em aula referente as Metodologias de Gerenciamento de Projetos (utilizou-se a DP - Dirigida a Planos) e as Metodologias de Desenvolvimento de Software (Waterfall/Cascata foi utilizada). Conforme descrito no Relatório Final, embora utilizados os princípios destas metodologias, também se fez uso de conceitos de outras metodologias vistas em sala de aula (como Ágil/XP).  O Relatório Final possui mais informações sobre o assunto.
 
 ### 2. JUSTIFICATIVA
 A Vídeo Locadora Imperial ainda não possui um sistema informatizado para auxílio de seu negócio. A equipe foi procurada para desenvolver um sistema capaz de gerenciar os empréstimos, devoluções, cadastro de clientes, entre outros.  
 Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram levantadados. 
-A equipe ficou a cargo de finalizar a documentação, elaborar a análise, planejar, projetar, implementar, testar e implantar o software.
+A equipe ficou a cargo de finalizar a documentação, elaborar a análise, planejar, projetar, implementar, testar e implantar o software. Se faz importante a informatização do sistema para facilitar o atendimento ao cliente e a gerência do negócio. 
 
 ### 3. DESCRIÇÃO
 -- escrever quando o sistema estiver pronto -- 
@@ -32,14 +33,14 @@ lbm5@cin.ufpe.br
 Website: https://cin.ufpe.br/~lbm5/    
 Twitter: @baciotti  
 GitHub: @bacciotti  
-Instagram: @lbacciotti
+Instagram: @lbacciotti  
 Role: Gerente do Projeto e Desenvolvedor  
 
 ii. GUSTAVO COSTA MEIRELES  
 gcm3@cin.ufpe.br  
 Instagram: @gcmeireles   
 GitHub:@gcmeireles  
-Role: Analista de Requisitos e Desenvolvedor   
+Role:  Desenvolvedor e Analista de Requisitos
 
 iii. WELINGTON MOTHÉ DE OLIVEIRA  
 wmo@cin.ufpe.br  
