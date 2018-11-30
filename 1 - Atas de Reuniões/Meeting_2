@@ -1,5 +1,5 @@
 # Meeting 2 - 30/11
-# Início: 
+# Início: 18h02
 # Término: 
 
 #Pauta
@@ -20,7 +20,14 @@ quando da marcação desta reunião. Ele se comprometeu a ler a ata quando poss�
 finais no arquivo README, divisão de novas tarefas no board Tasks e criação e adição de tarefas de desenvolvimento no borad User Stories.  
 
 
-(2) 
+(2) PHP + JS (Laravel + Vue.js). Linguagem de Programação: PHP e JavaScript
+Framework de desenvolvimento: Laravel Framework e Vue.js
+Banco de dados: Mysql
+Servidor de Hospedagem: AWS
+Metodologias de Desenvolvimento: Entrega continua e GitFlow e boas práticas de programação.
+IDE: JetBrains PhpStorm(Apenas para facilitar)
+
+MySQL + Laravel + JS/Vue.js.
 
 (3) O GP explicou que na primeira reunião houve uma confusão qunato às metodologias e que, depois de pesquisa ao material de apoio,
 constatou-se que o melhor caminho seria utilizar a metodologia DP para gerir o projeto e Waterfall para o desenvolvimento. Colocado em
@@ -34,15 +41,16 @@ de responsabilidade do senhor XXXXXXXXXXX. O senhor YYYYY se disponibilizou a de
 devem ser entregues para validação da equipe até dia DDDDDDD. Quanto aos testes, o senhor Diego Menegazzi guiará os desenvolvedores. 
 Por orientação do cliente e decisão da equipe, os testes serão efetuados apenas em 15% das Estórias mais críticas/importantes.
 
-(5) Colocou-se em discussão quais outros artefatos seriam elaboradas para auxiliar a equipe de desenvolviment. JJJJJJJJJJ
+(5) Colocou-se em discussão quais outros artefatos seriam elaboradas para auxiliar a equipe de desenvolvimento. Sequencia e 
+DER.
 
-(6) Para finalizar, decidiu-se que PPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+(6) Para finalizar, decidiu-se que Mothé e Lucas (DER e Classes), Carlos e Gustavo (Casos de Uso e Sequêcia), Diego (Deploy).
 
 
 
  
   
-A próxima reunião será presencial em 
+A próxima reunião será presencial em segunda do mestrado, 19h30
   
 Lucas Bacciotti foi o responsável pela confecção da presente Ata de Reunião.  
   
