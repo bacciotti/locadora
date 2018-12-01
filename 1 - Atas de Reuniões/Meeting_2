@@ -19,39 +19,40 @@ quando da marcação desta reunião. Ele se comprometeu a ler a ata quando poss�
 (1) O Gerente de Projetos abriu a reunião apresentando os trabalhos desenvolvidos até aqui: início da confeccção do Relatório Final, ajustes 
 finais no arquivo README, divisão de novas tarefas no board Tasks e criação e adição de tarefas de desenvolvimento no borad User Stories.  
 
-
-(2) PHP + JS (Laravel + Vue.js). Linguagem de Programação: PHP e JavaScript
+(2) O desenvolvedor Diego Menegazzi apresentou aos colegas de equipe uma proposta de desenvolvimento envolvendo as tecnologias
+Laravel (Framework PHP), Vue.js (bilbioteca Javascript),  MySQL (banco de dados), AWS para servidor de produção. Continou 
+dizendo que, com estas tecnolgogias, será possível fazer entregas contínuas, contemplando aspectos das metodologias ágeis. 
+Sugeriu ainda que usemos a IDE JetBrains PHPStorm. Colocado em discussão, a proposta foi aprovada por unanimidade:
+PHP + JS (Laravel + Vue.js). Linguagem de Programação: PHP e JavaScript
 Framework de desenvolvimento: Laravel Framework e Vue.js
 Banco de dados: Mysql
 Servidor de Hospedagem: AWS
 Metodologias de Desenvolvimento: Entrega continua e GitFlow e boas práticas de programação.
 IDE: JetBrains PhpStorm(Apenas para facilitar)
 
-MySQL + Laravel + JS/Vue.js.
-
-(3) O GP explicou que na primeira reunião houve uma confusão qunato às metodologias e que, depois de pesquisa ao material de apoio,
+(3) O GP explicou que na primeira reunião houve uma confusão quanto às metodologias e que, depois de pesquisa ao material de apoio,
 constatou-se que o melhor caminho seria utilizar a metodologia DP para gerir o projeto e Waterfall para o desenvolvimento. Colocado em
 discussão, a equipe aprovou a proposta. 
 
 (4) O GP explicou aos membros da equipe que o próprio documento dos requisitos fornecidos pelo cliente já continha as priorização 
 das funcionalidades (como Alta, Média e Baixa). Foi colocado em discussão se a Equipe iria alterar ou não a ordem de priorização 
-ou se poderia fazer algumas trocas de prioridade de uma tarefa ou outra. A equipe decidiu que XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX. A 
-partir disso, tem-se que elaborar os primeiros Artefatos. O Diagrama de Casos de Uso (das principais Estórias de Usuário) ficou 
-de responsabilidade do senhor XXXXXXXXXXX. O senhor YYYYY se disponibilizou a desenvolve o Diagrama de Classes. Os artefatos citados
-devem ser entregues para validação da equipe até dia DDDDDDD. Quanto aos testes, o senhor Diego Menegazzi guiará os desenvolvedores. 
-Por orientação do cliente e decisão da equipe, os testes serão efetuados apenas em 15% das Estórias mais críticas/importantes.
+ou se poderia fazer algumas trocas de prioridade de uma tarefa ou outra. A equipe decidiu que as prioridades do cliente serão mantidas. A 
+partir disso, tem-se que elaborar os primeiros Artefatos. O Diagrama de Casos de Uso e o de Sequência (das principais Estórias de Usuário) ficou 
+de responsabilidade dos senhores Carlos A. Porto e Gustavo C. Meireles. O senhor W. Mothé se disponibilizou a desenvolve o Diagrama de Classes e 
+o de Entidade Relacionamento, com a ajuda do senhor Lucas Bacciotti.. Os artefatos citados devem ser entregues para validação da equipe até dia 10/12. 
+Quanto aos testes, o senhor Diego Menegazzi guiará os desenvolvedores nesta fase, visto que o Framework Laravel já possui ferramentas 
+que auxiliará nesta tarefa. Por orientação do cliente e decisão da equipe, os testes serão efetuados apenas em 15% das Estórias mais críticas/importantes.
 
-(5) Colocou-se em discussão quais outros artefatos seriam elaboradas para auxiliar a equipe de desenvolvimento. Sequencia e 
-DER.
+(5) Colocou-se em discussão quais outros artefatos seriam elaboradas para auxiliar a equipe de desenvolvimento. 
+Conforme mencionado no item 3, O diagrama de Sequência e o Entidade Relacionamento também serão confeccionados.
 
-(6) Para finalizar, decidiu-se que Mothé e Lucas (DER e Classes), Carlos e Gustavo (Casos de Uso e Sequêcia), Diego (Deploy).
-
-
-
- 
+(6) Ficou-se definido, então, que os próximos passos da equipe serão:
+- Menegazzi: commitar ambiente de desenvolvimento para a equipe até terça-feira (4/12);
+- Bacciotti e Mothé: confeccionar DER e Diagrama de Classes até segunda-feira (10/12 - Data da próxima reunião);
+- Porto e Meireles: confeccionar Diagrama de Casos de Uso e Sequência até segunda-feira (10/12 - Data da próxima reunião).
   
-A próxima reunião será presencial em segunda do mestrado, 19h30
+A próxima reunião será feta presencialmente na segunda-feira, 10/dez às 19h30min.
   
 Lucas Bacciotti foi o responsável pela confecção da presente Ata de Reunião.  
   
-#Fim da ata     
+#Fim da ata   
