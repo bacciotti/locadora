@@ -18,4 +18,12 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    /* [Diego - 03/12/2018] - Classe verifica requisicao da rota /admin, irá retornar um erro pois não existe está rota. */
+    public function testBasicTest2()
+    {
+        $response = $this->get('/admin');
+
+        $response->assertStatus(200);
+    }
 }
