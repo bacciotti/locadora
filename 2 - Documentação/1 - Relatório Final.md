@@ -33,8 +33,7 @@ Reuniões (online e presenciais).
 **5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)**
 - **5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
 - **5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
-- **5.3 TECNOLOGIAS**  
-- **5.4 FASES**  
+- **5.3 FASES**  
 
 **6. VISÃO DE IMPLANTAÇÃO**    
 **7. VISÃO DE USO**    
@@ -101,7 +100,15 @@ Tela Y...
 Funcionalidade K...  
 Módulo Z...  
 
-### 3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE ###
+### 3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE ###  
+A tecnologia de desenvolvimento a ser utilizada é a Laravel (um Framework PHP) com Vue.js (uma . Biblioteca Javascript). Para banco de dados utilizaremos MySQL.  
+Link para Laravel 1.1.1.1.1.1: XXXXX   
+Link para Vue.js 1.1.1.1.1.1.: YYYYY  
+Link para Mysql 2.2.2.2.2.2.2: KKKKK  
+
+Como ferramentas, utilizaremos o PHP Storm, da JetBrains, para IDE, com licença de estudante cedida pelo CIN/UFPE. Alguns desenvolvedores utilizaram um PaaS chamado Cloud Nine como ambiente de desenvolvimento.  
+Link para PHPStorm: https://www.jetbrains.com/phpstorm/     
+Link para C9: https://c9.io    
 
 ### 4. CARACTERÍSTICAS DA APLICAÇÃO ###
 
@@ -166,13 +173,7 @@ O board Kanban utilizado para o Desenvolvimento é o board "User stories". Optam
 
 Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
 
-#### 5.3 TECNOLOGIAS
-A tecnologia de desenvolvimento a ser utilizada é a XXXXX, pois...
-As ferramentas de desenvolvimento a serem utilizadas são YYYYY, pois...  
-
-Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
-
-#### 5.4 FASES
+#### 5.3 FASES
 Houve a tentativa de se seguir os princípios da metodologia Waterfall. O projeto foi dividido em algumas fases, descritas abaixo. É importante salientar que a próxima fase só se iniciou no término da anterior, ou, pelo menos, quando a anterior esteve praticamente finalizada com suas tarefas mais importantes já concluídas. Além disso, destaca-se que embora a metodologia principal seja a Waterfall, alguns princípios do Processo Evolucionário foram lembrados.  
 
 ##### ANÁLISE/PROJETO
@@ -191,34 +192,21 @@ Alguns artefatos do software foram produzidos:
 - Estórias de Usuário, com base no Levantamento de Requisitos;  
 - Diagrama de Classes, para facilitar a criação destas na etapa de codificação;  
 - Diagramas de Casos de Uso, para as Estórias de Usuário mais importantes;  
-...  
-...  
+- Diagramas de Sequência, também para as Estórias de Usuário mais importantes;  
+- Diagrama Entidade Relacionamento, para servir de referência quando da criação e manipulação do banco de dados.  
+
+Para confecção dos artefatos utilizou-se a ferramenta online Draw.io: https://draw.io.
 
 ##### DOCUMENTAÇÃO  
 A equipe sempre buscou ter uma documentação constante desde o primeiro dia de projeto (primeira reunião, Meeting_1). Há uma tentativa de contemplar a metodologia Waterfall, principalmente BDUF.  
 
-Toda a documentação pode ser encontrada no repositório GitHub. Abaixo descreve-se brevemente os principais pontos:  
-- Atas de Reunião:  
-- Estórias de Usuário:  
-- Diagramas:
-...  
-...  
+Toda a documentação pode ser encontrada no repositório GitHub. A relação dos principais artefatos produzidos pode ser lida no subtópico **ANÁLISE/PROJETO** do tópico **5.3 FASES** deste documento.
 
 Terminadas as fases de análise e documentação, iniciou-se a Implementação/Codificação e Testes.  
 
 ##### IMPLEMENTAÇÃO E TESTES
 Faz-se importante destacar que neste projeto os testes foram simultâneos, senão intercalados, a codificação, contemplando um dos aspectos da Metodologia Ágil (Utilização de testes TDD e BDD dentro do ciclo de implementação).   
-Tecnologia/linguagem de back-end utilizada:  
-Link:  
-
-Tecnologia/linguagem de front-end utilizada:  
-Link:  
-
-Tecnologia para o ambiente de testes TDD:  
-Link:  
-
-Tecnologia para o ambiente de testes BDD:  
-Link:  
+Os detalhes das tecnologias utilizadas podem ser vistas no tópico **3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE** deste documento.
 
 ##### IMPLANTAÇÃO  
 Tecnologia para o ambiente de implantação (SaaS/PaaS):  
