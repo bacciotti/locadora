@@ -1,4 +1,5 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -11,7 +12,13 @@
 ## Documentação de Instalação
 
 Criação do Projeto  
--> composer create-project --prefer-dist laravel/laravel Locadora-Imperial
+> composer create-project --prefer-dist laravel/laravel Locadora-Imperial
 
 Inicializado o servidor e subindo a aplicação  
--> php artisan server
+> php artisan server
+
+Criação das tabelas no banco
+> php artisan migrate
+
+Criado Seed - Trabalhar com dados fictício
+> php artisan make:seed UsersTableSeeder
