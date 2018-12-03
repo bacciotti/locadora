@@ -10,8 +10,8 @@
 
 ## Documentação de Instalação
 
-//Criação do Projeto
+//Criação do Projeto  
 -> composer create-project --prefer-dist laravel/laravel Locadora-Imperial
 
-//Inicializado o servidor e subindo a aplicação
--> php artisan serve
+//Inicializado o servidor e subindo a aplicação  
+-> php artisan servea
