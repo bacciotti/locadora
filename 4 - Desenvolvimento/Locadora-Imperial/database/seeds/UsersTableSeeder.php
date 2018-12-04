@@ -13,7 +13,6 @@ class UsersTableSeeder extends Seeder
     {
         factory(\App\User::class)->create([
             'email'=> 'admin@gmail.com'
-        ]);
-        
+        ]);        
     }
 }

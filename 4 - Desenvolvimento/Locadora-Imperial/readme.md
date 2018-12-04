@@ -21,9 +21,9 @@ Criação das tabelas no banco
 > php artisan migrate
 
 Criado Seed - Trabalhar com dados fictício
-> php artisan make:seed UsersTableSeeder
+> php artisan db:seed
 
-Realizar test TDD e BDD no Laravel.
+Realizar test TDD e BDD no Laravel.  
 -> Regras:  
 - Toda classe de test deve terminar com o sufixo Test, ex: ClientTest.php. 
 - Toda função de teste deve iniciar com a palavra test, ex: public function testBasico()
