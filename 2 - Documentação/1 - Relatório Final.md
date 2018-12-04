@@ -102,9 +102,13 @@ Módulo Z...
 
 ### 3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE ###  
 A tecnologia de desenvolvimento a ser utilizada é a Laravel (um Framework PHP) com Vue.js (uma . Biblioteca Javascript). Para banco de dados utilizaremos MySQL.  
-Link para Laravel 1.1.1.1.1.1: XXXXX   
-Link para Vue.js 1.1.1.1.1.1.: YYYYY  
-Link para Mysql 2.2.2.2.2.2.2: KKKKK  
+Link para Laravel 5.7.15: https://laravel.com/   
+Link para Vue.js 2.5.18: https://vuejs.org/  
+Link para MySQL 8.0.13: https://www.mysql.com/  
+Link para PHP 7.0.0: http://www.php.net/  
+Link para Composer 1.8.0: https://getcomposer.org/  
+Link para Node 10.14.1: https://nodejs.org/en/  
+Link para NPM 6.4.1: https://www.npmjs.com/  
 
 Como ferramentas, utilizaremos o PHP Storm, da JetBrains, para IDE, com licença de estudante cedida pelo CIN/UFPE. Alguns desenvolvedores utilizaram um PaaS chamado Cloud Nine como ambiente de desenvolvimento.  
 Link para PHPStorm: https://www.jetbrains.com/phpstorm/     
