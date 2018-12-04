@@ -1,2 +1,0 @@
-- Projeto será criado na sequencia utilizando Laravel.
-- Foi configurado a pasta e será trabalhando com Git Flow, lembrando que será trabalhando com a branch devolp.
