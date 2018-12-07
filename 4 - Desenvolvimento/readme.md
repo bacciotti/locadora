@@ -17,6 +17,9 @@ Criação do Projeto
 Inicializado o servidor e subindo a aplicação  
 > php artisan server
 
+Criar Controlers, Model e Migrations
+>  php artisan make:model -mc <nomeModel>
+
 Criação das tabelas no banco
 > php artisan migrate
 
