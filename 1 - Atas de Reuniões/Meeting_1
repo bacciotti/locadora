@@ -13,8 +13,9 @@
 Presentes: Carlos Alexandre Porto, Diego Menegazzi, Welington Mothé, Lucas Bacciotti e Gustavo Meireles
 
 #Registro  
-Inicialmente o Gerente de Projetos, Lucas Bacciotti colocou em discussão a forma de utilização do GitHub, se faremos as alterações diretamente online  
-ou se cada integrante do grupo fará uma cópia local, fazendo suas alterações e somente depois realizando o Upload para a plataforma.  
+Inicialmente o Gerente de Projetos, Lucas Bacciotti colocou em discussão a forma de utilização do GitHub, se faremos as alterações  
+diretamente online ou se cada integrante do grupo fará uma cópia local, fazendo suas alterações e somente depois realizando o  
+Upload para a plataforma.  
   
 Definiu-se que todos os membros que irão desenvolver devem fazer uma cópia local e as documentações do projeto poderá ser realizada  
 diretamente online.  
@@ -24,24 +25,26 @@ uma solução própria, sem a utilização de um modelo geral pronto.
   
 Iniciando no primeiro item da Pauta, o Lucas Baccioti fez uma pequena explanação das principais metodologias de Gerenciamento, SCRUM  
 e Cascata.  
-Gustavo Meireles disse que o Método Cascata é melhor para desenvolver projetos de pequeno porte. Diego Menegazzi concordou com a ideia de  
-Metodologia Cascata. Carlos Alexandre Porto acrescentou que poderemos usar o Modelo KANBAN para organizar as tarefas e o desenvolvimento,  
-conforme orientação do Professor nos requisitos do Projeto. Com o consentimento de todos, será utilizado o Método em Cascata para todas  
-as fases do Projeto e o Modelo KANBAN para organização.  
-Para a Metodologia de Desenvolvimento, o G. P. defendeu a utilização da Metodologia XP, pois a equipe é pequena, o ciclo de vida do projeto  
-é curto, a equipe desenvolverá as atividades de cidades diferentes, agilidade no refatoramento e correção de erros. Diego Menegazzi tentou  
-sugerir outras opções, mas diante dos argumentos apresentados inicialmente por Lucas Bacciotti toda a equipe concordou que a Metodologia XP  
-é a melhor opção para este projeto.  
+Gustavo Meireles disse que o Método Cascata é melhor para desenvolver projetos de pequeno porte. Diego Menegazzi concordou com a  
+ideia de Metodologia Cascata. Carlos Alexandre Porto acrescentou que poderemos usar o Modelo KANBAN para organizar as tarefas e  
+o desenvolvimento, conforme orientação do Professor nos requisitos do Projeto. Com o consentimento de todos, será utilizado o  
+Método em Cascata para todas as fases do Projeto e o Modelo KANBAN para organização.  
+Para a Metodologia de Desenvolvimento, o G. P. defendeu a utilização da Metodologia XP, pois a equipe é pequena, o ciclo de vida  
+do projeto é curto, a equipe desenvolverá as atividades de cidades diferentes, agilidade no refatoramento e correção de erros.  
+Diego Menegazzi tentou sugerir outras opções, mas diante dos argumentos apresentados inicialmente por Lucas Bacciotti toda a  
+equipe concordou que a Metodologia XP é a melhor opção para este projeto.  
   
 Para a Definição da Tecnologia/Linguagem, Welington apresentou a opção de utilizar o serviço CMS Headless de criação  
-de conteúdo. Defendeu ainda a forma de funcionamento do serviço apresentado, dizendo que a principal vantagem é a abstração das principais  
-complicações do desenvolvimento tradicional.  
+de conteúdo. Defendeu ainda a forma de funcionamento do serviço apresentado, dizendo que a principal vantagem é a abstração  
+das principais complicações do desenvolvimento tradicional.  
 Lucas Bacciotti, Diego Menegazzi e Gustavo Meireiles apresentaram o Framework Laravel para utilizar a Linguagem PHP  
-com FrontEnd e BackEnd para melhor desenvolvimento do Sofware. Falaram ainda da facilidade de encontrar documentação Online e utilizar  
-um dos muitos Códigos de FrontEnd disponíveis. Por insistência de Welington, Diego, Gustavo e Welington ficaram responsáveis por pesquisar as  
-tecnologias e apresentar uma definição para a equipe geral até sexta-feira (30 de novembro de 2018) até 10:00h.  
+com FrontEnd e BackEnd para melhor desenvolvimento do Sofware. Falaram ainda da facilidade de encontrar documentação Online  
+e utilizar um dos muitos Códigos de FrontEnd disponíveis. Por insistência de Welington, Diego, Gustavo e Welington ficaram  
+responsáveis por pesquisar as tecnologias e apresentar uma definição para a equipe geral até sexta-feira (30 de novembro  
+de 2018) até 10:00h. 
 Somente após a definição da tecnologia e Linguagens será definida a plataforma online (PAAS/IAAS). Gustavo pediu para que,  
-caso a tecnologia CMS Headless seja escolhida, o responsável pela justificativa de sua utilização no projeto seja feita pelo Welington.  
+caso a tecnologia CMS Headless seja escolhida, o responsável pela justificativa de sua utilização no projeto seja feita  
+pelo Welington.  
   
 Todos ficaram de acordo com a seguinte definição de papeis: Gustavo Meireles e Welington serão os principais responsáveis pelo  
 desenvolvimento, Diego Menegazzi será o Responsável principal pelos Testes TDD e BDD, Lucas Bacciotti será o Gerente Geral do 
@@ -55,8 +58,9 @@ O Cronograma foi apresentado por Carlos Alexandre Porto da seguinte forma:
   
   
 O Cronograma será complementado nas próximas reuniões de acordo com os prazos estipulados pelo Professor.  
-A Próxima reunião será na Sexta-Feira (30/11/2018) às 18:00 por uma plataforma Online. Para as considerações finais, Lucas informou  
-que está fazendo a divisão das atividades no GitHub e todos devem se familiarizar com a plataforma até a próxima reunião.  
+A Próxima reunião será na Sexta-Feira (30/11/2018) às 18:00 por uma plataforma Online. Para as considerações finais, Lucas  
+informou que está fazendo a divisão das atividades no GitHub e todos devem se familiarizar com a plataforma até a próxima  
+reunião.  
   
 Carlos Alexandre foi o responsável pela confecção da presente Ata de Reunião.  
   
