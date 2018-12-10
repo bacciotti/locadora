@@ -72,4 +72,5 @@ item 1,* 		-- 		1 	distribuidora
 locacao	0,* 	-- 		1,* pagamento  
 pagamento 1		-- 		0,* pagamento_cheque  
 pagamento 1 	--		0,* pagamento_cartao  
+cliente (titular) 1  -- 0,* cliente (dependente)
 
