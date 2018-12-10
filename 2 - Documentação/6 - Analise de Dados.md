@@ -33,7 +33,7 @@ Atributos: data e hora, tipo de mídia.
 **2. Não são aceitas reservas para filmes que não têm itens do tipo de mídia requerido disponível ou reservas para as datas específicas.**  
 
 ## 8. Locação e Devolução  
-Atributos: Data e Hora de Locação, Data e Hora de Devolução,  
+Atributos: Data e Hora de Locação, Data e Hora de Devolução, 
 
 ### Regras do Negócio  
 **1. Uma locação só ́́pode ser feita para um item, se não houver uma reserva não atendida para o seu filme e mídia.**  
@@ -57,3 +57,19 @@ Atributos: valor, operadora do cartão, número do cartão, data da autorizaçã
 **1. Consultas ao acervo da locadora devem poder ser feitas pela Internet.**  
 **2. Um cliente pode consultar os dados de um filme específico, informando o título (ou parte dele), original ou em português.**  
 **3. Também devem ser possíveis consultas por gênero, tipo de mídia disponível, ator, diretor, nacionalidade e lançamentos,bem como combinações dessas informações.**  
+
+## 11. Cardinalidades  
+CARDINALIDADES BANCO v1  
+
+genero 1,* 		-- 		1,* filme  
+filme 1,* 		-- 		0,* reserva  
+reserva 0,*		-- 		0,1	cliente   
+cliente 1 		-- 		0,*	locacao  
+locacao 0,1 	-- 		0,1 reserva  
+locacao 0,* 	-- 		1,* item  
+item 0,* 		-- 		1 	tipo_midia  
+item 1,* 		-- 		1 	distribuidora  
+locacao	0,* 	-- 		1,* pagamento  
+pagamento 1		-- 		0,* pagamento_cheque  
+pagamento 1 	--		0,* pagamento_cartao  
+
