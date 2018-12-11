@@ -61,16 +61,16 @@ Atributos: valor, operadora do cartão, número do cartão, data da autorizaçã
 ## 11. Cardinalidades  
 CARDINALIDADES BANCO v1  
 
-genero 1,* 		-- 		1,* filme  
-filme 1,* 		-- 		0,* reserva  
-reserva 0,*		-- 		0,1	cliente   
-cliente 1 		-- 		0,*	locacao  
-locacao 0,1 	-- 		0,1 reserva  
-locacao 0,* 	-- 		1,* item  
-item 0,* 		-- 		1 	tipo_midia  
-item 1,* 		-- 		1 	distribuidora  
-locacao	0,* 	-- 		1,* pagamento  
-pagamento 1		-- 		0,* pagamento_cheque  
-pagamento 1 	--		0,* pagamento_cartao  
-cliente (titular) 1  -- 0,* cliente (dependente)
+genero 1,* 		    -- 		1,* filme  
+filme 1,* 		    -- 		0,* reserva  
+reserva 0,*		    -- 		0,1	cliente   
+cliente (titular) 1 --      0,* cliente (dependente)
+cliente 1 		    -- 		0,*	locacao  
+locacao 0,1 	    -- 		0,1 reserva  
+locacao 0,* 	    -- 		1,* item  
+item 0,* 		    -- 		1 	tipo_midia  
+item 1,* 		    -- 		1 	distribuidora  
+locacao	1           --      0,1 pagamento  
+pagamento 1		    -- 		0,* pagamento_cheque  
+pagamento 1 	    --		0,* pagamento_cartao  
 
