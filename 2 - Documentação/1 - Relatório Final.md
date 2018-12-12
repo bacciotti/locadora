@@ -55,7 +55,7 @@ Desta forma, a equipe foi procurada para desenvolver um sistema capaz de registr
 
 O carro-chefe do negócio é o empréstimo de vídeos/filmes, que possuem cópias em várias mídias diferentes (VHS e Blu-Ray, por exemplo) e vários gêneros. O registro destas informações no sistema a ser desenvolvido é necessário.  
 
-Os empréstimos tem um preço a depender do tipo de mídia e se o filme é lançamento ou não. Porém é possível aumentar ou diminuir o preço e o prazo de devolução em ocasiões extraordinárias.  
+Os empréstimos tem um preço a depender do tipo de mídia e se o filme é lançamento ou catálogo. Porém é possível aumentar ou diminuir o preço e o prazo de devolução em ocasiões extraordinárias.  
 
 Além disso, é necessário registrar as informações das distribuidoras e dos clientes. Os clientes podem ter dependentes.  
 
@@ -71,7 +71,7 @@ Para controle de versões (tanto do código como de todos os outros artefatos do
 
 A análise de requisitos será convertida em Estórias de Usuários, para facilitar a elaboração de cada uma das funcionalidades do sistema. Para cada requisito do cliente será feita uma ou mais Estórias de Usuários.  
 
-Na fase de documentação, alguns artefatos podem ser úteis aos desenvolvedores, como o Diagrama de Classes. Novos artefatos surgirão a medida que forem constatadas sua necessidade pela equipe.  
+Na fase de documentação, alguns artefatos podem ser úteis aos desenvolvedores, como os Diagramas de Classes, Entidade-Relacionamento, Sequencia e de Uso.
 
 Para resolver a problemática apresentada a Equipe desenvolveu um software leve, intuitivo, rápido e online.
 Com as tecnologias de desenvolvimento web utilizadas, o cliente terá um software capaz de ser executado em vários computadores com internet, ou seja, cada funcionário poderá utilizar um computador ao mesmo tempo que outros, sem prejudicar o armazenamento e recuperação de informações.  
@@ -133,12 +133,9 @@ A metodologia de desenvolvimento de software escolhida pela equipe é a Cascata 
 
 Embora utilizemos majoritariamente os princípios do método Waterfall, algumas ideias do processo evolucionário foram utilizadas, mesmo que minimamante: a implementação, os testes e a validação dos requisitos foram intercalados e iterados entre os membros da equipe.
 
-Por fim, conforme sugestão no enunciado no projeto, a ferrament Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.  
+Por fim, conforme sugestão no enunciado do projeto, a ferramenta Kanban (aba Projects do GitHub) foi utilizada para auxiliar na divisão das tarefas e na observação de todo o ciclo de vida do projeto. Devido a distância geográfica entre os membros da equipe e o prazo curto para entrega, o Kanban, por ser visual, proporciona um rápido entendimento do estado atual das tarefas e seus responsáveis. Além disso, ele é fácil de trabalhar e está online na plataforma GitHub, juntamente a outros artefatos do projeto.  
 
 O Kanban oferece um board (quadro) que pode ser dividido visualmente. A equipe optou por seguir a sugestão do professor e fazer a divisão em To-Do (a fazer), In progress (sendo realizado) e Done (feito). Além disso, labels (etiquetas) foram utilizadas para definir cada uma das tarefas (issues): Priority 1 para as tarefas de prioridade mais alta, Priority 2 para as tarefas de prioridade média e Priority 3 para as tarefas de baixa prioridade. Etiquetas com o nome da fase ou tipo também foram adicionadas: Documentation para as issues referentes a Documentação, Development para Desenvolvimento e assim por diante. O board que utilizaremos para gerenciar o projeto como um todo é o board "Tasks".
-
-Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
-
 
 #### 5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
 A metodologia de gerenciamento de projeto escolhida pela equipe em reunião foi a DP - Dirigida a Plano. Os seguintes fatores justificam a escolha:
@@ -172,10 +169,7 @@ Por fim, com base em SOMMERVILLE (2011), conseguimos inferir que, de fato, a mel
 * 9. O Time tem um perfil “fraco” de desenvolvimento? SIM
 * 10.O sistema está sujeito a regulamentação externa? SIM  
 
-O board Kanban utilizado para o Desenvolvimento é o board "User stories". Optamos por criar um board específico para o desenvolvimento para o gerencimanento ser facilitado. As issues do boar "User Stories" foram divididas por labels de Prioridade (1, 2, 3) de acordo com o Documento de Requisitos (o qual classificava-as como Alta, Média ou Baixa). A prioridade 1 refere-se a Alta, a 2 a Média e a 3 a Baixa. Outros labels foram adicionadas as issues do board "User Stories" para identificar o tipo de Estória: se ela é derivada de um Requisito Funcional (RF), Regra de Negócio (RN) ou Requisito Não-Funcional (RNF).  
-
-
-Mais detalhes sobre as metodologias e ferramentas podem ser lidas no Relatório Final.  
+O board Kanban utilizado para o Desenvolvimento é o board "User stories". Optamos por criar um board específico para o desenvolvimento por manter o gerencimanento facilitado. As issues do board "User Stories" foram divididas por labels de Prioridade (1, 2, 3) de acordo com o Documento de Requisitos (o qual classificava-as como Alta, Média ou Baixa). A prioridade 1 refere-se a Alta, a 2 a Média e a 3 a Baixa. Outros labels foram adicionadas as issues do board "User Stories" para identificar o tipo de Estória: se ela é derivada de um Requisito Funcional (RF), Regra de Negócio (RN) ou Requisito Não-Funcional (RNF).  
 
 #### 5.3 FASES
 Houve a tentativa de se seguir os princípios da metodologia Waterfall. O projeto foi dividido em algumas fases, descritas abaixo. É importante salientar que a próxima fase só se iniciou no término da anterior, ou, pelo menos, quando a anterior esteve praticamente finalizada com suas tarefas mais importantes já concluídas. Além disso, destaca-se que embora a metodologia principal seja a Waterfall, alguns princípios do Processo Evolucionário foram lembrados.  
@@ -186,7 +180,7 @@ Nos primeiros momentos do projeto, inclusive na primeira reunião, houve confus�
 Além disso, a equipe teve dúvidas para escolher a tecnologia de desenvolvimento. A princípio sugeriu-se utilizar o Framework PHP Laravel (para front-end) somado à algum CMS Headless (sem cabeça, para back-end). Porém, após pesquisa e discussão entre os desenvolvedores, ficou definido que será usado o CMS Headless para back-end e React (biblioteca JavaScript) para front-end (ver ata Meeting_2).  
 
 No que toca o gerenciamento do projeto, a equipe definiu os seguintes processos/princípios:
-- Reuniões periódicas (presencial e online) para discussão do trabalho feito e do trabalho a ser feito;
+- Reuniões periódicas (presencial e online) para discussão do trabalho realizado e por fazer;
 - Divisão dos papéis, tendo cada tarefa um responsável principal (que contará com a ajuda dos outros);
 - Validação e refatoração dentro das fases ao surgir necessidade.  
 
@@ -197,9 +191,9 @@ Alguns artefatos do software foram produzidos:
 - Diagrama de Classes, para facilitar a criação destas na etapa de codificação;  
 - Diagramas de Casos de Uso, para as Estórias de Usuário mais importantes;  
 - Diagramas de Sequência, também para as Estórias de Usuário mais importantes;  
-- Diagrama Entidade Relacionamento, para servir de referência quando da criação e manipulação do banco de dados.  
+- Diagrama Entidade Relacionamento, para servir de referência quanto a criação e manipulação do banco de dados.  
 
-Para confecção dos artefatos utilizou-se a ferramenta online Draw.io: https://draw.io.
+Para confecção dos artefatos utilizou-se a ferramenta online Draw.io: https://draw.io e MySQL Workbench, mantendo versões no repositório Git do projeto.
 
 ##### DOCUMENTAÇÃO  
 A equipe sempre buscou ter uma documentação constante desde o primeiro dia de projeto (primeira reunião, Meeting_1). Há uma tentativa de contemplar a metodologia Waterfall, principalmente BDUF.  
