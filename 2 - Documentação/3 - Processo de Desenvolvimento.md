@@ -1,7 +1,12 @@
 **CONFIGURAÇÕES INICIAS**  
 - Instalar o Git no computador, para este projeto foi utilizado a versão 2.20.1. (Não há necessidade de ser nesta versão)  
+> Dentro do terminal rodar os comandos abaixo para configurar o git na máquina:  
+> git config --global user.name "Your Name"  
+> git config --global user.email "you@example.com"  
+
 - Instalar o PHP na versão 7.2.13  
-- Configurar a variavel de ambiente para o PHP.
+> Configurar a variavel de ambiente para o PHP.  
+
 - Dentro da pasta do PHP, procurar dentro do arquivo o item extension_dir = "ext" e abaixo colocar a seguinte linha: extension=php_pdo_mysql.dll  
 
 - Instalar a versão do Mysql 8.0.13  
