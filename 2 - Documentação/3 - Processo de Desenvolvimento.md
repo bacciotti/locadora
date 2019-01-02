@@ -9,7 +9,7 @@
 
 - Instalar o Composer - Gerenciador de dependências.  
 
-- Dentro da pasta do PHP, procurar dentro do arquivo o item extension_dir = "ext" e abaixo colocar a seguinte linha: extension=php_pdo_mysql.dll  
+- Dentro da pasta do PHP, editar o arquivo php.ini e dentro do arquivo procurar o item extension_dir = "ext" e abaixo colocar a seguinte linha: extension=php_pdo_mysql.dll  
 
 - Instalar a versão do Mysql 8.0.13  
 
@@ -20,9 +20,9 @@
 - Dentro da raiz do projeto, renomear o arquivo .env.example para .env
 - Dentro do arquivo alterar conforme orientações abaixo:
 
-> DB_DATABASE=db_locadora
-> DB_USERNAME=root
-> DB_PASSWORD=root
+> DB_DATABASE=db_locadora  
+> DB_USERNAME=root  
+> DB_PASSWORD=root  
 
 **CONFIGURAÇÃO DO BANCO DE DADOS E APLICAÇÃO**  
 
