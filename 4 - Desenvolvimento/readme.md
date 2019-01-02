@@ -15,7 +15,7 @@ Criação do Projeto
 > composer create-project --prefer-dist laravel/laravel Locadora-Imperial
 
 Inicializado o servidor e subindo a aplicação  
-> php artisan server
+> php artisan serve  
 
 Criar Controlers, Model e Migrations
 >  php artisan make:model -mc <nomeModel>
