@@ -42,6 +42,11 @@ senha: secret
 - Obs: Caso ocorra o erro: "No application encryption key has been specified." É necessário gerar as chaves novamente. Execute o comando abaixo no terminal do projeto:  
 > php artisan key:generate  
 
+
+**DESENVOLVIMENTO**  
+
+- Sempre antes de iniciar uma tarefa executar um git pull, para baixar todas as atualizações que está no github.  
+
 **NOMENCLATURA E PADRONIZAÇÃO**
 - Usar os nomes de clasess em inglês;  
 - Não usar espaço em branco;  
