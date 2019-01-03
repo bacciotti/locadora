@@ -166,8 +166,7 @@ return [
          * Package Service Providers...
          */
 
-        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
-
+        \Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -226,6 +225,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
 
     ],
 
