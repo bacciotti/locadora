@@ -11,7 +11,11 @@
 
 - Dentro da pasta do PHP, editar o arquivo php.ini e dentro do arquivo procurar o item extension_dir = "ext" e abaixo colocar a seguinte linha: extension=php_pdo_mysql.dll  
 
-- Instalar a versão do Mysql 8.0.13  
+- Instalar a versão do Mysql 8.0.13 
+
+Obs: Ao instalar no MySQL na tela de "Authentication Method" escolher a opção abaixo, para não ocorrer erro de autenticação do Laravel com o MySQL.  
+
+> Use Legacy Authentication Method (Retain MySQL 5.x Compatibility)
 
 - Após clonar o repositorio do projeto na branch develop, executar o comando abaixo:   
 > composer require league/flysystem  
