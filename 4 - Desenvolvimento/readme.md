@@ -30,4 +30,7 @@ Realizar test TDD e BDD no Laravel.
 -> Regras:  
 - Toda classe de test deve terminar com o sufixo Test, ex: ClientTest.php. 
 - Toda função de teste deve iniciar com a palavra test, ex: public function testBasico()
-> .\vendor\bin\phpunit
+> .\vendor\bin\phpunit  
+  
+Para mudar para a branch Develop, criando uma branch local de outro nome
+> git checkout -b [nome-da-sua-branch] origin/develop
