@@ -4,6 +4,7 @@
     <div class="container">
         <h3>Listagem de usuários</h3>
         {!! Button::primary('Novo usuário')->asLinkTo(route('admin.users.create')) !!}
+        <br/><br/>
         {!! Table::withContents($users->items())
          ->striped()
          ->callback('Ações', function ($field, $model){

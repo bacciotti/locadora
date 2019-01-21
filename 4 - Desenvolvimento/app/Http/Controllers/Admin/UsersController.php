@@ -72,7 +72,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return view('admin.users.show', compact('user'));
     }
 
     /**
@@ -130,6 +130,7 @@ class UsersController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return redirect()->route('admin.users.index');
     }
 }
