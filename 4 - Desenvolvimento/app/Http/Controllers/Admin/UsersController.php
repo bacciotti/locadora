@@ -54,6 +54,13 @@ class UsersController extends Controller
                 ->withErrors($form->getErrors())
                 ->withInput();
         }
+
+        $data  = $form->getFieldValues();
+        $password = str_random(6);
+        $data['password'] = $password;
+        User::create($data);
+
+        return redirect()->route('admin.users.index');
     }
 
     /**
