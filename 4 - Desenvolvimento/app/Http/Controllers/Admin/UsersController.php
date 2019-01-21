@@ -1,11 +1,11 @@
 <?php
 
-namespace Horsefly\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin;
 
-use Horsefly\Forms\UserForm;
-use Horsefly\Models\User;
+use App\Forms\UserForm;
+use App\Models\User;
 use Illuminate\Http\Request;
-use Horsefly\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Kris\LaravelFormBuilder\Form;
 
 class UsersController extends Controller
@@ -67,7 +67,7 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Horsefly\Models\User $user
+     * @param  \App\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
@@ -78,7 +78,7 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \Horsefly\Models\User $user
+     * @param  \App\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -98,7 +98,7 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \Horsefly\Models\User $user
+     * @param  \App\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function update(User $user)
@@ -125,7 +125,7 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Horsefly\Models\User $user
+     * @param  \App\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $user)

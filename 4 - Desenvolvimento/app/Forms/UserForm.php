@@ -1,6 +1,6 @@
 <?php
 
-namespace Horsefly\Forms;
+namespace App\Forms;
 
 use Kris\LaravelFormBuilder\Form;
 
