@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Horsefly\Models;
 
 use Bootstrapper\Interfaces\TableInterface;
 use Illuminate\Notifications\Notifiable;

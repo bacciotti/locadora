@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace Horsefly\Http\Controllers\Admin;
 
-use App\Forms\UserForm;
-use App\Models\User;
+use Horsefly\Forms\UserForm;
+use Horsefly\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Horsefly\Http\Controllers\Controller;
 use Kris\LaravelFormBuilder\Form;
 
 class UsersController extends Controller
@@ -67,7 +67,7 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\User $user
+     * @param  \Horsefly\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
@@ -78,30 +78,54 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\User $user
+     * @param  \Horsefly\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
     {
-        //
+        $form = \FormBuilder::create(UserForm::class, [
+            'url' => route('admin.users.update', ['user' => $user->id]),
+            'method' => 'PUT',
+            'model' => $user
+        ]);
+
+        return view('admin.users.edit', compact('form'));
+
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \App\Models\User $user
+     * @param  \Horsefly\Models\User $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(User $user)
     {
-        //
+        /** @var Form $form */
+        $form = \FormBuilder::create(UserForm::class, [
+            'data' => ['id' => $user->id]
+        ]);
+
+        if (!$form->isValid()) {
+            return redirect()
+                ->back()
+                ->withErrors($form->getErrors())
+                ->withInput();
+        }
+
+        $data  = $form->getFieldValues();
+        $user->update($data);
+
+        return redirect()->route('admin.users.index');
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\User $user
+     * @param  \Horsefly\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $user)

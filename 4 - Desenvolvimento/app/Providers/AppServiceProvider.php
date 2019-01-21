@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Horsefly\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
