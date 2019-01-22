@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable implements TableInterface
 {
     use Notifiable;
+    const ROLE_ADMIN = 1;
+    const ROLE_USER = 2;
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +18,7 @@ class User extends Authenticatable implements TableInterface
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'enrolment_number'
     ];
 
     /**
@@ -56,4 +58,38 @@ class User extends Authenticatable implements TableInterface
                 return $this->email;
         }
     }
+
+    public static function createFully($data)
+    {
+        $password = str_random(6);
+        $data['password'] = bcrypt($password);
+
+        $user = parent::create($data + ['enrolment_number' => str_random(6)]);
+        self::assignEnrolment($user, self::ROLE_ADMIN);
+        //self::assingRole($user, $data['type']);
+        $user->save();
+
+        return $user;
+    }
+    public static function assignEnrolment(User $user, $type)
+    {
+        $types = [
+            self::ROLE_ADMIN => 100000,
+            self::ROLE_USER => 300000,
+        ];
+        $user->enrolment_number = $types[$type] + $user->id;
+        return $user->enrolment_number;
+    }
+
+    /*public static function assingRole(User $user, $type)
+    {
+        $types = [
+            self::ROLE_ADMIN => Admin::class,
+            self::ROLE_TEACHER => Teacher::class,
+            self::ROLE_STUDENT => Student::class,
+        ];
+        $model = $types[$type];
+        $model = $model::create([]);
+        $user->userable()->associate($model);
+    }*/
 }

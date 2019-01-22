@@ -12,7 +12,8 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         factory(\App\Models\User::class)->create([
-            'email'=> 'admin@gmail.com'
+            'email'=> 'admin@gmail.com',
+            'enrolment_number' => 100000
         ]);        
     }
 }
