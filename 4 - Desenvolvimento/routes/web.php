@@ -22,6 +22,10 @@ Route::prefix('admin')->group(function(){
         'as' => 'admin.',
         'middleware' => 'auth'
     ], function(){
+        Route::name('dashbpard')->get('/dashboard', function () {
+            return "Estou no dashboard";
+        });
+
         Route::resource('users', 'UsersController');
     });
 });

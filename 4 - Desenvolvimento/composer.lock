@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15478c455db495afc3ce43938ed3d3d4",
+    "content-hash": "e2998a33dac1f78b519769148c0e253b",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1162,16 +1162,16 @@
         },
         {
             "name": "patricktalmadge/bootstrapper",
-            "version": "5.10.2",
+            "version": "5.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/patricktalmadge/bootstrapper.git",
-                "reference": "d92e16891570613b374f2d382051409dde02663e"
+                "reference": "899f572143f483879bb75b36f17445d75f6262b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/patricktalmadge/bootstrapper/zipball/d92e16891570613b374f2d382051409dde02663e",
-                "reference": "d92e16891570613b374f2d382051409dde02663e",
+                "url": "https://api.github.com/repos/patricktalmadge/bootstrapper/zipball/899f572143f483879bb75b36f17445d75f6262b8",
+                "reference": "899f572143f483879bb75b36f17445d75f6262b8",
                 "shasum": ""
             },
             "require": {
@@ -1189,6 +1189,13 @@
                 "squizlabs/php_codesniffer": "~2.3"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bootstrapper\\BootstrapperL5ServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Bootstrapper\\": "src\\Bootstrapper",
@@ -1218,7 +1225,7 @@
                 "bootstrap",
                 "laravel"
             ],
-            "time": "2017-06-14T21:52:31+00:00"
+            "time": "2018-07-15T21:56:50+00:00"
         },
         {
             "name": "psr/container",
