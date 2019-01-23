@@ -16,9 +16,6 @@
 
                     Você está logado!
                 </div>
-                <div class="card-body">
-                    {!! Button::primary('Usuários')->asLinkTo(route('admin.users.index')) !!}
-                </div>
             </div>
         </div>
     </div>
