@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('enrolment_number')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->nullableMorphs('userable');
             $table->rememberToken();
             $table->timestamps();
         });

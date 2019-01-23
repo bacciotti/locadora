@@ -2,15 +2,18 @@
 
 namespace App\Models;
 
+use App\Notifications\UserCreated;
 use Bootstrapper\Interfaces\TableInterface;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
 
 class User extends Authenticatable implements TableInterface
 {
     use Notifiable;
     const ROLE_ADMIN = 1;
-    const ROLE_USER = 2;
+    const ROLE_CLIENT = 2;
+    const ROLE_DEPENDENT = 3;
 
     /**
      * The attributes that are mass assignable.
@@ -59,37 +62,46 @@ class User extends Authenticatable implements TableInterface
         }
     }
 
+    public function userable(){
+        return $this->morphTo();
+    }
+
     public static function createFully($data)
     {
         $password = str_random(6);
         $data['password'] = bcrypt($password);
 
         $user = parent::create($data + ['enrolment_number' => str_random(6)]);
-        self::assignEnrolment($user, self::ROLE_ADMIN);
-        //self::assingRole($user, $data['type']);
+        self::Enrolment($user, self::ROLE_ADMIN);
+        self::Role($user, $data['type']);
         $user->save();
+        if(isset($data['send_mail'])){
+            $token = \Password::broker()->createToken($user);
+            $user->notify(new UserCreated($token));
+        }
 
         return $user;
     }
-    public static function assignEnrolment(User $user, $type)
+    public static function Enrolment(User $user, $type)
     {
         $types = [
             self::ROLE_ADMIN => 100000,
-            self::ROLE_USER => 300000,
+            self::ROLE_CLIENT => 200000,
+            self::ROLE_DEPENDENT => 700000
         ];
         $user->enrolment_number = $types[$type] + $user->id;
         return $user->enrolment_number;
     }
 
-    /*public static function assingRole(User $user, $type)
+    public static function Role(User $user, $type)
     {
         $types = [
             self::ROLE_ADMIN => Admin::class,
-            self::ROLE_TEACHER => Teacher::class,
-            self::ROLE_STUDENT => Student::class,
+            self::ROLE_CLIENT => Client::class,
+            self::ROLE_DEPENDENT => Dependent::class,
         ];
         $model = $types[$type];
         $model = $model::create([]);
         $user->userable()->associate($model);
-    }*/
+    }
 }
