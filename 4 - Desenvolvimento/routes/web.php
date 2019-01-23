@@ -20,16 +20,17 @@ Route::prefix('admin')->group(function(){
     Route::group([
         'namespace' => 'Admin\\',
         'as' => 'admin.',
-        'middleware' => 'auth'
+        'middleware' => ['auth', 'can:admin']
     ], function(){
-        Route::name('dashbpard')->get('/dashboard', function () {
+        Route::name('dashboard')->get('/dashboard', function () {
             return "Estou no dashboard";
         });
-
+        Route::group(['prefix' => 'users', 'as' => 'users.'], function () {
+           //Route::name('show_details')->get('show_details', )
+        });
         Route::resource('users', 'UsersController');
     });
 });
-
 
 
 Route::get('/home', 'HomeController@index')->name('home');
