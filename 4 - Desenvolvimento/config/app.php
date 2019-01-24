@@ -168,7 +168,6 @@ return [
 
         \Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Bootstrapper\BootstrapperL5ServiceProvider::class,
-        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         /*
          * Application Service Providers...
