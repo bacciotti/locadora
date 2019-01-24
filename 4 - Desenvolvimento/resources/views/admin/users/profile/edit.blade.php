@@ -2,8 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-
+            @component('admin.users.tabs',['user' => $form->getModel()])
                 <div class="col-md-12">
                     <h3>Editar perfil</h3>
                     <?php $icon = Icon::create('pencil');?>
@@ -14,7 +13,6 @@
                         ]))
                     !!}
                 </div>
-
-        </div>
+            @endcomponent
     </div>
 @endsection
