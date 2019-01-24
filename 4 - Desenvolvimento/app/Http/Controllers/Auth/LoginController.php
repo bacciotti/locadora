@@ -42,7 +42,7 @@ class LoginController extends Controller
     protected function credentials(Request $request)
     {
         $data = $request->only($this->username(), 'password');
-        $data['userable_type'] = Admin::class;
+        //$data['userable_type'] = Admin::class;
         return $data;
     }
 
