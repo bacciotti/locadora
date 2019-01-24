@@ -61,6 +61,10 @@ class User extends Authenticatable implements TableInterface
                 return $this->email;
         }
     }
+    
+    public function profile(){
+        return $this->hasOne(UserProfile::class)->withDefault();
+    }
 
     public function userable(){
         return $this->morphTo();

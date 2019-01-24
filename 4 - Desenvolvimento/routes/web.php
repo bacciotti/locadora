@@ -22,8 +22,6 @@ Route::prefix('admin')->group(function(){
         Route::name('settings.update')->put('settings', 'Admin\UserSettingsController@update');
     });
 
-
-
     Route::group([
         'namespace' => 'Admin\\',
         'as' => 'admin.',
@@ -33,7 +31,10 @@ Route::prefix('admin')->group(function(){
             return "Estou no dashboard";
         });
         Route::group(['prefix' => 'users', 'as' => 'users.'], function () {
-           //Route::name('show_details')->get('show_details', )
+            Route::group(['prefix' => '/{user}/profile'], function () {
+                Route::name('profile.edit')->get('', 'UserProfileController@edit');
+                Route::name('profile.update')->put('', 'UserProfileController@update');
+            });
         });
         Route::resource('users', 'UsersController');
     });
