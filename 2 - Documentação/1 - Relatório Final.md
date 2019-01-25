@@ -215,16 +215,41 @@ Link:
 ### 7. VISÃO DE USO  
 
 ### 8. REVISÃO DO PROJETO  
+A equipe tentou tornar o andamento do projeto o mais prático possível. Depois de várias reuniões (presenciais e a distância) e várias tecnologias e metodologias cogitadas, optou-se pelo uso de Laravel (framework PHP), Cascata para Gerenciamento do Projeto, Boards Kanban como ferramenta de gerenciamento, para divisão das tarefas e responsabilidades e Dirigida a Plano como metodologia de desenvolvimento. Mais detalhes sobre as metodologias estão na seção 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA).  
+
+O desenvolvimento foi feito utilizando uma branch do GitHub chamada "develop". Os analistas instalaram o servidor PHP, o Git e todas as outras ferramentas necessárias (banco de dados MySQL, Laravel, entre outros) em suas máquinas locais para se poder trabalhar. Antes de se iniciar o trabalho era efetuado um "git pull", para receber as versões atualizadas do código e, ao fim do trabalho, era efetuado um "git push" para atualizar o código com a versão desenvolvida. Mais detalhes podem ser lidos no arquivo "3 - Processo de Desenvolvimento.md" (https://github.com/bacciotti/locadora/blob/master/2%20-%20Documenta%C3%A7%C3%A3o/3%20-%20Processo%20de%20Desenvolvimento.md). 
+
+Os principais problemas encontrados pela equipe foram:
+a) Distância geográfica: cada analista se encontrava em um ponto do país, o que dificultou a comunicação. Embora algumas reuniões tenham sido efetuadas a distância, o fato de a equipe se reunir presencialmente apenas uma vez ao mês tornou mais moroso o processo de tomadas de decisão e divisão de tarefas. Acredita-se que se a equipe estivesse em um mesmo ambiente geográfico o trabalho poderia ser finalizado anteriormente.
+b) Pouco conhecimento nas ferramentas: apenas um analista dispunha de vasta experiência em codificação. Todos os outros desenvolvedores tiveram que aprender a tecnologia/framework/contexto para começar a somar à equipe no que toca à codificação. Isso tomou horas-trabalho e atenção dos analistas, o que pode ter prejudicado o tempo total do projeto.
+c) Curso espaço de tempo, somada a outras demandas do curso: a equipe está inserida em um curso de mestrado profissional que trouxe demandas que não fossem do projeto em questão. O período proposto, embora tenha sido extenso, ainda foi pouco para se entregar um projeto com maior excelência. Alguns pontos ficaram a desejar, a saber: segurança das informações, backup, reuso do código, para citar alguns exemplos. Os depoimentos e opiniões de cada analista podem ser encontrados na Seção 9 - Revisão Individual, deste Relatório Final.
+
+As principais tomadas de decisão referente ao projeto foram:
+a) Escolhe do Gerente de Projetos: a equipe decidiu em conjunto nomear um Gerente de projetos para que este seja o organizador, facilitador e distribuidor de tarefas e atribuições.
+b) Escolha da metodologia de gerenciamento: após leitura bibliográfica no material de apoio, a equipe optou por utilizar a metodologia de gerenciamento de projetos Waterfall (ou Cascata). Mais detalhes sobre as metodologias estão na seção 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA).
+c) Escolha da metodologia para desenvolvimento: pela pouca experiência, a equipe optou por tentar não reinventar a roda, portanto foi escolhida a metodologia de desenvolvimento Dirigida a Plano, a mais conhecida pelos membros da equipe. Mais detalhes sobre as metodologias estão na seção 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA).
+d) Escolha das tecnologias de desenvolvimento: a utilização do PHP com Laravel e do Banco de Dados SQL foi discutida pelos analistas com maior experiência em desenvolvimento da equipe. Chegou-se a conclusão que tais tecnologias seriam de mais fácil aprendizado e mais simples a configuração, tanto do ambiente de desenvolvimento quanto do produto final em si.
+
+Para dividir as tarefas utilizou-se os Boards Kanban, os quais dividem as tarefas em "A fazer", "Sendo feito" e "Resolvido/Feito" (e derivados). Desta forma, a equipe consegue situar-se no status do projeto mais rapidamente, com uma olhada rápida no board (quadro). As tarefas foram divididas com base na afinidade e experiência de cada membro. O membro com menor experiência em desenvolvimento ficou responsável pela redação e projeto de vários artefatos (modelagem). O gerente de projetos tentou auxiliar, mesmo que minimamente, todos os outros membros em suas tarefas, além de ficar responsável pela divisão de atribuições e posterior cobrança das tarefas. Os outros membros dividiram-se entre desenvolvimento e alguma tarefa assessória. Todas as divisões, atribuições e tarefas estão documentadas nos Boards Kanban, neste Relatório Final e nas Atas de Reuniões.
+
+Ver "Boards Kanban" - https://github.com/bacciotti/locadora/projects
+Ver "Atas de Reuniões" - https://github.com/bacciotti/locadora/tree/master/1%20-%20Atas%20de%20Reuni%C3%B5es
+
+O monitoramento e controle foi executado em sua maior parte pelo Gerente de Projetos. Utilizou-se os Boards Kanban e sua função de comentários deste para se fazer a cobrança e o acompanhamento das atividades. Conversas pessoais informais também tiveram seu valor nas semanas em que a equipe estivera reunida presencialmente. As issues, módulo do GitHub, também foram utilizadas para acompanhar o andamento do projeto.
+
+Ver "Issues" - https://github.com/bacciotti/locadora/issues
+
+É importante ressaltar que foram criados dois boards Kanban: o "Tasks" e o "User Storeis". O primeiro refere-se às tarefas não relacionadas diretamente à codificação, como "Redação de Relatório Final" ou "Concecpção de Diagrama Entidade Relacionamento". Já o board "User Stories" diz respeito aos requisitos fornecidos pelo cliente que foram transformados em tarefas para os desenvolvedores.  
 
 ### 9. REVISÃO INDIVIDUAL  
-#### Opinião de Lucas Bacciotti Moreira (lbm5):####  
+#### Opinião de Lucas Bacciotti Moreira (lbm5):  
 Pessoalmente o projeto foi muito importante. Vivi a rotina de uma Fábrica de Software, com as divisões de papéis, cobranças, discussões e prazos. O aprendizado de novas ferramentas (GitHub e Laravel, por exemplo) foram de suma importância para meu crescimento intelectual. A disciplina de Engenharia de Software me fez ver o mundo corporativo com outros olhos.  
 Tive dificuldades em configurar o ambiente de desenvolvimento, pois a princípio queria ter implantado no Cloud 9 da Amazon, porém tive muitos problemas ao fazer upgrade do PHP, instalar o Composer, configurar o Artisan e o Laravel. Foram tantas dificuldades que optei por não utilizar mais o Cloud 9 e fazer o ambiente de desenvolvimento localmente mesmo. Após isso ainda tive que aprender o mínimo do Framework Laravel (já conheço e trabalho com PHP há anos, mas tive que ler a documentação do Laravel mesmo assim).  Além disso, como Gerente de Projetos, sempre estava com a preocupação de que algo ainda estava por fazer e sempre estava cobrando a equipe (e me cobrando também) de alguma forma. Cogitou-se a utilização de algum serviço de CMS Headless, porém creio que o Laravel foi a melhor escolha visto que a curva de aprendizado foi menor. Auxiliei minimanente o desenvolvedor principal (dm5) para poder obter mais experiência no framework. Enfim, o projeto foi de grande valia para meu crescimento intelectual e profissional.
 
-#### Opinião de Diego Menegazzi (dm5):####  
+#### Opinião de Diego Menegazzi (dm5):  
 
-#### Opinião de Carlos Alexandre Porto (cap):####  
+#### Opinião de Carlos Alexandre Porto (cap):    
 
-#### Opinião de Gustavo Costa Meireles (gcm3):####  
+#### Opinião de Gustavo Costa Meireles (gcm3):   
 
-#### Opinião de Welington Mothé de Oliveira (wmo):####  
+#### Opinião de Welington Mothé de Oliveira (wmo):    
