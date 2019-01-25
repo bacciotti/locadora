@@ -217,4 +217,14 @@ Link:
 ### 8. REVISÃO DO PROJETO  
 
 ### 9. REVISÃO INDIVIDUAL  
+#### Opinião de Lucas Bacciotti Moreira (lbm5):####  
+Pessoalmente o projeto foi muito importante. Vivi a rotina de uma Fábrica de Software, com as divisões de papéis, cobranças, discussões e prazos. O aprendizado de novas ferramentas (GitHub e Laravel, por exemplo) foram de suma importância para meu crescimento intelectual. A disciplina de Engenharia de Software me fez ver o mundo corporativo com outros olhos.  
+Tive dificuldades em configurar o ambiente de desenvolvimento, pois a princípio queria ter implantado no Cloud 9 da Amazon, porém tive muitos problemas ao fazer upgrade do PHP, instalar o Composer, configurar o Artisan e o Laravel. Foram tantas dificuldades que optei por não utilizar mais o Cloud 9 e fazer o ambiente de desenvolvimento localmente mesmo. Após isso ainda tive que aprender o mínimo do Framework Laravel (já conheço e trabalho com PHP há anos, mas tive que ler a documentação do Laravel mesmo assim).  Além disso, como Gerente de Projetos, sempre estava com a preocupação de que algo ainda estava por fazer e sempre estava cobrando a equipe (e me cobrando também) de alguma forma. Cogitou-se a utilização de algum serviço de CMS Headless, porém creio que o Laravel foi a melhor escolha visto que a curva de aprendizado foi menor. Auxiliei minimanente o desenvolvedor principal (dm5) para poder obter mais experiência no framework. Enfim, o projeto foi de grande valia para meu crescimento intelectual e profissional.
 
+#### Opinião de Diego Menegazzi (dm5):####  
+
+#### Opinião de Carlos Alexandre Porto (cap):####  
+
+#### Opinião de Gustavo Costa Meireles (gcm3):####  
+
+#### Opinião de Welington Mothé de Oliveira (wmo):####  
