@@ -24,8 +24,22 @@ A Vídeo Locadora Imperial ainda não possui um sistema informatizado para auxí
 Entrevistas e reuniões com o cliente foram feitas e os requisitos já foram levantadados. 
 A equipe ficou a cargo de finalizar a documentação, elaborar a análise, planejar, projetar, implementar, testar e implantar o software. Se faz importante a informatização do sistema para facilitar o atendimento ao cliente e a gerência do negócio. 
 
-### 3. DESCRIÇÃO
--- escrever quando o sistema estiver pronto -- 
+### 3. DESCRIÇÃO  
+O Sistema Informatizado da Locadora Imperial foi concebido para ser executado em navegadores de internet, ou seja, é necessário ter conexão com a web para fazer uso do software desenvolvido. O desenvolvimento do sistema prezou a usabilidade e facilidade de uso para o usuário final (clientes e funcionários da locadora). Por isso sempre foi buscado o mínimo de botões, menus e funções possíveis. O objetivo é ter-se um software fácil de uso que dispensa o máximo de treinamento. Em algumas telas pode-se observar que o objetivo foi contemplado. Por exemplo, na tela de Login existe o mínimo de opções possível (ou o usuário entra no sistema, ou ele se registra):  
+  
+Ver "1 - Tela de Login/Registro.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20Login:Registro.png  
+
+O sistema foi criado para poder gerenciar o cadastro de Clientes, Usuários, Filmes e Gêneros. Além disso, o foco principal é o controle e gerencimento dos Empréstimos e Reservas dos filmes. A tela abaixo ilustra como exemplo a relação de usuários do sistema. Percebe-se um ambiente visual limpo, claro e minimalista:  
+
+Ver "3 - Usuários.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usua%CC%81rios.png  
+
+Na próxima imagem nota-se o menu principal da aplicação, onde o usuário poderá navegar entre as principais funcionalidades do sistema, sempre fazendo uso do mínimo de cliques possível:  
+  
+Ver "2 - Menu.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/2%20-%20Menu.png  
+
+Outras telas do sistema podem ser acessadas no diretório https://github.com/bacciotti/locadora/tree/master/6%20-%20Telas.  
+
+Mais informações sobre o sistema e sobre o projeto podem ser acessadas neste repositório GitHub (https://github.com/bacciotti/locadora), ou no Relatório Final (https://github.com/bacciotti/locadora/blob/master/2%20-%20Documenta%C3%A7%C3%A3o/1%20-%20Relato%CC%81rio%20Final.md).
 
 ### 4. MEMBROS DA EQUIPE
 i. LUCAS BACCIOTTI MOREIRA   
@@ -60,4 +74,6 @@ Role: Analista de Requisitos e Engenheiro de Software
 
 ### 5. ARQUIVOS IMPORTANTES
 a. Introdução ao mini-mundo e Requisitos levantados: https://drive.google.com/file/d/16kJfE_s-CRvOfdSN1RvDyEjCLu34ErAx/view?usp=sharing  
-b. Relatório Final (Relatório Técnico): https://raw.githubusercontent.com/bacciotti/locadora/master/2%20-%20Documenta%C3%A7%C3%A3o/1%20-%20Relato%CC%81rio%20Final.md?token=AcQVsp4z6bK0o7Vov3XwYxQ8bLTAjeAIks5cA87iwA%3D%3D
+b. Relatório Final (Relatório Técnico): https://raw.githubusercontent.com/bacciotti/locadora/master/2%20-%20Documenta%C3%A7%C3%A3o/1%20-%20Relato%CC%81rio%20Final.md?token=AcQVsp4z6bK0o7Vov3XwYxQ8bLTAjeAIks5cA87iwA%3D%3D  
+c. Repostiório GitHub: https://github.com/bacciotti/locadora  
+d. Software implementado em nuvem (Heroku): http://locadora-imperial.herokuapp.com/
