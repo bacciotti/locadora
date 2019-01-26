@@ -213,6 +213,27 @@ Link:
 ### 6. VISÃO DE IMPLANTAÇÃO  
 
 ### 7. VISÃO DE USO  
+Ao acessar o sistema da Locadora Imperial, em http://locadora-imperial.herokuapp.com, o usuário deve clicar em Registrar, no canto superior direito, caso ainda não tenha feito seu registro, ou em Login, também no canto superior direito, caso já possua um usuário e uma senha. Desta forma o usuário entrará na parte administrativa do site.  
+
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20Login:Registro.png  
+
+Na página de registro o usuário deve preencher seus dados pessoais e clicar no botão Registrar. Um e-mail será enviado ao endereço cadastrado informando sobre a ativação da nova conta.  
+
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/5%20-%20Registrar.png  
+
+Em Cadastros>Usuários o usuário poderá ver a listagem de Usuários cadastrados. Ao clicar em Ver, ao lado de um registro, detalhes do Usuário serão exibidos. Também é possível Editar as informações do registro. Para se cadastrar um novo Usuário basta clicar no botão azul "Novo usuário". Desta forma, um formulário será exibido para se preencher os dados do novo Usuário. Ao final do preenchimento é necessário clicar em "Salvar".  
+
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usua%CC%81rios.png  
+
+O mesmo acima se aplica para os menus Cadastros>Distribuidora, Cadastros>Filmes, Cadastros>Gênero, Cadastros>Mídia.  
+
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/6%20-%20Menu%20cadastro.png  
+
+É necessário salientar que apenas os funcionários da empresa terão acesso aos menus de cadastro. Os clientes só terão acesso aos menus Reserva, Locação e Pagamento, além de poder alterar seus dados pessoais.  
+
+Meis fotografias de telas do sistema podem ser encontradas em: https://github.com/bacciotti/locadora/tree/master/6%20-%20Telas  
+
+** Finalizar quando as outras telas estiverem prontas. **  
 
 ### 8. REVISÃO DO PROJETO  
 A equipe tentou tornar o andamento do projeto o mais prático possível. Depois de várias reuniões (presenciais e a distância) e várias tecnologias e metodologias cogitadas, optou-se pelo uso de Laravel (framework PHP), Cascata para Gerenciamento do Projeto, Boards Kanban como ferramenta de gerenciamento, para divisão das tarefas e responsabilidades e Dirigida a Plano como metodologia de desenvolvimento. Mais detalhes sobre as metodologias estão na seção 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA).  
