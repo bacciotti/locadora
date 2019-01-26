@@ -84,21 +84,23 @@ Sua interface amigável encurta o espaço entre o usuário leigo e a aplicação
 
 A velocidade é o diferencial: com uma conexão estável, o software faz o armazenamento e a recuperação das informações sem depender do disco rígido local.  
 
-O botão XXX, por exemplo,...  
-
-A tela YYY, ...  
-
-Já o módulo KKKKK...  
-
 Nosso software poderá ser utilizado por qualquer locadora de vídeos. Sua arquitetura flexível permite adaptar-se a contextos diferentes com pouca manutenção.  
 
 Como consequência de o software estar em um servidor externo, as atualizações se darão por meio da internet, sem a necessidade da visita de um técnico especializado no local.  
 
-Desta forma, apresentamos nosso produto a seguir:  
-Tela X...  
-Tela Y...  
-Funcionalidade K...  
-Módulo Z...  
+Desta forma, apresentamos alguns aspectos do produto a seguir:  
+As telas tentam trazer a melhor usabilidade para o usuário, tendo um aspecto limpo e fácil de usar. Por exemplo, a tela de cadastro de usuários possui a listagem dos registros e um botão em azul para se criar um novo usuário. Pode-se ver aqui: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usua%CC%81rios.png.   
+
+Os botões de ação serão na cor azul com o escrito em branco, para se destacar do fundo branco do restante do sistema. O esquema de cores foi desenvolvido propositalmente em cores claras para facilitar a visão de todos os usuários, inclusive os que possuam pequenas dificuldades na visão.  
+
+Além disso, o software possui controle de acesso, onde os usuários (tanto os clientes quanto os funcionários da Locadora) deverão se registrar e posteriormente logar no sistema para acesso às informações. Pode-se ver a tela de registro aqui: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/5%20-%20Registrar.png.  
+
+É importante destacar que o sistema possui um layout padrão para todas as telas, aumentando a usabilidade deste, causando menor confusão ao usuário.  
+
+No módulo de cadastros, o usuário/funcionário poderá fazer o registro e gerenciamento das informações do sistema (distribuidoras, filmes, gêneros, entre outros). Nesta tela é ilustrado o menu de cadastro, disponível apenas para funcionários da empresa, e não aos clientes: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/6%20-%20Menu%20cadastro.png.  
+
+Mais detalhes das telas, módulos e funcionalidades do sistema podem ser vistos no item **7** **-** **VISÃO DE USO**.  
+
 
 ### 3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE ###  
 A tecnologia de desenvolvimento a ser utilizada é a Laravel (um Framework PHP) com Vue.js (uma . Biblioteca Javascript). Para banco de dados utilizaremos MySQL.  
