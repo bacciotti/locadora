@@ -1,46 +1,52 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('title', 'Visualizar Usuário')
+
+@section('content_header')
+    <h1>Visualizar Usuário</h1>
+@stop
 
 @section('content')
-    <div class="container">
-        <h3>Ver usuários</h3>
-        @php
-            $linkEdit = route('admin.users.edit', ['user' => $user->id]);
-            $linkDelete = route('admin.users.destroy', ['user' => $user->id]);
-        @endphp
-        {!! Button::primary("Editar")->asLinkTo($linkEdit) !!}
-        {!!
-        Button::danger('Excluir')->asLinkTo($linkDelete)
-            ->addAttributes([
-                'onclick' => "event.preventDefault();document.getElementById(\"form-delete\").submit();"
-            ])
-        !!}
-        Na
-        @php
-            $formDelete = FormBuilder::plain([
-                'id' => 'form-delete',
-                'url' => $linkDelete,
-                'method' => 'DELETE',
-                'style' => 'display:none'
-            ])
-        @endphp
-        {!! form($formDelete) !!}
-        <br/><br/>
-        <table class="table table-bordered">
-            <tbody>
-            <tr>
-                <th scope="row">ID</th>
-                <td>{{$user->id}}</td>
-            </tr>
-            <tr>
-                <th scope="row">Nome</th>
-                <td>{{$user->name}}</td>
-            </tr>
-            <tr>
-                <th scope="row">E-mail</th>
-                <td>{{$user->email}}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    @php
+        $linkEdit = route('admin.users.edit', ['user' => $user->id]);
+        $linkDelete = route('admin.users.destroy', ['user' => $user->id]);
+    @endphp
+    {!! Button::primary("Editar")->asLinkTo($linkEdit) !!}
+    {!!
+    Button::danger('Excluir')->asLinkTo($linkDelete)
+        ->addAttributes([
+            'onclick' => "event.preventDefault();document.getElementById(\"form-delete\").submit();"
+        ])
+    !!}
 
-@endsection
+    @php
+        $formDelete = FormBuilder::plain([
+            'id' => 'form-delete',
+            'url' => $linkDelete,
+            'method' => 'DELETE',
+            'style' => 'display:none'
+        ])
+    @endphp
+    {!! form($formDelete) !!}
+
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <th scope="row">ID</th>
+            <td>{{$user->id}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Nome</th>
+            <td>{{$user->name}}</td>
+        </tr>
+        <tr>
+            <th scope="row">E-mail</th>
+            <td>{{$user->email}}</td>
+        </tr>
+        </tbody>
+    </table>
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop

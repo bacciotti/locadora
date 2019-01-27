@@ -1,4 +1,10 @@
-@extends('layouts.app')
+@extends('adminlte::register')
+
+@section('title', 'Registrar')
+
+@section('content_header')
+    <h1>Registrar</h1>
+@stop
 
 @section('content')
 <div class="container">
@@ -74,4 +80,8 @@
         </div>
     </div>
 </div>
-@endsection
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop

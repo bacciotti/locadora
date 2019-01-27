@@ -1,4 +1,10 @@
-@extends('layouts.app')
+@extends('adminlte::login')
+
+@section('title', 'Login')
+
+@section('content_header')
+    <h1>Login</h1>
+@stop
 
 @section('content')
 <div class="container">
@@ -70,4 +76,8 @@
         </div>
     </div>
 </div>
-@endsection
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop

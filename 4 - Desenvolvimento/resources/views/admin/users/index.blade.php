@@ -1,21 +1,26 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('title', 'Usuários')
+
+@section('content_header')
+    <h1>Listagem de usuários</h1>
+@stop
 
 @section('content')
-    <div class="container">
-        <h3>Listagem de usuários</h3>
         {!! Button::primary('Novo usuário')->asLinkTo(route('admin.users.create')) !!}
-        <br/><br/>
         {!! Table::withContents($users->items())
          ->striped()
          ->callback('Ações', function ($field, $model){
             $linkEdit = route('admin.users.edit', ['user' => $model->id]);
             $linkShow = route('admin.users.show', ['user' => $model->id]);
             return Button::link('Editar')->asLinkTo($linkEdit).'|'.
-            Button::link('Ver')->asLinkTo($linkShow);
+            Button::link('Visualizar')->asLinkTo($linkShow);
          })
          !!}
-    </div>
 
     {!! $users->links() !!}
+@stop
 
-@endsection
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
