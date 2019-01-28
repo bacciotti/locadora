@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd227fda4adbc83844963c47bb243ee1",
+    "content-hash": "48942d8eebea57b6b80bb73c9234850a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3513,6 +3513,67 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "appzcoder/crud-generator",
+            "version": "v3.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/appzcoder/crud-generator.git",
+                "reference": "e086cdb6a9497ddb80c849626aa22ab1e379b4a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/appzcoder/crud-generator/zipball/e086cdb6a9497ddb80c849626aa22ab1e379b4a4",
+                "reference": "e086cdb6a9497ddb80c849626aa22ab1e379b4a4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.3",
+                "laravelcollective/html": "^5.3",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.6",
+                "orchestra/testbench": "^3.3",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Appzcoder\\CrudGenerator\\": "src/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sohel Amin",
+                    "email": "sohelamincse@gmail.com",
+                    "homepage": "http://www.appzcoder.com"
+                }
+            ],
+            "description": "Laravel CRUD Generator",
+            "keywords": [
+                "API generator",
+                "crud",
+                "crud generator",
+                "laravel",
+                "laravel crud generator"
+            ],
+            "time": "2018-12-16T19:10:14+00:00"
+        },
         {
             "name": "barryvdh/laravel-ide-helper",
             "version": "v2.5.3",

@@ -114,13 +114,18 @@ return [
             'url'   => 'admin',
             'icon'  => 'home',
             //'label' => 4,
-            'label_color'   => 'success',
+            //'label_color'   => 'success',
         ],
         [
             'text'  => 'Usuários',
             'url'   => 'admin/users',
             'icon'  => 'users',
             //'can'   => 'manage-administrador',
+        ],
+        [
+            'text'  => 'Filmes',
+            'url'   => 'admin/movie',
+            'icon'  => 'film',
         ],
         'CONFIGURAÇÕES',
         [

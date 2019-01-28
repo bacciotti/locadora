@@ -19,6 +19,7 @@
         "patricktalmadge/bootstrapper": "^5.11"
     },
     "require-dev": {
+        "appzcoder/crud-generator": "^3.0",
         "barryvdh/laravel-ide-helper": "^2.5",
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
