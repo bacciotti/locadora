@@ -18,7 +18,7 @@ class CreateMoviesTable extends Migration
             $table->string('original_title')->nullable();
             $table->string('pt_br_tittle')->nullable();
             $table->string('countries')->nullable();
-            $table->string('year')->nullable();
+            $table->integer('year')->nullable();
             $table->string('director')->nullable();
             $table->string('cast')->nullable();
             $table->text('sinopse')->nullable();

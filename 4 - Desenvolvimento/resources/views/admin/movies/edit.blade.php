@@ -1,17 +1,17 @@
 @extends('adminlte::page')
 
-@section('title', '%%modelNameCap%% - New')
+@section('title', 'Movie - Edit')
 
 @section('content_header')
-    <h1>New %%modelNameCap%%</h1>
+    <h1>Edit Movie</h1>
 @stop
 
 @section('content')
     <div class="col-md-9">
-        <a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+        <a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
         
         <br /><br />
-
+        
         @if ($errors->any())
             <ul class="alert alert-danger">
                 @foreach ($errors->all() as $error)
@@ -20,10 +20,11 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/%%routeGroup%%%%viewName%%') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+        <form method="POST" action="{{ url('/admin/movies/' . $movie->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+            {{ method_field('PATCH') }}
             {{ csrf_field() }}
 
-            @include ('%%viewTemplateDir%%.form', ['formMode' => 'create'])
+            @include ('admin.movies.form', ['formMode' => 'edit'])
 
         </form>
     </div>

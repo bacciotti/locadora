@@ -1,17 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Genre extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'movies';
+    protected $table = 'genres';
 
     /**
     * The database primary key value.
@@ -25,7 +25,7 @@ class Movie extends Model
      *
      * @var array
      */
-    protected $fillable = ['original_title', 'pt_br_tittle', 'countries', 'year', 'director', 'cast', 'sinopse', 'duration'];
+    protected $fillable = ['name'];
 
     
 }

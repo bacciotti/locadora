@@ -43,4 +43,7 @@ Route::prefix('admin')->group(function(){
 
 Route::get('/admin', 'AdminController@index')->name('admin');
 
-Route::resource('admin/movie', 'Admin\\MovieController');
+Route::resource('admin/genres', 'Admin\\GenresController');
+Route::resource('admin/media-types', 'Admin\\MediaTypesController');
+Route::resource('admin/distributors', 'Admin\\DistributorsController');
+Route::resource('admin/movies', 'Admin\\MoviesController');

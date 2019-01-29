@@ -1,5 +1,5 @@
 %%formFieldsHtml%%
 
 <div class="form-group">
-    <input class="btn btn-primary" type="submit" value="{{ $formMode === 'edit' ? 'Update' : 'Create' }}">
+    <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-save"></span> Save</button>
 </div>

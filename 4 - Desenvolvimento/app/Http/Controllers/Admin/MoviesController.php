@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Movie;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
-class MovieController extends Controller
+class MoviesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +21,7 @@ class MovieController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $movie = Movie::where('original_title', 'LIKE', "%$keyword%")
+            $movies = Movie::where('original_title', 'LIKE', "%$keyword%")
                 ->orWhere('pt_br_tittle', 'LIKE', "%$keyword%")
                 ->orWhere('countries', 'LIKE', "%$keyword%")
                 ->orWhere('year', 'LIKE', "%$keyword%")
@@ -31,10 +31,10 @@ class MovieController extends Controller
                 ->orWhere('duration', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $movie = Movie::latest()->paginate($perPage);
+            $movies = Movie::latest()->paginate($perPage);
         }
 
-        return view('admin.movie.index', compact('movie'));
+        return view('admin.movies.index', compact('movies'));
     }
 
     /**
@@ -44,7 +44,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        return view('admin.movie.create');
+        return view('admin.movies.create');
     }
 
     /**
@@ -61,7 +61,7 @@ class MovieController extends Controller
         
         Movie::create($requestData);
 
-        return redirect('admin/movie')->with('flash_message', 'Movie added!');
+        return redirect('admin/movies')->with('flash_message', 'Movie added!');
     }
 
     /**
@@ -75,7 +75,7 @@ class MovieController extends Controller
     {
         $movie = Movie::findOrFail($id);
 
-        return view('admin.movie.show', compact('movie'));
+        return view('admin.movies.show', compact('movie'));
     }
 
     /**
@@ -89,7 +89,7 @@ class MovieController extends Controller
     {
         $movie = Movie::findOrFail($id);
 
-        return view('admin.movie.edit', compact('movie'));
+        return view('admin.movies.edit', compact('movie'));
     }
 
     /**
@@ -108,7 +108,7 @@ class MovieController extends Controller
         $movie = Movie::findOrFail($id);
         $movie->update($requestData);
 
-        return redirect('admin/movie')->with('flash_message', 'Movie updated!');
+        return redirect('admin/movies')->with('flash_message', 'Movie updated!');
     }
 
     /**
@@ -122,6 +122,6 @@ class MovieController extends Controller
     {
         Movie::destroy($id);
 
-        return redirect('admin/movie')->with('flash_message', 'Movie deleted!');
+        return redirect('admin/movies')->with('flash_message', 'Movie deleted!');
     }
 }

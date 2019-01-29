@@ -124,7 +124,22 @@ return [
         ],
         [
             'text'  => 'Movies',
-            'url'   => 'admin/movie',
+            'url'   => 'admin/movies',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Genres',
+            'url'   => 'admin/genres',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'MediaTypes',
+            'url'   => 'admin/media-types',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Distributors',
+            'url'   => 'admin/distributors',
             'icon'  => 'film',
         ],
         'SETINGS',
