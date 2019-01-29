@@ -138,10 +138,16 @@ Este comando cria as tabelas no banco de dados da aplicação.
 
 **CRIAÇÃO DE "CRUD" DE UM OBJETO/TABELA USANDO PROJETO CRUD-GENERATOR**  
 
-- Este comando cria todos os arquivos pré-configurados dentro do Laravel:  
-> php artisan crud:generate Movie --fields='original_title#string; pt_br_tittle#string; countries#string; year#string; director#string; cast#string; sinopse#text; duration#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html  
+- Para criar todos os arquivos pré-configurados do CRUD dentro do Projeto Laravel é necessario rodar apenas um comando, seguindo esses exemplos:  
+>php artisan crud:generate Genres --fields='name#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
 
-- Após criar os arquivos do "CRUD" é necessario popular a base de dados:  
+>php artisan crud:generate MediaTypes --fields='name#string; price#number' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+
+>php artisan crud:generate Distributors --fields='corporate_name#string; cnpj#number; address#string; phone#number; contact_person#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+
+>php artisan crud:generate Movies --fields='original_title#string; pt_br_tittle#string; countries#string; year#number; director#string; cast#string; sinopse#text; duration#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+
+- Após criar os arquivos do "CRUD" é necessario popular a base de dados, usando este comando:  
 > php artisan migrate  
 
 - Outras informações de uso podem ser encontradas na pagina do projeto:  
