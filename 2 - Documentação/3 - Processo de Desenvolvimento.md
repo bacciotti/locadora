@@ -135,3 +135,14 @@ No link que mostra os parametros são so seguinte, primeiro é usuário, segundo
 > heroku run php artisan migrate  
 
 Este comando cria as tabelas no banco de dados da aplicação.  
+
+**CRIAÇÃO DE "CRUD" DE UM OBJETO/TABELA USANDO PROJETO CRUD-GENERATOR**  
+
+- Este comando cria todos os arquivos pré-configurados dentro do Laravel:  
+> php artisan crud:generate Movie --fields='original_title#string; pt_br_tittle#string; countries#string; year#string; director#string; cast#string; sinopse#text; duration#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html  
+
+- Após criar os arquivos do "CRUD" é necessario popular a base de dados:  
+> php artisan migrate  
+
+- Outras informações de uso podem ser encontradas na pagina do projeto:  
+https://github.com/appzcoder/crud-generator/blob/master/doc/usage.md  
