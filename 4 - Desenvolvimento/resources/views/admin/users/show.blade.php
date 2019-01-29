@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Visualizar Usuário')
+@section('title', 'User - View')
 
 @section('content_header')
-    <h1>Visualizar Usuário</h1>
+    <h1>User</h1>
 @stop
 
 @section('content')
@@ -11,14 +11,16 @@
         $linkEdit = route('admin.users.edit', ['user' => $user->id]);
         $linkDelete = route('admin.users.destroy', ['user' => $user->id]);
     @endphp
-    {!! Button::primary("Editar")->asLinkTo($linkEdit) !!}
+    {!! Button::warning('<i class="fa fa-arrow-left" aria-hidden="true"></i> Back')->asLinkTo(route('admin.users.index'))->addAttributes(['class' => "btn-sm"]) !!}
+    {!! Button::primary('<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit')->asLinkTo($linkEdit)->addAttributes(['class' => "btn-sm"]) !!}
     {!!
-    Button::danger('Excluir')->asLinkTo($linkDelete)
-        ->addAttributes([
-            'onclick' => "event.preventDefault();document.getElementById(\"form-delete\").submit();"
-        ])
+    Button::danger('<i class="fa fa-trash-o" aria-hidden="true"></i> Delete')->asLinkTo($linkDelete)
+        ->addAttributes(['class' => "btn-sm"])
+        ->addAttributes(
+            ['onclick' => "if(confirm(\"Confirm delete?\")){ event.preventDefault();document.getElementById(\"form-delete\").submit() };"]
+        )
     !!}
-
+    <br/><br/>
     @php
         $formDelete = FormBuilder::plain([
             'id' => 'form-delete',

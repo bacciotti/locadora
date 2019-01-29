@@ -15,9 +15,9 @@ return [
 
     'title' => 'Locadora Imperial',
 
-    'title_prefix' => '',
+    'title_prefix' => 'Admin ',
 
-    'title_postfix' => ' (Admin)',
+    'title_postfix' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -110,31 +110,31 @@ return [
     'menu' => [
         'MENU',
         [
-            'text'  => 'Inicio',
+            'text'  => 'Home',
             'url'   => 'admin',
             'icon'  => 'home',
             //'label' => 4,
             //'label_color'   => 'success',
         ],
         [
-            'text'  => 'Usuários',
+            'text'  => 'Users',
             'url'   => 'admin/users',
             'icon'  => 'users',
             //'can'   => 'manage-administrador',
         ],
         [
-            'text'  => 'Filmes',
+            'text'  => 'Movies',
             'url'   => 'admin/movie',
             'icon'  => 'film',
         ],
-        'CONFIGURAÇÕES',
+        'SETINGS',
         [
-            'text' => 'Perfil',
+            'text' => 'Profile',
             'url'  => 'admin/users/settings',
             'icon' => 'user',
         ],
         [
-            'text' => 'Alterar Senha',
+            'text' => 'Change Password',
             'url'  => 'admin/users/settings',
             'icon' => 'lock',
         ],
