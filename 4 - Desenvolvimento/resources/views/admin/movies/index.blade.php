@@ -7,22 +7,22 @@
 @stop
 
 @section('content')
-    <div class="col-md-9">
-        <a href="{{ url('/admin/movies/create') }}" class="btn btn-success btn-sm" title="Add New Movie">
-            <i class="fa fa-plus" aria-hidden="true"></i> Add New
-        </a>
-
-        <form method="GET" action="{{ url('/admin/movies') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
-                <span class="input-group-append">
-                    <button class="btn btn-secondary" type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </span>
-            </div>
+    <div class="row">
+        <div class="col-md-9">
+            <a href="{{ url('/admin/movies/create') }}" class="btn btn-success btn-sm" title="Add New Movie">
+                <i class="fa fa-plus" aria-hidden="true"></i> Add New
+            </a>
+    </div>
+            <form method="GET" action="{{ url('/admin/movies') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+            
+            <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
+            <span class="input-group-append">
+                <button class="btn btn-secondary" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
         </form>
-
+       
         <br/>
         
         <div class="table-responsive">
