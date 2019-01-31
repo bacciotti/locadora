@@ -7,11 +7,11 @@
 @stop
 
 @section('content')
+<a href="{{ url('/admin/genres') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<br /><br />
+
+<div class="container">
     <div class="col-md-9">
-        <a href="{{ url('/admin/genres') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-        
-        <br /><br />
-        
         @if ($errors->any())
             <ul class="alert alert-danger">
                 @foreach ($errors->all() as $error)
@@ -23,11 +23,10 @@
         <form method="POST" action="{{ url('/admin/genres/' . $genre->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
-
             @include ('admin.genres.form', ['formMode' => 'edit'])
-
         </form>
     </div>
+</div>
 @stop
 
 @section('css')

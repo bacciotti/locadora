@@ -7,11 +7,11 @@
 @stop
 
 @section('content')
-    <div class="col-md-9">
-        <a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-        
-        <br /><br />
+<a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<br /><br />
 
+<div class="container">
+    <div class="col-md-9">
         @if ($errors->any())
             <ul class="alert alert-danger">
                 @foreach ($errors->all() as $error)
@@ -27,6 +27,7 @@
 
         </form>
     </div>
+</div>
 @stop
 
 @section('css')

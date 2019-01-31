@@ -7,11 +7,11 @@
 @stop
 
 @section('content')
-    <div class="col-md-9">
-        <a href="{{ url('/admin/distributors') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-        
-        <br /><br />
+<a href="{{ url('/admin/distributors') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<br /><br />
 
+<div class="container">
+    <div class="col-md-9">
         @if ($errors->any())
             <ul class="alert alert-danger">
                 @foreach ($errors->all() as $error)
@@ -22,11 +22,10 @@
 
         <form method="POST" action="{{ url('/admin/distributors') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
             @include ('admin.distributors.form', ['formMode' => 'create'])
-
         </form>
     </div>
+</div>
 @stop
 
 @section('css')
