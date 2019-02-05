@@ -39,6 +39,8 @@
                 </td>
             </tr>
         @endforeach
+
+
         </tbody>
     </table>
     <div class="pagination-wrapper"> {!! $movies->appends(['search' => Request::get('search')])->render() !!} </div>

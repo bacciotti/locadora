@@ -27,5 +27,11 @@ class Movie extends Model
      */
     protected $fillable = ['original_title', 'pt_br_tittle', 'countries', 'year', 'director', 'cast', 'sinopse', 'duration'];
 
-    
+    public function genre() {
+        return $this->belongsToMany(Genre::class);
+    }
+
+    public function genre_movie() {
+        return $this->belongsToMany(GenreMovie::class);
+    }
 }

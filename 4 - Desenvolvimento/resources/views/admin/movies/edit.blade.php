@@ -24,6 +24,14 @@
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
             @include ('admin.movies.form', ['formMode' => 'edit'])
+            <div class="form-group {{ $errors->has('genres_id') ? 'has-error' : ''}}">
+                <label for="duration" class="control-label">{{ 'Genre' }}</label>
+                <select class="form-control select2-multi" name="genres[]" multiple>
+                    @foreach($genres as $genre)
+                        <option value="{{ isset($genre->id) ? $genre->id : ''}}">{{ $genre->name }}</option>
+                    @endforeach
+                </select>
+            </div>
         </form>
     </div>
 </div>
@@ -32,3 +40,14 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script>
+        $('.select2-multi').select2().val({!! json_encode($genres->genres_movie()->allRelatedIds() ) !!}).trigger('change');
+    </script>
+@endsection
+

@@ -24,7 +24,14 @@
             {{ csrf_field() }}
 
             @include ('admin.movies.form', ['formMode' => 'create'])
-
+            <div class="form-group {{ $errors->has('genres_id') ? 'has-error' : ''}}">
+                <label for="duration" class="control-label">{{ 'Genre' }}</label>
+                <select class="form-control select2-multi" name="genres[]" multiple>
+                    @foreach($genres as $genre)
+                        <option value="{{ isset($genre->id) ? $genre->id : ''}}">{{ $genre->name }}</option>
+                    @endforeach
+                </select>
+            </div>
         </form>
     </div>
 </div>

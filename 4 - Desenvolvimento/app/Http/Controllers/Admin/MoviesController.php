@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Genre;
+use App\Models\GenreMovie;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
@@ -19,6 +21,7 @@ class MoviesController extends Controller
     {
         $keyword = $request->get('search');
         $perPage = 25;
+
 
         if (!empty($keyword)) {
             $movies = Movie::where('original_title', 'LIKE', "%$keyword%")
@@ -44,7 +47,8 @@ class MoviesController extends Controller
      */
     public function create()
     {
-        return view('admin.movies.create');
+        $genres = Genre::all();
+        return view('admin.movies.create', compact('genres'));
     }
 
     /**
@@ -56,10 +60,26 @@ class MoviesController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $requestData = $request->all();
-        
-        Movie::create($requestData);
+        $movie = new Movie();
+
+        $movie->original_title = $request->original_title;
+        $movie->pt_br_tittle = $request->pt_br_tittle;
+        $movie->countries = $request->countries;
+        $movie->year = $request->year;
+        $movie->director = $request->director;
+        $movie->cast = $request->cast;
+        $movie->sinopse = $request->sinopse;
+        $movie->duration = $request->duration;
+
+        $movie->save();
+
+        $movie->genre()->sync($request->genres, false);
+
+
+        //$requestData = $request->all();
+        //Movie::create($requestData);
+
+        //$requestData->genre()->sync($request->genre, false);
 
         return redirect('admin/movies')->with('flash_message', 'Movie added!');
     }
@@ -88,8 +108,11 @@ class MoviesController extends Controller
     public function edit($id)
     {
         $movie = Movie::findOrFail($id);
+        $genres = Genre::all();
+        $genres_movie = Genre::all();
 
-        return view('admin.movies.edit', compact('movie'));
+        return view('admin.movies.edit',compact('movie', 'genres', 'genres_movie'));
+
     }
 
     /**

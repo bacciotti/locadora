@@ -39,7 +39,12 @@
     {!! $errors->first('duration', '<p class="help-block">:message</p>') !!}
 </div>
 
-
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-save"></span> Save</button>
 </div>
+
+@section('js')
+    <script>
+        $('.select2-multi').select2();
+    </script>
+@endsection

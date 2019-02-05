@@ -4,20 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Genre extends Model
+class GenreMovie extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'genres';
+    protected $table = 'genre_movie';
 
     /**
-    * The database primary key value.
-    *
-    * @var string
-    */
+     * The database primary key value.
+     *
+     * @var string
+     */
     protected $primaryKey = 'id';
 
     /**
@@ -25,11 +25,11 @@ class Genre extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['movie_id, genre_id'];
 
-    public function movies() {
+
+
+    public function movie() {
         return $this->belongsToMany(Movie::class);
     }
-
-    
 }
