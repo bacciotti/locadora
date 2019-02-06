@@ -1,14 +1,29 @@
---- TÓPICOS SOLICITADOS (REMOVER APÓS TÉRMINO) ---
+**O QUE FALTA FAZER**  
+**1) Arquivo 1 - RELATÓRIO FINAL**  
+a) Falta fazer: 6. VISÃO DE IMPLANTAÇÃO  
+Quem deve fazer: desenvolvedores (Diego e Mothé)  
+O que é: Visão e instruções de implantação do sistema. Um release notes com os erros, falhas e faltas conhecidos também é bem visto. Site onde ele está implantado e/ou um vídeo de demonstração promovendo o produto (pode estar no youtube ou outro serviço semelhante).    
 
+b) Falta terminar: 7. VISÃO DE USO  
+Quem deve fazer: Lucas, quando o front estiver finalizado, pois usarei prints do sistema em produção.  
+O que é: Guia de uso da solução do ponto de vista de todos os stakeholders identificados.      
 
-**O projeto deve compreender, não limitado a, os seguintes itens ou tópicos (removidos os prontos):**  
+c) Falta terminar: 9. REVISÃO INDIVIDUAL  
+Quem deve fazer: Gustavo, Carlos e Mothé, até dia 18.    
+O que é: Lições aprendidas do ponto de vista individual dos membros do time em relação a execução do projeto em si.  
 
-**Visão de Implantação:** Visão e instruções de implantação do sistema. Um release notes com os erros, falhas e faltas conhecidos também é bem visto. Site onde ele está implantado e/ou um vídeo de demonstração promovendo o produto (pode estar no youtube ou outro serviço semelhante).  
+**2) Arquivo 2 - POST-MORTEM**  
+Falta fazer ele todo.  
+Quem deve fazer: Carlos  
 
-**Visão de Uso:** Guia de uso da solução do ponto de vista de todos os stakeholders identificados.  
+**3) Arquivo 3 - PROCESSO DE DESENVOLVIMENTO**  
+Falta fazer: concluir o danado.  
+Quem deve fazer: desenvolvedores (Diego e Mothé)  
 
-**Revisão Individual:** Lições aprendidas do ponto de vista individual dos membros do time em relação a execução do projeto em si.  
-------------------------------------------------------------------
+**4) Revisão geral do projeto**  
+Falta: revisar.  
+Quem deve fazer: Todos  
+
 ------------------------------------------------------------------
 
 ### ÍNDICE
