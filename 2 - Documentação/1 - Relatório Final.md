@@ -195,8 +195,8 @@ Faz-se importante destacar que neste projeto os testes foram simultâneos, senã
 Os detalhes das tecnologias utilizadas podem ser vistas no tópico **3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE** deste documento.
 
 ##### IMPLANTAÇÃO  
-Tecnologia para o ambiente de implantação (SaaS/PaaS):  
-Link:  
+Tecnologia para o ambiente de implantação (SaaS/PaaS):  https://www.heroku.com/
+Link:  http://locadora-imperial.herokuapp.com
 
 ### 6. VISÃO DE IMPLANTAÇÃO  
 
