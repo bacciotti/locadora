@@ -38,6 +38,14 @@
     <input class="form-control" name="duration" type="text" id="duration" value="{{ isset($movie->duration) ? $movie->duration : ''}}" >
     {!! $errors->first('duration', '<p class="help-block">:message</p>') !!}
 </div>
+<div class="form-group {{ $errors->has('genres_id') ? 'has-error' : ''}}">
+    <label for="duration" class="control-label">{{ 'Genre' }}</label>
+    <select class="form-control select2-multi" name="genres[]" multiple>
+        @foreach($genres as $genre)
+            <option value="{{ isset($genre->id) ? $genre->id : ''}}">{{ $genre->name }}</option>
+        @endforeach
+    </select>
+</div>
 
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-save"></span> Save</button>
@@ -45,6 +53,6 @@
 
 @section('js')
     <script>
-        $('.select2-multi').select2();
+        $('.select2-multi').select2().val({!! json_encode($movie->genres()->allRelatedIds() ) !!}).trigger('change');
     </script>
 @endsection

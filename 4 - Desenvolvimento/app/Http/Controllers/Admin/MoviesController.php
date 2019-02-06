@@ -72,14 +72,7 @@ class MoviesController extends Controller
         $movie->duration = $request->duration;
 
         $movie->save();
-
-        $movie->genre()->sync($request->genres, false);
-
-
-        //$requestData = $request->all();
-        //Movie::create($requestData);
-
-        //$requestData->genre()->sync($request->genre, false);
+        $movie->genres()->sync($request->genres, false);
 
         return redirect('admin/movies')->with('flash_message', 'Movie added!');
     }
@@ -109,9 +102,8 @@ class MoviesController extends Controller
     {
         $movie = Movie::findOrFail($id);
         $genres = Genre::all();
-        $genres_movie = Genre::all();
 
-        return view('admin.movies.edit',compact('movie', 'genres', 'genres_movie'));
+        return view('admin.movies.edit', compact('movie', 'genres'));
 
     }
 
@@ -125,11 +117,25 @@ class MoviesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-        $requestData = $request->all();
-        
+
         $movie = Movie::findOrFail($id);
-        $movie->update($requestData);
+
+        $movie->original_title = $request->original_title;
+        $movie->pt_br_tittle = $request->pt_br_tittle;
+        $movie->countries = $request->countries;
+        $movie->year = $request->year;
+        $movie->director = $request->director;
+        $movie->cast = $request->cast;
+        $movie->sinopse = $request->sinopse;
+        $movie->duration = $request->duration;
+
+        $movie->save();
+        if (isset($request->genres)) {
+            $movie->genres()->sync($request->genres);
+        } else {
+            $movie->genres()->sync(array());
+        }
+
 
         return redirect('admin/movies')->with('flash_message', 'Movie updated!');
     }
@@ -143,7 +149,10 @@ class MoviesController extends Controller
      */
     public function destroy($id)
     {
-        Movie::destroy($id);
+        $movie = Movie::findOrFail($id);
+
+        $movie->destroy($id);
+        $movie->genres()->detach();
 
         return redirect('admin/movies')->with('flash_message', 'Movie deleted!');
     }
