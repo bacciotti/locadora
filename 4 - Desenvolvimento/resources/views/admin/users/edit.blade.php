@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'User - Edit')
+@section('title', '- Usuário - Editar')
 
 @section('content_header')
-    <h1>Edit User</h1>
+    <h1>Editar Usuário</h1>
 @stop
 
 @section('content')
-    {!! Button::warning('<i class="fa fa-arrow-left" aria-hidden="true"></i> Back')->asLinkTo(route('admin.users.index'))->addAttributes(['class' => "btn-sm"]) !!}
+    {!! Button::warning('<i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar')->asLinkTo(route('admin.users.index'))->addAttributes(['class' => "btn-sm"]) !!}
     <br/><br/>
     @component('admin.users.tabs',['user' => $form->getModel()])
         <br/>
@@ -15,7 +15,7 @@
         {!!
             form($form->add('edit', 'submit', [
                 'attr' => ['class' => 'btn btn-primary btn-block'],
-                'label' => $icon . ' Save'
+                'label' => $icon . ' Salvar'
             ]))
         !!}
     @endcomponent

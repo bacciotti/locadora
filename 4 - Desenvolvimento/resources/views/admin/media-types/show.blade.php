@@ -7,12 +7,12 @@
 @stop
 
 @section('content')
-<a href="{{ url('/admin/media-types') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-<a href="{{ url('/admin/media-types/' . $mediatype->id . '/edit') }}" title="Edit MediaType"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+<a href="{{ url('/admin/media-types') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/media-types/' . $mediatype->id . '/edit') }}" title="Edit MediaType"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
 <form method="POST" action="{{ url('admin/mediatypes' . '/' . $mediatype->id) }}" accept-charset="UTF-8" style="display:inline">
     {{ method_field('DELETE') }}
     {{ csrf_field() }}
-    <button type="submit" class="btn btn-danger btn-sm" title="Delete MediaType" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+    <button type="submit" class="btn btn-danger btn-sm" title="Delete MediaType" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Deletar</button>
 </form>
 <br/><br/>
 
@@ -24,7 +24,7 @@
                     <tr>
                         <th>ID</th><td>{{ $mediatype->id }}</td>
                     </tr>
-                    <tr><th> Name </th><td> {{ $mediatype->name }} </td></tr><tr><th> Price </th><td> {{ $mediatype->price }} </td></tr>
+                    <tr><th> Descrição </th><td> {{ $mediatype->name }} </td></tr><tr><th> Preço </th><td> {{ $mediatype->price }} </td></tr>
                 </tbody>
             </table>
         </div>

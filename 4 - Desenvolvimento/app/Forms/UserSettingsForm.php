@@ -15,7 +15,7 @@ class UserSettingsForm extends Form
                 'label' => 'Senha'
             ])
             ->add('password_confirmation', 'password', [
-                'label' => 'Confirmação de Senhaa'
+                'label' => 'Confirmação de Senha'
             ]);
     }
 }

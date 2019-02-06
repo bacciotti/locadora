@@ -3,11 +3,11 @@
 @section('title', 'Movie - Edit')
 
 @section('content_header')
-    <h1>Edit Movie</h1>
+    <h1>Editar Filme</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">

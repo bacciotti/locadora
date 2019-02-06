@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Distributor - New')
+@section('title', 'Distribuidor - Novo')
 
 @section('content_header')
-    <h1>New Distributor</h1>
+    <h1>Novo Distribuidor</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/distributors') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/admin/distributors') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
