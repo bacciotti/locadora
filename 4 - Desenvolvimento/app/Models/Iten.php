@@ -27,17 +27,17 @@ class Iten extends Model
      */
     protected $fillable = ['date_acquisition', 'serial_number', 'media_type_id', 'movie_id', 'distributor_id'];
 
-    public function media_types()
+    public function media_type()
     {
-        return $this->belongsToMany(MediaType::class);
+        return $this->hasMany(MediaType::class);
     }
-    public function movies()
+    public function movie()
     {
-        return $this->belongsToMany(Movie::class);
+        return $this->hasMany(Movie::class);
     }
-    public function distributors()
+    public function distributor()
     {
-        return $this->belongsToMany(Distributor::class);
+        return $this->hasMany(Distributor::class);
     }
     
 }

@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', '- Usuário - Editar')
+@section('title', 'Usuário - Editar')
 
 @section('content_header')
-    <h1>Editar Usuárioo</h1>
+    <h1>Editar Usuário</h1>
 @stop
 
 @section('content')
@@ -11,7 +11,7 @@
     <br/><br/>
     @component('admin.users.tabs',['user' => $form->getModel()])
         <br/>
-        <?php $icon = Icon::create('save');?>
+        <?php $icon = Icon::create('cloud-upload');?>
         {!!
             form($form->add('edit', 'submit', [
                 'attr' => ['class' => 'btn btn-primary btn-block'],

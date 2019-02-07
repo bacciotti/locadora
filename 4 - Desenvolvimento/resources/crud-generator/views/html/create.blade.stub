@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', '%%modelNameCap%% - New')
+@section('title', '%%modelNameCap%% - Novo')
 
 @section('content_header')
-    <h1>New %%modelNameCap%%</h1>
+    <h1>Novo %%modelNameCap%%</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -22,9 +22,7 @@
 
         <form method="POST" action="{{ url('/%%routeGroup%%%%viewName%%') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
             @include ('%%viewTemplateDir%%.form', ['formMode' => 'create'])
-
         </form>
     </div>
 </div>

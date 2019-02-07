@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Iten - New')
+@section('title', 'Item - Novo')
 
 @section('content_header')
-    <h1>New Iten</h1>
+    <h1>Novo Item</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/itens') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/admin/itens') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -22,9 +22,7 @@
 
         <form method="POST" action="{{ url('/admin/itens') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
             @include ('admin.itens.form', ['formMode' => 'create'])
-
         </form>
     </div>
 </div>

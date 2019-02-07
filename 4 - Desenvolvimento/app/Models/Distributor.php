@@ -27,5 +27,8 @@ class Distributor extends Model
      */
     protected $fillable = ['corporate_name', 'cnpj', 'address', 'phone', 'contact_person'];
 
+    public function itens() {
+        return $this->belongsTo(Itens::class);
+    }
     
 }

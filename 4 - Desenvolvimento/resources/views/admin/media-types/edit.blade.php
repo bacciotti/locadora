@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'MediaType - Edit')
+@section('title', 'Tipo de Mídia - Editar')
 
 @section('content_header')
-    <h1>Edit MediaType</h1>
+    <h1>Editar Tipo de Mídia</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/media-types') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/admin/media-types') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">

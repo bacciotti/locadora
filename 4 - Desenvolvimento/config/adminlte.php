@@ -15,7 +15,7 @@ return [
 
     'title' => 'Locadora Imperial',
 
-    'title_prefix' => 'Admin ',
+    'title_prefix' => 'Admin: ',
 
     'title_postfix' => '',
 
@@ -110,7 +110,7 @@ return [
     'menu' => [
         'MENU',
         [
-            'text'  => 'Home',
+            'text'  => 'Painel de Controle',
             'url'   => 'admin',
             'icon'  => 'home',
             //'label' => 4,

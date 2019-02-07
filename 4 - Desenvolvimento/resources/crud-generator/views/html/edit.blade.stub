@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', '%%modelNameCap%% - Edit')
+@section('title', '%%modelNameCap%% - Editar')
 
 @section('content_header')
-    <h1>Edit %%modelNameCap%%</h1>
+    <h1>Editar %%modelNameCap%%</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">

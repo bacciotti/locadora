@@ -30,4 +30,8 @@ class Movie extends Model
     public function genres() {
         return $this->belongsToMany(Genre::class);
     }
+
+    public function itens() {
+        return $this->belongsTo(Itens::class);
+    }
 }

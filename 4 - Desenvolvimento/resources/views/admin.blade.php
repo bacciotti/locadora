@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Painel de Controle')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Painel de Controle</h1>
 @stop
 
 @section('content')
@@ -22,5 +22,5 @@
 @stop
 
 @section('js')
-    <script>console.log('Painel admin aberto!');</script>
+    <script>console.log('Admin: Painel de Controle aberto!');</script>
 @stop

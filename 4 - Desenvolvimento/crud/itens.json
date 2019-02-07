@@ -44,17 +44,17 @@
     "relationships": [
         {
             "name": "media_types",
-            "type": "belongsTo",
+            "type": "hasMany",
             "class": "App\\Models\\MediaType"
         },
         {
             "name": "movies",
-            "type": "belongsTo",
+            "type": "hasMany",
             "class": "App\\Models\\Movie"
         },
         {
             "name": "distributors",
-            "type": "belongsTo",
+            "type": "hasMany",
             "class": "App\\Models\\Distributor"
         }
     ]

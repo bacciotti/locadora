@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Genre - Edit')
+@section('title', 'Gênero - Editar')
 
 @section('content_header')
     <h1>Editar Gênero</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/genres') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/genres') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">

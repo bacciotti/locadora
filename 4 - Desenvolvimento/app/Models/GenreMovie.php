@@ -28,10 +28,10 @@ class GenreMovie extends Model
     protected $fillable = ['movie_id, genre_id'];
 
     public function movies() {
-        return $this->belongsToMany(Movie::class);
+        return $this->hasMany(Movie::class);
     }
 
     public function genres() {
-        return $this->belongsToMany(Genre::class);
+        return $this->hasMany(Genre::class);
     }
 }

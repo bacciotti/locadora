@@ -6,5 +6,5 @@
 
 
 <div class="form-group">
-    <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-save"></span> Salvar</button>
+    <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Salvar</button>
 </div>

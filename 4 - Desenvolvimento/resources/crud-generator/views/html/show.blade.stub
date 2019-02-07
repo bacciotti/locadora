@@ -1,18 +1,18 @@
 @extends('adminlte::page')
 
-@section('title', '%%modelNameCap%% - View')
+@section('title', '%%modelNameCap%% - Ver')
 
 @section('content_header')
     <h1>%%modelNameCap%%</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-<a href="{{ url('/%%routeGroup%%%%viewName%%/' . $%%crudNameSingular%%->%%primaryKey%% . '/edit') }}" title="Edit %%modelName%%"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+<a href="{{ url('/%%routeGroup%%%%viewName%%') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/%%routeGroup%%%%viewName%%/' . $%%crudNameSingular%%->%%primaryKey%% . '/edit') }}" title="Editar %%modelName%%"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
 <form method="POST" action="{{ url('%%routeGroup%%%%crudName%%' . '/' . $%%crudNameSingular%%->%%primaryKey%%) }}" accept-charset="UTF-8" style="display:inline">
     {{ method_field('DELETE') }}
     {{ csrf_field() }}
-    <button type="submit" class="btn btn-danger btn-sm" title="Delete %%modelName%%" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+    <button type="submit" class="btn btn-danger btn-sm" title="Excluir %%modelName%%" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Excluir</button>
 </form>
 <br/><br/>
 

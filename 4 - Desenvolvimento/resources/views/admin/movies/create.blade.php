@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Movie - New')
+@section('title', 'Movie - Novo')
 
 @section('content_header')
     <h1>Novo Filme</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/movies') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/movies') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -34,6 +34,6 @@
 
 @section('js')
     <script>
-        $('.select2-multi').select2();
+        $('.select2').select2();
     </script>
 @endsection

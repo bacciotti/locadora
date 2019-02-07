@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Iten - Edit')
+@section('title', 'Item - Editar')
 
 @section('content_header')
-    <h1>Edit Iten</h1>
+    <h1>Editar Item</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/itens') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+<a href="{{ url('/admin/itens') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -37,6 +37,9 @@
 
 @section('js')
     <script>
-        $('.select2').select2().val({!! json_encode($iten->media_types()->allRelatedIds() ) !!}).trigger('change');
+        $('.select2').select2();
+        $('#media_type_id').val({!! json_encode($iten->media_type_id ) !!}).trigger('change');
+        $('#movie_id').val({!! json_encode($iten->movie_id ) !!}).trigger('change');
+        $('#distributor_id').val({!! json_encode($iten->distributor_id ) !!}).trigger('change');
     </script>
 @endsection

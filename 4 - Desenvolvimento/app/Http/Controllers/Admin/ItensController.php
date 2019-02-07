@@ -59,11 +59,8 @@ class ItensController extends Controller
      */
     public function store(Request $request)
     {
-        
         $requestData = $request->all();
-        
         Iten::create($requestData);
-
         return redirect('admin/itens')->with('flash_message', 'Iten added!');
     }
 
@@ -109,12 +106,9 @@ class ItensController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
         $requestData = $request->all();
-        
         $iten = Iten::findOrFail($id);
         $iten->update($requestData);
-
         return redirect('admin/itens')->with('flash_message', 'Iten updated!');
     }
 
