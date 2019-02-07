@@ -14,7 +14,8 @@ class UsersTableSeeder extends Seeder
     {
         factory(\App\Models\User::class)->create([
             'email'=> 'admin@gmail.com',
-            'enrolment_number' => 100000
+            'enrolment_number' => 100000,
+            'status' => 1
         ])->each(function (\App\Models\User $user){
             User::Role($user, User::ROLE_ADMIN);
             $user->save();

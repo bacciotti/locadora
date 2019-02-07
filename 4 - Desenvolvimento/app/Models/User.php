@@ -21,7 +21,7 @@ class User extends Authenticatable implements TableInterface
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'enrolment_number'
+        'name', 'email', 'password', 'enrolment_number', 'status'
     ];
 
     /**
@@ -40,7 +40,7 @@ class User extends Authenticatable implements TableInterface
      */
     public function getTableHeaders()
     {
-        return['ID', 'Nome', 'Email'];
+        return['ID', 'Nome', 'E-mail', 'Status'];
     }
 
     /**
@@ -52,13 +52,23 @@ class User extends Authenticatable implements TableInterface
      */
     public function getValueForHeader($header)
     {
+        $status = "";
+        if($this->status == 1){
+            $status = "Ativo";
+        }else{
+            $status = "Inativo";
+        }
+
+
         switch ($header){
             case 'ID':
                 return $this->id;
             case 'Nome':
                 return $this->name;
-            case 'Email':
+            case 'E-mail':
                 return $this->email;
+            case 'Status':
+                return $status;
         }
     }
     

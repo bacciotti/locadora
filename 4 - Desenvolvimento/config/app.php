@@ -234,7 +234,8 @@ return [
         'Navigation' => Bootstrapper\Facades\Navigation::class,
         'ProgressBar' => Bootstrapper\Facades\ProgressBar::class,
         'Alert' => \Bootstrapper\Facades\Alert::class,
-        'Badge' => \Bootstrapper\Facades\Badge::class
+        'Badge' => \Bootstrapper\Facades\Badge::class,
+        'Label' => \Bootstrapper\Facades\Label::class,
     ],
 
 ];

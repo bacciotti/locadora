@@ -19,6 +19,10 @@ class UserForm extends Form
                 'label' => 'E-mail',
                 'rules' => "required|max:255|unique:users,email,{$id}"
             ])
+            ->add('status', 'select',[
+                'label' => 'Status',
+                'choices' => ['Inativo', 'Ativo']
+            ])
             ->add('type', 'select',[
                 'label' => 'Tipo de usuário',
                 'choices' => $this->roles(),

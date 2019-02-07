@@ -31,6 +31,10 @@
     @endphp
     {!! form($formDelete) !!}
 
+    @php
+        $user->status
+
+    @endphp
     <table class="table table-bordered">
         <tbody>
         <tr>
@@ -44,6 +48,10 @@
         <tr>
             <th scope="row">E-mail</th>
             <td>{{$user->email}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Status</th>
+            <td> {!! $user->status == 1 ? Label::success('Ativo') : Label::danger('Inativo') !!}</td>
         </tr>
         </tbody>
     </table>
