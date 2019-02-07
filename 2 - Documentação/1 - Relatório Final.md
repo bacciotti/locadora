@@ -230,11 +230,17 @@ Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usu
 
 O mesmo acima se aplica para os menus Cadastros>Distribuidora, Cadastros>Filmes, Cadastros>Gênero, Cadastros>Mídia.  
 
-Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/6%20-%20Menu%20cadastro.png  
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/6%20-%20Novo%20filme.png  
 
 É necessário salientar que apenas os funcionários da empresa terão acesso aos menus de cadastro. Os clientes só terão acesso aos menus Reserva, Locação e Pagamento, além de poder alterar seus dados pessoais.  
 
-Meis fotografias de telas do sistema podem ser encontradas em: https://github.com/bacciotti/locadora/tree/master/6%20-%20Telas  
+As telas do sistema seguem um padrão, tanto para consulta quanto para inserção/atualização das informações. Pode-se ver, por exemplo, que todas elas possuem o botão verde com o sinal de "+", o que significa a adição de um novo registro, seja de filmes, mídias ou usuários, por exemplo.  
+
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/7%20-%20Tipos%20de%20m%C3%ADdia.png  
+
+Além disso, é possível notar que, sempre que há um campo de busca, tem-se uma ícone de uma lupa, para aumentar o nível de usabilidade do usuário.
+
+Mais fotografias de telas do sistema podem ser encontradas em: https://github.com/bacciotti/locadora/tree/master/6%20-%20Telas  
 
 ** Finalizar quando as outras telas estiverem prontas. **  
 
