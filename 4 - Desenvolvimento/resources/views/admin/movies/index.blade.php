@@ -19,7 +19,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th><th>Título Original</th><th>Título Nacional</th><th>País</th><th>Ações</th>
+                <th>#</th><th>Título Original</th><th>Título Nacional</th><th>País</th><th>Ações</th>
             </tr>
         </thead>
         <tbody>

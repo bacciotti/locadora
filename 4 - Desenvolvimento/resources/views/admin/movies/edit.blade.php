@@ -23,15 +23,10 @@
         <form method="POST" action="{{ url('/admin/movies/' . $movie->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
-            @include ('admin.movies.formEdit', ['formMode' => 'edit'])
-
+            @include ('admin.movies.form', ['formMode' => 'edit'])
         </form>
     </div>
 </div>
-@stop
-
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
 @section('css')

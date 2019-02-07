@@ -50,9 +50,3 @@
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-save"></span> Salvar</button>
 </div>
-
-@section('js')
-    <script>
-        $('.select2-multi').select2();
-    </script>
-@endsection

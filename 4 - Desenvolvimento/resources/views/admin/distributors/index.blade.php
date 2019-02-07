@@ -21,7 +21,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th><th>Nome Corporativo</th><th>CNPJ</th><th>Endereço</th><th>Ações</th>
+                <th>#</th><th>Nome Corporativo</th><th>CNPJ</th><th>Endereço</th><th>Ações</th>
             </tr>
         </thead>
         <tbody>

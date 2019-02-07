@@ -22,8 +22,7 @@
 
         <form method="POST" action="{{ url('/admin/movies') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
-            @include ('admin.movies.formCreate', ['formMode' => 'create'])
+            @include ('admin.movies.form', ['formMode' => 'create'])
         </form>
     </div>
 </div>
@@ -32,3 +31,9 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $('.select2-multi').select2();
+    </script>
+@endsection

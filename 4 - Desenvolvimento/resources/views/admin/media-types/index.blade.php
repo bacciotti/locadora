@@ -21,7 +21,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th><th>Descrição</th><th>Preço</th><th>Ações</th>
+                <th>#</th><th>Descrição</th><th>Preço</th><th>Ações</th>
             </tr>
         </thead>
         <tbody>
