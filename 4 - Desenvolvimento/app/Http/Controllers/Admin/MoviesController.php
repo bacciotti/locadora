@@ -136,7 +136,6 @@ class MoviesController extends Controller
             $movie->genres()->sync(array());
         }
 
-
         return redirect('admin/movies')->with('flash_message', 'Movie updated!');
     }
 

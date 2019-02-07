@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Genre extends Model
+class Iten extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'genres';
+    protected $table = 'itens';
 
     /**
     * The database primary key value.
@@ -25,9 +25,19 @@ class Genre extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['date_acquisition', 'serial_number', 'media_type_id', 'movie_id', 'distributor_id'];
 
-    public function movies() {
+    public function media_types()
+    {
+        return $this->belongsToMany(MediaType::class);
+    }
+    public function movies()
+    {
         return $this->belongsToMany(Movie::class);
     }
+    public function distributors()
+    {
+        return $this->belongsToMany(Distributor::class);
+    }
+    
 }

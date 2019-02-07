@@ -23,4 +23,4 @@ https://github.com/appzcoder/crud-generator/blob/master/doc/usage.md
 Exemplo JSON:
 >php artisan crud:generate Posts --fields_from_file=".\crud\fields.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
->php artisan crud:generate Itens --model-name="Item" --fields_from_file=".\crud\itens.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+>php artisan crud:generate Itens --fields_from_file=".\crud\itens.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models

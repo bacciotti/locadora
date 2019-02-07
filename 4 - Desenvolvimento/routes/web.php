@@ -47,3 +47,5 @@ Route::resource('admin/genres', 'Admin\\GenresController');
 Route::resource('admin/media-types', 'Admin\\MediaTypesController');
 Route::resource('admin/distributors', 'Admin\\DistributorsController');
 Route::resource('admin/movies', 'Admin\\MoviesController');
+
+Route::resource('admin/itens', 'Admin\\ItensController');
