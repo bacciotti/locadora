@@ -27,11 +27,11 @@ A equipe ficou a cargo de finalizar a documentação, elaborar a análise, plane
 ### 3. DESCRIÇÃO  
 O Sistema Informatizado da Locadora Imperial foi concebido para ser executado em navegadores de internet, ou seja, é necessário ter conexão com a web para fazer uso do software desenvolvido. O desenvolvimento do sistema prezou a usabilidade e facilidade de uso para o usuário final (clientes e funcionários da locadora). Por isso sempre foi buscado o mínimo de botões, menus e funções possíveis. O objetivo é ter-se um software fácil de uso que dispensa o máximo de treinamento. Em algumas telas pode-se observar que o objetivo foi contemplado. Por exemplo, na tela de Login existe o mínimo de opções possível (ou o usuário entra no sistema, ou ele se registra):  
   
-Ver "1 - Tela de Login/Registro.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20Login:Registro.png  
+Ver "1 - Tela de Login/Registro.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20LoginRegistro.png.png  
 
 O sistema foi criado para poder gerenciar o cadastro de Clientes, Usuários, Filmes e Gêneros. Além disso, o foco principal é o controle e gerencimento dos Empréstimos e Reservas dos filmes. A tela abaixo ilustra como exemplo a relação de usuários do sistema. Percebe-se um ambiente visual limpo, claro e minimalista:  
 
-Ver "3 - Usuários.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usua%CC%81rios.png  
+Ver "3 - Usuários.png" - https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/3%20-%20Usu%C3%A1rios.png  
 
 Na próxima imagem nota-se o menu principal da aplicação, onde o usuário poderá navegar entre as principais funcionalidades do sistema, sempre fazendo uso do mínimo de cliques possível:  
   
