@@ -1,0 +1,61 @@
+{
+    "fields": [
+        {
+            "name": "date_acquisition",
+            "type": "date"
+        },
+        {
+            "name": "serial_number",
+            "type": "string"
+        },
+        {
+            "name": "media_type_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "movie_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "distributor_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "media_type_id",
+            "references": "id",
+            "on": "media_types",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "movie_id",
+            "references": "id",
+            "on": "movies",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "distributor_id",
+            "references": "id",
+            "on": "distributors",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "media_types",
+            "type": "belongsTo",
+            "class": "App\\Models\\MediaType"
+        },
+        {
+            "name": "movies",
+            "type": "belongsTo",
+            "class": "App\\Models\\Movie"
+        },
+        {
+            "name": "distributors",
+            "type": "belongsTo",
+            "class": "App\\Models\\Distributor"
+        }
+    ]
+}

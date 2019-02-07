@@ -123,11 +123,6 @@ return [
             //'can'   => 'manage-administrador',
         ],
         [
-            'text'  => 'Filmes',
-            'url'   => 'admin/movies',
-            'icon'  => 'film',
-        ],
-        [
             'text'  => 'Gêneros',
             'url'   => 'admin/genres',
             'icon'  => 'film',
@@ -140,6 +135,16 @@ return [
         [
             'text'  => 'Distribuidores',
             'url'   => 'admin/distributors',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Filmes',
+            'url'   => 'admin/movies',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Itens',
+            'url'   => 'admin/itens',
             'icon'  => 'film',
         ],
         'CONFIGURAÇÕES',
