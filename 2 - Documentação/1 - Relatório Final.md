@@ -281,5 +281,11 @@ O projeto da locadora no inicio pareceu que seria simples, mas como sempre na á
 #### Opinião de Carlos Alexandre Porto (cap):    
 
 #### Opinião de Gustavo Costa Meireles (gcm3):   
+O projeto tem sido muito importante pra mim por que estou experimentando o processo de desenvolvimento de software em equipe pela primeira vez. As demais experiências que tive com desenvolvimento foram sozinho. Então essa parte de discussões, troca de informação, divisão de tarefas, uso de ferramentas de compartilhamento de informações, dentre outros, é novo para mim e se mostrou um grande desafio. Mas a equipe se mostrou muito homogênea, tornando fácil todo esse processo de trabalho em equipe e curva de apredizagem das ferramentas utilizadas. 
+O gerente de projetos (lbm5) fez a divisão das tarefas e a comunicação com a equipe pelo GitHub, e o processo funcionou muito bem. Após a parte de documentação e projeto de software começamos a parte de desenvolvimento, após a escolha por trabalhar com o framework Laravel, o nosso desenvolvedor principal (dm5) montou o ambiente de desenvolvimento e auxiliou os demais membros da equipe que não tinham experiencia com o framework.
+Apesar da minha dificuldade incial para me adaptar ao sistema de projeto em equipe, consegui me adaptar ao sistema e contribuir com a equipe. Todas as dúvidas e dificuldades que algum membro da equipe encontrava era prontamente solucionado pelos demais membros, tornando um ambiente de muito aprendizado e de grande crescimento profissional.
 
 #### Opinião de Welington Mothé de Oliveira (wmo):    
+
+
+
