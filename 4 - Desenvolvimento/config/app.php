@@ -168,6 +168,8 @@ return [
 
         \Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Bootstrapper\BootstrapperL5ServiceProvider::class,
+        \Spatie\Permission\PermissionServiceProvider::class,
+        \Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -236,6 +238,8 @@ return [
         'Alert' => \Bootstrapper\Facades\Alert::class,
         'Badge' => \Bootstrapper\Facades\Badge::class,
         'Label' => \Bootstrapper\Facades\Label::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

@@ -21,7 +21,7 @@ class User extends Authenticatable implements TableInterface
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'enrolment_number', 'status'
+        'name', 'email', 'password', 'enrolment_number', 'status','userable_type'
     ];
 
     /**
@@ -40,7 +40,7 @@ class User extends Authenticatable implements TableInterface
      */
     public function getTableHeaders()
     {
-        return['ID', 'Nome', 'E-mail', 'Status'];
+        return['ID', 'Nome', 'E-mail', 'Status', 'Tipo'];
     }
 
     /**
@@ -58,6 +58,15 @@ class User extends Authenticatable implements TableInterface
         }else{
             $status = "Inativo";
         }
+        $userble_type = "";
+
+        if($this->userable_type == "App\Models\Admin"){
+            $userble_type = "Administrador";
+        }else if($this->userable_type == "App\Models\Client"){
+            $userble_type = "Cliente";
+        }else {
+            $userble_type = "Dependente";
+        }
 
 
         switch ($header){
@@ -69,6 +78,8 @@ class User extends Authenticatable implements TableInterface
                 return $this->email;
             case 'Status':
                 return $status;
+            case 'Tipo':
+                return $userble_type;
         }
     }
     
@@ -118,4 +129,10 @@ class User extends Authenticatable implements TableInterface
         $model = $model::create([]);
         $user->userable()->associate($model);
     }
+
+    public function users() {
+        return $this->belongsToMany(User::class);
+    }
 }
+
+

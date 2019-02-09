@@ -23,6 +23,7 @@ class UserForm extends Form
                 'label' => 'Status',
                 'choices' => ['Inativo', 'Ativo']
             ])
+
             ->add('type', 'select',[
                 'label' => 'Tipo de usuário',
                 'choices' => $this->roles(),

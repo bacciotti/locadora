@@ -28,12 +28,14 @@ class UsersController extends Controller
      */
     public function create()
     {
+        $users = User::all();
+
         $form = \FormBuilder::create(UserForm::class, [
             'url' => route('admin.users.store'),
             'method' => 'POST'
         ]);
 
-        return view('admin.users.create', compact('form'));
+        return view('admin.users.create', compact('form', 'users'));
     }
 
     /**
@@ -90,13 +92,16 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
+        $users = User::all();
+
+
         $form = \FormBuilder::create(UserForm::class, [
             'url' => route('admin.users.update', ['user' => $user->id]),
             'method' => 'PUT',
             'model' => $user
         ]);
 
-        return view('admin.users.edit', compact('form'));
+        return view('admin.users.edit', compact('form', 'users'));
 
 
     }
