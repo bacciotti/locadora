@@ -28,7 +28,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        $users = User::all();
+        $users = User::all()
+            ->whereIn('status', '1');
 
         $form = \FormBuilder::create(UserForm::class, [
             'url' => route('admin.users.store'),
@@ -92,8 +93,8 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        $users = User::all();
-
+        $users = User::all()
+            ->whereIn('status', '1');
 
         $form = \FormBuilder::create(UserForm::class, [
             'url' => route('admin.users.update', ['user' => $user->id]),

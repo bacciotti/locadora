@@ -18,9 +18,25 @@
                 'label' => $icon . ' Salvar'
             ]))
         !!}
+        <div class="form-group {{ $errors->has('genres_id') ? 'has-error' : ''}}">
+            <label for="users" class="control-label">{{ 'Gênero' }}</label>
+            <select id="users" class="form-control select2" name="users[]" multiple>
+                @foreach($users as $user)
+                    <option value="{{ isset($user->id) ? $user->id : ''}}">{{ $user->name }}</option>
+                @endforeach
+            </select>
+        </div>
     @endcomponent
 @stop
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+
+@section('js')
+    <script>
+        $('.select2').select2();
+
+    </script>
+@endsection
