@@ -8,10 +8,6 @@ b) Falta terminar: 7. VISÃO DE USO
 Quem deve fazer: Lucas, quando o front estiver finalizado, pois usarei prints do sistema em produção.  
 O que é: Guia de uso da solução do ponto de vista de todos os stakeholders identificados.      
 
-c) Falta terminar: 9. REVISÃO INDIVIDUAL  
-Quem deve fazer: Gustavo, Carlos e Mothé, até dia 18.    
-O que é: Lições aprendidas do ponto de vista individual dos membros do time em relação a execução do projeto em si.  
-
 **2) Arquivo 2 - POST-MORTEM**  
 Falta fazer ele todo.  
 Quem deve fazer: Carlos  
