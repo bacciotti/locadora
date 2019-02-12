@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-<a href="{{ url('/admin/itens') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/items') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -20,11 +20,11 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/admin/itens/' . $iten->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+        <form method="POST" action="{{ url('/admin/items/' . $item->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
 
-            @include ('admin.itens.form', ['formMode' => 'edit'])
+            @include ('admin.items.form', ['formMode' => 'edit'])
 
         </form>
     </div>
@@ -38,8 +38,8 @@
 @section('js')
     <script>
         $('.select2').select2();
-        $('#media_type_id').val({!! json_encode($iten->media_type_id ) !!}).trigger('change');
-        $('#movie_id').val({!! json_encode($iten->movie_id ) !!}).trigger('change');
-        $('#distributor_id').val({!! json_encode($iten->distributor_id ) !!}).trigger('change');
+        $('#media_type_id').val({!! json_encode($item->media_type_id ) !!}).trigger('change');
+        $('#movie_id').val({!! json_encode($item->movie_id ) !!}).trigger('change');
+        $('#distributor_id').val({!! json_encode($item->distributor_id ) !!}).trigger('change');
     </script>
 @endsection

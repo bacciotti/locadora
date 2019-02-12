@@ -5,10 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\MediaType;
+use App\Models\Movie;
 use App\Models\Distributor;
+use App\Models\Item;
 use Illuminate\Http\Request;
 
-class DistributorsController extends Controller
+class ItemsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,17 +24,17 @@ class DistributorsController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $distributors = Distributor::where('corporate_name', 'LIKE', "%$keyword%")
-                ->orWhere('cnpj', 'LIKE', "%$keyword%")
-                ->orWhere('address', 'LIKE', "%$keyword%")
-                ->orWhere('phone', 'LIKE', "%$keyword%")
-                ->orWhere('contact_person', 'LIKE', "%$keyword%")
+            $items = Item::where('date_acquisition', 'LIKE', "%$keyword%")
+                ->orWhere('serial_number', 'LIKE', "%$keyword%")
+                ->orWhere('media_type_id', 'LIKE', "%$keyword%")
+                ->orWhere('movie_id', 'LIKE', "%$keyword%")
+                ->orWhere('distributor_id', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $distributors = Distributor::latest()->paginate($perPage);
+            $items = Item::latest()->paginate($perPage);
         }
 
-        return view('admin.distributors.index', compact('distributors'));
+        return view('admin.items.index', compact('items'));
     }
 
     /**
@@ -41,7 +44,10 @@ class DistributorsController extends Controller
      */
     public function create()
     {
-        return view('admin.distributors.create');
+        $media_types = MediaType::all();
+        $movies = Movie::all();
+        $distributors = Distributor::all();
+        return view('admin.items.create', compact('media_types','movies','distributors'));
     }
 
     /**
@@ -53,19 +59,9 @@ class DistributorsController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $this->validate($request, [
-			'corporate_name' => 'required',
-			'cnpj' => 'required|unique:distributors|min:14|max:14',
-			'address' => 'required',
-			'phone' => 'required|unique:distributors|min:8|max:12',
-			'contact_person' => 'required'
-		]);
         $requestData = $request->all();
-        
-        Distributor::create($requestData);
-
-        return redirect('admin/distributors')->with('flash_message', 'Distributor added!');
+        Item::create($requestData);
+        return redirect('admin/items')->with('flash_message', 'Item added!');
     }
 
     /**
@@ -77,9 +73,9 @@ class DistributorsController extends Controller
      */
     public function show($id)
     {
-        $distributor = Distributor::findOrFail($id);
+        $item = Item::findOrFail($id);
 
-        return view('admin.distributors.show', compact('distributor'));
+        return view('admin.items.show', compact('item'));
     }
 
     /**
@@ -91,9 +87,13 @@ class DistributorsController extends Controller
      */
     public function edit($id)
     {
-        $distributor = Distributor::findOrFail($id);
+        $item = Item::findOrFail($id);
 
-        return view('admin.distributors.edit', compact('distributor'));
+        $media_types = MediaType::all();
+        $movies = Movie::all();
+        $distributors = Distributor::all();
+
+        return view('admin.items.edit', compact('item','media_types','movies','distributors'));
     }
 
     /**
@@ -106,19 +106,10 @@ class DistributorsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-			'corporate_name' => 'required',
-			'cnpj' => 'required|unique:distributors|min:14|max:14',
-			'address' => 'required',
-			'phone' => 'required|unique:distributors|min:8|max:12',
-			'contact_person' => 'required'
-		]);
         $requestData = $request->all();
-        
-        $distributor = Distributor::findOrFail($id);
-        $distributor->update($requestData);
-
-        return redirect('admin/distributors')->with('flash_message', 'Distributor updated!');
+        $item = Item::findOrFail($id);
+        $item->update($requestData);
+        return redirect('admin/items')->with('flash_message', 'Item updated!');
     }
 
     /**
@@ -130,8 +121,8 @@ class DistributorsController extends Controller
      */
     public function destroy($id)
     {
-        Distributor::destroy($id);
+        Item::destroy($id);
 
-        return redirect('admin/distributors')->with('flash_message', 'Distributor deleted!');
+        return redirect('admin/items')->with('flash_message', 'Item deleted!');
     }
 }

@@ -27,8 +27,8 @@ class MediaType extends Model
      */
     protected $fillable = ['name', 'price'];
 
-    public function itens() {
-        return $this->belongsTo(Itens::class);
+    public function items() {
+        return $this->belongsTo(Items::class);
     }
     
 }

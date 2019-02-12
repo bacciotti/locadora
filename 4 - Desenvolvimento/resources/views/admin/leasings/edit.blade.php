@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Distributor - Editar')
+@section('title', 'Leasing - Editar')
 
 @section('content_header')
-    <h1>Editar Distributor</h1>
+    <h1>Editar Leasing</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/distributors') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/leasings') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -20,11 +20,11 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/admin/distributors/' . $distributor->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+        <form method="POST" action="{{ url('/admin/leasings/' . $leasing->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
 
-            @include ('admin.distributors.form', ['formMode' => 'edit'])
+            @include ('admin.leasings.form', ['formMode' => 'edit'])
 
         </form>
     </div>

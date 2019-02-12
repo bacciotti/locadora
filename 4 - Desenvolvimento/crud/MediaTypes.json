@@ -1,0 +1,29 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "integer#unsigned"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "item",
+            "type": "hasMany",
+            "class": "App\\Models\\Item"
+        }
+    ],
+    "validations": [
+        {
+            "field": "name",
+            "rules": "required|unique"
+        },
+        {
+            "field": "price",
+            "rules": "required"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "fields": [
+        {
+            "name": "date_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "user_id",
+            "references": "id",
+            "on": "users"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "class": "App\\Models\\User"
+        },
+        {
+            "name": "leasing",
+            "type": "hasOne",
+            "class": "App\\Models\\Leasing"
+        },
+        {
+            "name": "movies",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Movie"
+        }
+    ]
+}

@@ -5,13 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Models\MediaType;
-use App\Models\Movie;
-use App\Models\Distributor;
-use App\Models\Iten;
+use App\Models\Booking;
 use Illuminate\Http\Request;
 
-class ItensController extends Controller
+class BookingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,17 +21,14 @@ class ItensController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $itens = Iten::where('date_acquisition', 'LIKE', "%$keyword%")
-                ->orWhere('serial_number', 'LIKE', "%$keyword%")
-                ->orWhere('media_type_id', 'LIKE', "%$keyword%")
-                ->orWhere('movie_id', 'LIKE', "%$keyword%")
-                ->orWhere('distributor_id', 'LIKE', "%$keyword%")
+            $bookings = Booking::where('date_time', 'LIKE', "%$keyword%")
+                ->orWhere('user_id', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $itens = Iten::latest()->paginate($perPage);
+            $bookings = Booking::latest()->paginate($perPage);
         }
 
-        return view('admin.itens.index', compact('itens'));
+        return view('admin.bookings.index', compact('bookings'));
     }
 
     /**
@@ -44,10 +38,7 @@ class ItensController extends Controller
      */
     public function create()
     {
-        $media_types = MediaType::all();
-        $movies = Movie::all();
-        $distributors = Distributor::all();
-        return view('admin.itens.create', compact('media_types','movies','distributors'));
+        return view('admin.bookings.create');
     }
 
     /**
@@ -59,9 +50,12 @@ class ItensController extends Controller
      */
     public function store(Request $request)
     {
+        
         $requestData = $request->all();
-        Iten::create($requestData);
-        return redirect('admin/itens')->with('flash_message', 'Iten added!');
+        
+        Booking::create($requestData);
+
+        return redirect('admin/bookings')->with('flash_message', 'Booking added!');
     }
 
     /**
@@ -73,9 +67,9 @@ class ItensController extends Controller
      */
     public function show($id)
     {
-        $iten = Iten::findOrFail($id);
+        $booking = Booking::findOrFail($id);
 
-        return view('admin.itens.show', compact('iten'));
+        return view('admin.bookings.show', compact('booking'));
     }
 
     /**
@@ -87,13 +81,9 @@ class ItensController extends Controller
      */
     public function edit($id)
     {
-        $iten = Iten::findOrFail($id);
+        $booking = Booking::findOrFail($id);
 
-        $media_types = MediaType::all();
-        $movies = Movie::all();
-        $distributors = Distributor::all();
-
-        return view('admin.itens.edit', compact('iten','media_types','movies','distributors'));
+        return view('admin.bookings.edit', compact('booking'));
     }
 
     /**
@@ -106,10 +96,13 @@ class ItensController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
         $requestData = $request->all();
-        $iten = Iten::findOrFail($id);
-        $iten->update($requestData);
-        return redirect('admin/itens')->with('flash_message', 'Iten updated!');
+        
+        $booking = Booking::findOrFail($id);
+        $booking->update($requestData);
+
+        return redirect('admin/bookings')->with('flash_message', 'Booking updated!');
     }
 
     /**
@@ -121,8 +114,8 @@ class ItensController extends Controller
      */
     public function destroy($id)
     {
-        Iten::destroy($id);
+        Booking::destroy($id);
 
-        return redirect('admin/itens')->with('flash_message', 'Iten deleted!');
+        return redirect('admin/bookings')->with('flash_message', 'Booking deleted!');
     }
 }

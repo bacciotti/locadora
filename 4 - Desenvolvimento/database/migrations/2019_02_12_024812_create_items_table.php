@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateItensTable extends Migration
+class CreateItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateItensTable extends Migration
      */
     public function up()
     {
-        Schema::create('itens', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->date('date_acquisition')->nullable();
@@ -33,6 +33,6 @@ class CreateItensTable extends Migration
      */
     public function down()
     {
-        Schema::drop('itens');
+        Schema::drop('items');
     }
 }

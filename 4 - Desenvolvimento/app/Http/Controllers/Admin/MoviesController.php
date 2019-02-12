@@ -6,7 +6,6 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Models\Genre;
-use App\Models\GenreMovie;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 

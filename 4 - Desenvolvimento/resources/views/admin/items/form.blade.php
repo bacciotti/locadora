@@ -16,7 +16,7 @@
 </div>
 <div class="form-group {{ $errors->has('serial_number') ? 'has-error' : ''}}">
     <label for="serial_number" class="control-label">{{ 'Numero Serial' }}</label>
-    <input class="form-control" name="serial_number" type="text" id="serial_number" value="{{ isset($iten->serial_number) ? $iten->serial_number : ''}}" >
+    <input class="form-control" name="serial_number" type="text" id="serial_number" value="{{ isset($item->serial_number) ? $item->serial_number : ''}}" >
     {!! $errors->first('serial_number', '<p class="help-block">:message</p>') !!}
 </div>
 <div class="form-group {{ $errors->has('distributor_id') ? 'has-error' : ''}}">
@@ -29,7 +29,7 @@
 </div>
 <div class="form-group {{ $errors->has('date_acquisition') ? 'has-error' : ''}}">
     <label for="date_acquisition" class="control-label">{{ 'Data de Aquisição' }}</label>
-    <input class="form-control" name="date_acquisition" type="date" id="date_acquisition" value="{{ isset($iten->date_acquisition) ? $iten->date_acquisition : ''}}" >
+    <input class="form-control" name="date_acquisition" type="date" id="date_acquisition" value="{{ isset($item->date_acquisition) ? $item->date_acquisition : ''}}" >
     {!! $errors->first('date_acquisition', '<p class="help-block">:message</p>') !!}
 </div>
 

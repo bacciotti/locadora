@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Iten extends Model
+class Item extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'itens';
+    protected $table = 'items';
 
     /**
     * The database primary key value.

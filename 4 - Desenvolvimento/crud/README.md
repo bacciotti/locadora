@@ -2,13 +2,37 @@
 
 - Para criar todos os arquivos pré-configurados do CRUD dentro do Projeto Laravel é necessario rodar apenas um comando, seguindo esses exemplos:  
 
->php artisan crud:generate Genres --fields='name#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+>php artisan crud:generate Genres --fields_from_file=".\crud\Genres.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
->php artisan crud:generate MediaTypes --fields='name#string; price#number' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+>php artisan crud:generate MediaTypes --fields_from_file=".\crud\MediaTypes.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
->php artisan crud:generate Distributors --fields='corporate_name#string; cnpj#number; address#string; phone#number; contact_person#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+>php artisan crud:generate Distributors --fields_from_file=".\crud\Distributors.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
->php artisan crud:generate Movies --fields='original_title#string; pt_br_tittle#string; countries#string; year#number; director#string; cast#string; sinopse#text; duration#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models  
+>php artisan crud:generate Movies --fields_from_file=".\crud\Movies.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate Bookings --fields_from_file=".\crud\Bookings.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate Leasings --fields_from_file=".\crud\Leasings.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate Items --fields_from_file=".\crud\Items.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+php artisan crud:migration GenresMovies --schema="genre_id#integer#unsigned; movie_id#integer#unsigned"
+php artisan crud:migration ItemsLeasings --schema="item_id#integer#unsigned; leasing_id#integer#unsigned"
+php artisan crud:migration MoviesBookings --schema="movie_id#integer#unsigned; booking_id#integer#unsigned"
+
+
+
+--- Exemplos (Não rodar)
+
+>php artisan crud:generate GenresMovies --model-name=GenreMovie --fields_from_file=".\crud\GenresMovies.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate ItemsLeasings --model-name=ItemLeasing --fields_from_file=".\crud\ItemsLeasings.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate MoviesBookings --model-name=MovieBooking --fields_from_file=".\crud\MoviesBookings.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate Users --fields_from_file=".\crud\Users.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate Exemplos --fields_from_file=".\crud\Exemplos.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
 - Após criar os arquivos do "CRUD" é necessario popular a base de dados, usando este comando:  
 > php artisan migrate  
@@ -17,10 +41,68 @@
 https://github.com/appzcoder/crud-generator/blob/master/doc/usage.md  
 
 
+## Campos Suportados  
+Você pode usar qualquer um dos campos da lista.
 
->php artisan crud:generate GenresMovies --fields='genre_id#integer#unsigned; movie_id#integer#unsigned' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models --foreign-keys="genre_id#id#genres#cascade;movie_id#id#movies#cascade"  
+### Tipos de campos de formulário:
 
-Exemplo JSON:
->php artisan crud:generate Posts --fields_from_file=".\crud\fields.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+* text
+* textarea
+* password
+* email
+* number
+* date
+* datetime
+* time
+* radio
+* select
+* file
 
->php artisan crud:generate Itens --fields_from_file=".\crud\itens.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+### Tipos de campo de migração:
+
+* string
+* char
+* varchar
+* date
+* datetime
+* time
+* timestamp
+* text
+* mediumtext
+* longtext
+* json
+* jsonb
+* binary
+* integer
+* bigint
+* mediumint
+* tinyint
+* smallint
+* boolean
+* decimal
+* double
+* float
+* enum
+  
+  
+## Tipos de Relacionamentos  
+
+### Lista de Tipos:  
+* hasOne
+* hasMany
+* belongsTo
+* belongsToMany
+
+### 1 - 1  
+* hasOne (Usuário)
+* belongsTo (Telefone)
+
+### 1 - N  
+* hasMany (Postagem)
+* belongsTo (Comentário)
+
+### N - N  
+* belongsToMany (Usuário)
+* belongsToMany (UsuárioFunção)
+* belongsToMany (FunçãoUsuário)
+* belongsToMany (Função)

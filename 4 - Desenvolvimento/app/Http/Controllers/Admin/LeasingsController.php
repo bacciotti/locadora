@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Models\Distributor;
+use App\Models\Leasing;
 use Illuminate\Http\Request;
 
-class DistributorsController extends Controller
+class LeasingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,17 +21,16 @@ class DistributorsController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $distributors = Distributor::where('corporate_name', 'LIKE', "%$keyword%")
-                ->orWhere('cnpj', 'LIKE', "%$keyword%")
-                ->orWhere('address', 'LIKE', "%$keyword%")
-                ->orWhere('phone', 'LIKE', "%$keyword%")
-                ->orWhere('contact_person', 'LIKE', "%$keyword%")
+            $leasings = Leasing::where('date_time_leasing', 'LIKE', "%$keyword%")
+                ->orWhere('date_time_devolution', 'LIKE', "%$keyword%")
+                ->orWhere('user_id', 'LIKE', "%$keyword%")
+                ->orWhere('booking_id', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $distributors = Distributor::latest()->paginate($perPage);
+            $leasings = Leasing::latest()->paginate($perPage);
         }
 
-        return view('admin.distributors.index', compact('distributors'));
+        return view('admin.leasings.index', compact('leasings'));
     }
 
     /**
@@ -41,7 +40,7 @@ class DistributorsController extends Controller
      */
     public function create()
     {
-        return view('admin.distributors.create');
+        return view('admin.leasings.create');
     }
 
     /**
@@ -54,18 +53,11 @@ class DistributorsController extends Controller
     public function store(Request $request)
     {
         
-        $this->validate($request, [
-			'corporate_name' => 'required',
-			'cnpj' => 'required|unique:distributors|min:14|max:14',
-			'address' => 'required',
-			'phone' => 'required|unique:distributors|min:8|max:12',
-			'contact_person' => 'required'
-		]);
         $requestData = $request->all();
         
-        Distributor::create($requestData);
+        Leasing::create($requestData);
 
-        return redirect('admin/distributors')->with('flash_message', 'Distributor added!');
+        return redirect('admin/leasings')->with('flash_message', 'Leasing added!');
     }
 
     /**
@@ -77,9 +69,9 @@ class DistributorsController extends Controller
      */
     public function show($id)
     {
-        $distributor = Distributor::findOrFail($id);
+        $leasing = Leasing::findOrFail($id);
 
-        return view('admin.distributors.show', compact('distributor'));
+        return view('admin.leasings.show', compact('leasing'));
     }
 
     /**
@@ -91,9 +83,9 @@ class DistributorsController extends Controller
      */
     public function edit($id)
     {
-        $distributor = Distributor::findOrFail($id);
+        $leasing = Leasing::findOrFail($id);
 
-        return view('admin.distributors.edit', compact('distributor'));
+        return view('admin.leasings.edit', compact('leasing'));
     }
 
     /**
@@ -106,19 +98,13 @@ class DistributorsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-			'corporate_name' => 'required',
-			'cnpj' => 'required|unique:distributors|min:14|max:14',
-			'address' => 'required',
-			'phone' => 'required|unique:distributors|min:8|max:12',
-			'contact_person' => 'required'
-		]);
+        
         $requestData = $request->all();
         
-        $distributor = Distributor::findOrFail($id);
-        $distributor->update($requestData);
+        $leasing = Leasing::findOrFail($id);
+        $leasing->update($requestData);
 
-        return redirect('admin/distributors')->with('flash_message', 'Distributor updated!');
+        return redirect('admin/leasings')->with('flash_message', 'Leasing updated!');
     }
 
     /**
@@ -130,8 +116,8 @@ class DistributorsController extends Controller
      */
     public function destroy($id)
     {
-        Distributor::destroy($id);
+        Leasing::destroy($id);
 
-        return redirect('admin/distributors')->with('flash_message', 'Distributor deleted!');
+        return redirect('admin/leasings')->with('flash_message', 'Leasing deleted!');
     }
 }

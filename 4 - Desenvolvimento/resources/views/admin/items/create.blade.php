@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Distributor - Editar')
+@section('title', 'Item - Novo')
 
 @section('content_header')
-    <h1>Editar Distributor</h1>
+    <h1>Novo Item</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/distributors') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/items') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -20,12 +20,9 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/admin/distributors/' . $distributor->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
-            {{ method_field('PATCH') }}
+        <form method="POST" action="{{ url('/admin/items') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-
-            @include ('admin.distributors.form', ['formMode' => 'edit'])
-
+            @include ('admin.items.form', ['formMode' => 'create'])
         </form>
     </div>
 </div>
@@ -34,3 +31,9 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $('.select2').select2();
+    </script>
+@endsection

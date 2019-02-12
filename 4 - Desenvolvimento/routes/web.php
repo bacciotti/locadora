@@ -45,7 +45,8 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::resource('admin/genres', 'Admin\\GenresController');
 Route::resource('admin/media-types', 'Admin\\MediaTypesController');
-Route::resource('admin/distributors', 'Admin\\DistributorsController');
 Route::resource('admin/movies', 'Admin\\MoviesController');
-
-Route::resource('admin/itens', 'Admin\\ItensController');
+Route::resource('admin/distributors', 'Admin\\DistributorsController');
+Route::resource('admin/items', 'Admin\\ItemsController');
+Route::resource('admin/bookings', 'Admin\\BookingsController');
+Route::resource('admin/leasings', 'Admin\\LeasingsController');

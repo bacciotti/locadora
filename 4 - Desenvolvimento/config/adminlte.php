@@ -143,8 +143,18 @@ return [
             'icon'  => 'film',
         ],
         [
-            'text'  => 'Itens',
-            'url'   => 'admin/itens',
+            'text'  => 'Items',
+            'url'   => 'admin/items',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Reservas',
+            'url'   => 'admin/bookings',
+            'icon'  => 'film',
+        ],
+        [
+            'text'  => 'Locações',
+            'url'   => 'admin/leasings',
             'icon'  => 'film',
         ],
         'CONFIGURAÇÕES',
