@@ -286,6 +286,7 @@ O gerente de projetos (lbm5) fez a divisão das tarefas e a comunicação com a 
 Apesar da minha dificuldade incial para me adaptar ao sistema de projeto em equipe, consegui me adaptar ao sistema e contribuir com a equipe. Todas as dúvidas e dificuldades que algum membro da equipe encontrava era prontamente solucionado pelos demais membros, tornando um ambiente de muito aprendizado e de grande crescimento profissional.
 
 #### Opinião de Welington Mothé de Oliveira (wmo):    
-
-
-
+Este projeto possibilitou ampliar meu conhecimento sobre o desenvolvimento em equipe. Apesar de já ter desenvolvido em equipe por outras vezes, na maior parte da vida desenvolvi projetos de forma independente e ter essa visão de trabalho em equipe com papeis, requisitos e tarefas bem definidas utilizando a ferramenta do GitHub para integrar e possibilitar a visão de todo o projeto se mostrou o maior ganho de aprendizado que tive.
+Independentemente das ferramentas escolhidas teria uma grande curva de aprendizado, por não trabalhar diretamente com desenvolvimento atualmente, mas o framework Laravel me pareceu bem simples e facilitou bastante o desenvolvimento do sistema.
+Acredito que as metodologias de projeto e desenvolvimento adotadas pela equipe (Cascata e Dirigida a Plano) foram as melhores para o projeto e tentamos seguir à risca todos os seus princípios.
+Enfim, o projeto trouxe muitos benefícios para todos os envolvidos.
