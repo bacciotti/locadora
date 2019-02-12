@@ -38,7 +38,9 @@ class BookingsController extends Controller
      */
     public function create()
     {
-        return view('admin.bookings.create');
+        $users = User::all();
+        $movies = Movie::all();
+        return view('admin.bookings.create', compact('movies','users'));
     }
 
     /**
@@ -50,10 +52,13 @@ class BookingsController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $requestData = $request->all();
-        
-        Booking::create($requestData);
+        $booking = new Booking();
+
+        $booking->date_time = $request->date_time;
+        $booking->user_id = $request->user_id;
+
+        $booking->save();
+        $booking->movies()->sync($request->movies, false);
 
         return redirect('admin/bookings')->with('flash_message', 'Booking added!');
     }
@@ -82,8 +87,10 @@ class BookingsController extends Controller
     public function edit($id)
     {
         $booking = Booking::findOrFail($id);
+        $users = User::all();
+        $movies = Movie::all();
 
-        return view('admin.bookings.edit', compact('booking'));
+        return view('admin.bookings.edit', compact('booking','movies','users'));
     }
 
     /**
@@ -96,11 +103,17 @@ class BookingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-        $requestData = $request->all();
-        
         $booking = Booking::findOrFail($id);
-        $booking->update($requestData);
+
+        $booking->date_time = $request->date_time;
+        $booking->user_id = $request->user_id;
+
+        $booking->save();
+        if (isset($request->movies)) {
+            $booking->movies()->sync($request->movies);
+        } else {
+            $booking->movies()->sync(array());
+        }
 
         return redirect('admin/bookings')->with('flash_message', 'Booking updated!');
     }

@@ -49,11 +49,8 @@ class GenresController extends Controller
      */
     public function store(Request $request)
     {
-        
         $requestData = $request->all();
-        
         Genre::create($requestData);
-
         return redirect('admin/genres')->with('flash_message', 'Genre added!');
     }
 
@@ -95,12 +92,9 @@ class GenresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
         $requestData = $request->all();
-        
         $genre = Genre::findOrFail($id);
         $genre->update($requestData);
-
         return redirect('admin/genres')->with('flash_message', 'Genre updated!');
     }
 

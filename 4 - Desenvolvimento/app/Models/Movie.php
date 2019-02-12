@@ -31,6 +31,10 @@ class Movie extends Model
         return $this->belongsToMany(Genre::class);
     }
 
+    public function bookings() {
+        return $this->belongsToMany(Booking::class);
+    }
+
     public function items() {
         return $this->belongsTo(Items::class);
     }

@@ -23,9 +23,7 @@
         <form method="POST" action="{{ url('/admin/bookings/' . $booking->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ method_field('PATCH') }}
             {{ csrf_field() }}
-
             @include ('admin.bookings.form', ['formMode' => 'edit'])
-
         </form>
     </div>
 </div>
@@ -34,3 +32,11 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $('.select2').select2();
+        $('#user_id').val({!! json_encode($booking->user_id ) !!}).trigger('change');
+        $('#movies').val({!! json_encode($booking->movies()->allRelatedIds() ) !!}).trigger('change');
+    </script>
+@endsection

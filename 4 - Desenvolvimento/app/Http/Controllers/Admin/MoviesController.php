@@ -21,7 +21,6 @@ class MoviesController extends Controller
         $keyword = $request->get('search');
         $perPage = 25;
 
-
         if (!empty($keyword)) {
             $movies = Movie::where('original_title', 'LIKE', "%$keyword%")
                 ->orWhere('pt_br_tittle', 'LIKE', "%$keyword%")
@@ -116,7 +115,6 @@ class MoviesController extends Controller
      */
     public function update(Request $request, $id)
     {
-
         $movie = Movie::findOrFail($id);
 
         $movie->original_title = $request->original_title;
