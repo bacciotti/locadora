@@ -14,10 +14,12 @@ class GenresMoviesTableSeeder extends Seeder
     {
         //DB::table('genres')->delete();
 
-        Genre::create(['name'=>'Ação']);
-        Genre::create(['name'=>'Aventura']);
-        Genre::create(['name'=>'Ficção']);
-        Genre::create(['name'=>'Romance']);
-        Genre::create(['name'=>'Terror']);
+        Genre::create([
+            'name'=>'Ação',
+            'name'=>'Aventura',
+            'name'=>'Ficção',
+            'name'=>'Romance',
+            'name'=>'Terror',
+        ]);
     }
 }

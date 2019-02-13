@@ -21,6 +21,22 @@ class UsersTableSeeder extends Seeder
             $user->save();
         });
 
+        factory(\App\Models\User::class)->create([
+            'enrolment_number' => 100001,
+            'status' => 1,
+            'userable_type' => User::ROLE_CLIENT,
+        ]);
 
+        factory(\App\Models\User::class)->create([
+            'enrolment_number' => 100002,
+            'status' => 1,
+            'userable_type' => User::ROLE_CLIENT,
+        ]);
+
+        factory(\App\Models\User::class)->create([
+            'enrolment_number' => 100003,
+            'status' => 1,
+            'userable_type' => User::ROLE_CLIENT,
+        ]);
     }
 }
