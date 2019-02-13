@@ -6,7 +6,7 @@
         },
         {
             "name": "cnpj",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "address",
@@ -14,7 +14,7 @@
         },
         {
             "name": "phone",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "contact_person",

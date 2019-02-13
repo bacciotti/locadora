@@ -50,3 +50,6 @@ Route::resource('admin/distributors', 'Admin\\DistributorsController');
 Route::resource('admin/items', 'Admin\\ItemsController');
 Route::resource('admin/bookings', 'Admin\\BookingsController');
 Route::resource('admin/leasings', 'Admin\\LeasingsController');
+Route::resource('admin/payments', 'Admin\\PaymentsController');
+Route::resource('admin/check-payments', 'Admin\\CheckPaymentsController');
+Route::resource('admin/card-payments', 'Admin\\CardPaymentsController');

@@ -46,6 +46,29 @@
             "name": "items",
             "type": "belongsToMany",
             "class": "App\\Models\\Item"
+        },
+        {
+            "name": "payment",
+            "type": "hasMany",
+            "class": "App\\Models\\Payment"
+        }
+    ],
+    "validations": [
+        {
+            "field": "date_time_leasing",
+            "rules": "required"
+        },
+        {
+            "field": "date_time_devolution",
+            "rules": "required"
+        },
+        {
+            "field": "user_id",
+            "rules": "required"
+        },
+        {
+            "field": "booking_id",
+            "rules": "required"
         }
     ]
 }

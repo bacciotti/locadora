@@ -1,0 +1,44 @@
+{
+    "fields": [
+        {
+            "name": "payment_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "company",
+            "type": "number"
+        },
+        {
+            "name": "number",
+            "type": "number"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "payment_id",
+            "references": "id",
+            "on": "payments"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "payment",
+            "type": "belongsTo",
+            "class": "App\\Models\\Payment"
+        }
+    ],
+    "validations": [
+        {
+            "field": "payment_id",
+            "rules": "required"
+        },
+        {
+            "field": "company",
+            "rules": "required"
+        },
+        {
+            "field": "number",
+            "rules": "required|min:3"
+        }
+    ]
+}

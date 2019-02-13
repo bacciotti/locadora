@@ -2,7 +2,7 @@
     "fields": [
         {
             "name": "cpf",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "email",
@@ -42,15 +42,15 @@
         },
         {
             "name": "home_phone",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "work_phone",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "mobile_phone",
-            "type": "integer#unsigned"
+            "type": "number"
         },
         {
             "name": "holder_id",
@@ -90,35 +90,19 @@
     "validations": [
         {
             "field": "cpf",
-            "rules": "required|min:11"
-        },
-        {
-            "field": "cpf",
-            "rules": "required|max:11"
+            "rules": "required|unique:users|min:11|max:11"
         },
         {
             "field": "home_phone",
-            "rules": "required|min:11"
-        },
-        {
-            "field": "home_phone",
-            "rules": "required|max:11"
+            "rules": "required|min:11|max:11"
         },
         {
             "field": "work_phone",
-            "rules": "required|min:11"
-        },
-        {
-            "field": "work_phone",
-            "rules": "required|max:11"
+            "rules": "required|min:11|max:11"
         },
         {
             "field": "mobile_phone",
-            "rules": "required|min:11"
-        },
-        {
-            "field": "mobile_phone",
-            "rules": "required|max:11"
+            "rules": "required|min:11|max:11"
         }
     ]
 }

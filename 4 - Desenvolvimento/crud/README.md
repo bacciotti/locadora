@@ -20,7 +20,11 @@ php artisan crud:migration GenresMovies --schema="genre_id#integer#unsigned; mov
 php artisan crud:migration ItemsLeasings --schema="item_id#integer#unsigned; leasing_id#integer#unsigned"
 php artisan crud:migration MoviesBookings --schema="movie_id#integer#unsigned; booking_id#integer#unsigned"
 
+>php artisan crud:generate Payments --fields_from_file=".\crud\Payments.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
+>php artisan crud:generate CheckPayments --fields_from_file=".\crud\CheckPayments.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
+
+>php artisan crud:generate CardPayments --fields_from_file=".\crud\CardPayments.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --model-namespace=Models
 
 --- Exemplos (Não rodar)
 

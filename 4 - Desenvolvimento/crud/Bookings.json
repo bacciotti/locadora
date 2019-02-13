@@ -32,5 +32,15 @@
             "type": "belongsToMany",
             "class": "App\\Models\\Movie"
         }
+    ],
+    "validations": [
+        {
+            "field": "date_time",
+            "rules": "required"
+        },
+        {
+            "field": "user_id",
+            "rules": "required"
+        }
     ]
 }

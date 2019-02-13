@@ -1,0 +1,67 @@
+{
+    "fields": [
+        {
+            "name": "type",
+            "type": "radio",
+            "options": {
+                "0": "Dinheiro",
+                "1": "Cartão",
+                "2": "Cheque"
+            }
+        },
+        {
+            "name": "date_time",
+            "type": "datetime"
+        },
+        {
+            "name": "value",
+            "type": "number"
+        },
+        {
+            "name": "leasing_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "leasing_id",
+            "references": "id",
+            "on": "leasings"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "leasing",
+            "type": "belongsTo",
+            "class": "App\\Models\\Leasing"
+        },
+        {
+            "name": "check_payment",
+            "type": "hasOne",
+            "class": "App\\Models\\CheckPayment"
+        },
+        {
+            "name": "card_payment",
+            "type": "hasOne",
+            "class": "App\\Models\\CardPayment"
+        }
+    ],
+    "validations": [
+        {
+            "field": "type",
+            "rules": "required"
+        },
+        {
+            "field": "date_time",
+            "rules": "required"
+        },
+        {
+            "field": "value",
+            "rules": "required|min:1|max:5"
+        },
+        {
+            "field": "leasing_id",
+            "rules": "required"
+        }
+    ]
+}

@@ -62,5 +62,27 @@
             "type": "belongsToMany",
             "class": "App\\Models\\Leasing"
         }
+    ],
+    "validations": [
+        {
+            "field": "date_acquisition",
+            "rules": "required"
+        },
+        {
+            "field": "serial_number",
+            "rules": "required"
+        },
+        {
+            "field": "media_type_id",
+            "rules": "required"
+        },
+        {
+            "field": "movie_id",
+            "rules": "required"
+        },
+        {
+            "field": "distributor_id",
+            "rules": "required"
+        }
     ]
 }
