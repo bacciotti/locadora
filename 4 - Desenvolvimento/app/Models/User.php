@@ -133,6 +133,10 @@ class User extends Authenticatable implements TableInterface
     public function users() {
         return $this->belongsToMany(User::class);
     }
+
+    public function leasings() {
+        return $this->belongsTo(Leasing::class);
+    }
 }
 
 

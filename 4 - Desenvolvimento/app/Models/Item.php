@@ -39,5 +39,10 @@ class Item extends Model
     {
         return $this->hasMany(Distributor::class);
     }
-    
+
+    public function leasings() {
+        return $this->belongsToMany(Leasing::class);
+    }
+
+
 }

@@ -38,4 +38,6 @@ class Movie extends Model
     public function items() {
         return $this->belongsTo(Items::class);
     }
+
+
 }

@@ -34,3 +34,13 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $('.select2').select2();
+        $('#items').val({!! json_encode($leasing->items()->allRelatedIds() ) !!}).trigger('change');
+        $('#booking_id').val({!! json_encode($leasing->booking_id) !!}).trigger('change');
+        $('#user_id').val({!! json_encode($leasing->user_id) !!}).trigger('change');
+    </script>
+@endsection
+

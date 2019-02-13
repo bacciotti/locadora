@@ -33,7 +33,7 @@ class Booking extends Model
     public function user() {
         return $this->belongsTo(User::class);
     }
-    public function leasing() {
-        return $this->hasOne(Leasing::class);
+    public function leasings() {
+        return $this->belongsToMany(Leasing::class);
     }
 }

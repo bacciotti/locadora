@@ -8,17 +8,31 @@
     <input class="form-control" name="date_time_devolution" type="datetime-local" id="date_time_devolution" value="{{ isset($leasing->date_time_devolution) ? $leasing->date_time_devolution : ''}}" >
     {!! $errors->first('date_time_devolution', '<p class="help-block">:message</p>') !!}
 </div>
+
 <div class="form-group {{ $errors->has('user_id') ? 'has-error' : ''}}">
-    <label for="user_id" class="control-label">{{ 'User Id' }}</label>
-    <input class="form-control" name="user_id" type="number" id="user_id" value="{{ isset($leasing->user_id) ? $leasing->user_id : ''}}" >
-    {!! $errors->first('user_id', '<p class="help-block">:message</p>') !!}
+    <label for="user_id" class="control-label">{{ 'Cliente' }}</label>
+    <select id="user_id" class="form-control select2" name="user_id">
+        @foreach($users as $user)
+            <option value="{{ isset($user->id) ? $user->id : ''}}">{{ $user->name }}</option>
+        @endforeach
+    </select>
 </div>
 <div class="form-group {{ $errors->has('booking_id') ? 'has-error' : ''}}">
-    <label for="booking_id" class="control-label">{{ 'Booking Id' }}</label>
-    <input class="form-control" name="booking_id" type="number" id="booking_id" value="{{ isset($leasing->booking_id) ? $leasing->booking_id : ''}}" >
-    {!! $errors->first('booking_id', '<p class="help-block">:message</p>') !!}
+    <label for="booking_id" class="control-label">{{ 'Reserva' }}</label>
+    <select id="booking_id" class="form-control select2" name="booking_id">
+        @foreach($bookings as $booking)
+            <option value="{{ isset($booking->id) ? $booking->id : ''}}">{{ $booking->id }}</option>
+        @endforeach
+    </select>
 </div>
-
+<div class="form-group {{ $errors->has('item_id') ? 'has-error' : ''}}">
+    <label for="items" class="control-label">{{ 'Item' }}</label>
+    <select id="items" class="form-control select2" name="items[]" multiple>
+        @foreach($items as $item)
+            <option value="{{ isset($item->id) ? $item->id : ''}}">{{ $item->pt_br_tittle }}</option>
+        @endforeach
+    </select>
+</div>
 
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Salvar</button>

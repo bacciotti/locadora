@@ -6,6 +6,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Models\Booking;
+use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class BookingsController extends Controller

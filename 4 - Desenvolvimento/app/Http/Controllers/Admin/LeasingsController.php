@@ -5,7 +5,11 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Booking;
+use App\Models\Item;
 use App\Models\Leasing;
+use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class LeasingsController extends Controller
@@ -40,7 +44,13 @@ class LeasingsController extends Controller
      */
     public function create()
     {
-        return view('admin.leasings.create');
+        $items = Item::select('movies.*', 'items.*')
+            ->join('movies', 'movies.id', '=', 'items.movie_id')
+            ->get();
+        $bookings = Booking::all();
+        $users = User::all();
+        $movies = Movie::all();
+        return view('admin.leasings.create', compact('items', 'users', 'bookings', 'movies'));
     }
 
     /**
@@ -52,10 +62,16 @@ class LeasingsController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $requestData = $request->all();
-        
-        Leasing::create($requestData);
+
+        $leasing = new Leasing();
+
+        $leasing->date_time_leasing = $request->date_time_leasing;
+        $leasing->date_time_devolution = $request->date_time_devolution;
+        $leasing->user_id = $request->user_id;
+        $leasing->booking_id = $request->booking_id;
+
+        $leasing->save();
+        $leasing->items()->sync($request->items, false);
 
         return redirect('admin/leasings')->with('flash_message', 'Leasing added!');
     }
@@ -83,9 +99,15 @@ class LeasingsController extends Controller
      */
     public function edit($id)
     {
+        $items = Item::select('movies.*', 'items.*')
+            ->join('movies', 'movies.id', '=', 'items.movie_id')
+            ->get();
+        $bookings = Booking::all();
+        $users = User::all();
+
         $leasing = Leasing::findOrFail($id);
 
-        return view('admin.leasings.edit', compact('leasing'));
+        return view('admin.leasings.edit', compact('leasing','items', 'bookings', 'users'));
     }
 
     /**
@@ -98,11 +120,19 @@ class LeasingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-        $requestData = $request->all();
-        
         $leasing = Leasing::findOrFail($id);
-        $leasing->update($requestData);
+
+        $leasing->date_time_leasing = $request->date_time_leasing;
+        $leasing->date_time_devolution = $request->date_time_devolution;
+        $leasing->user_id = $request->user_id;
+        $leasing->booking_id = $request->booking_id;
+
+        $leasing->save();
+        if (isset($request->items)) {
+            $leasing->items()->sync($request->items, false);
+        } else {
+            $leasing->items()->sync(array());
+        }
 
         return redirect('admin/leasings')->with('flash_message', 'Leasing updated!');
     }
@@ -120,4 +150,5 @@ class LeasingsController extends Controller
 
         return redirect('admin/leasings')->with('flash_message', 'Leasing deleted!');
     }
+
 }

@@ -3,7 +3,7 @@
 @section('title', 'Leasing - Novo')
 
 @section('content_header')
-    <h1>Novo Leasing</h1>
+    <h1>Nova Locação</h1>
 @stop
 
 @section('content')
@@ -31,3 +31,9 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $('.select2').select2();
+    </script>
+@endsection

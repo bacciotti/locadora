@@ -16,9 +16,9 @@ class CreateDistributorsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('corporate_name')->nullable();
-            $table->integer('cnpj')->unsigned();
+            $table->double('cnpj')->unsigned();
             $table->text('address')->nullable();
-            $table->integer('phone')->unsigned();
+            $table->double('phone')->unsigned();
             $table->string('contact_person')->nullable();
             });
     }
