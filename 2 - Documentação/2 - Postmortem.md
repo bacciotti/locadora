@@ -5,7 +5,7 @@
 A primeira reunião de equipe foi em 22/11/2018. Como não trabalhamos com iterações, podemos entender esta data como o início do projeto. 
 A data de término foi em 18/02/2019, data-final para entrega do projeto ao cliente.
 
-2) O que estava planejado?
+2) O que estava planejado?  
 a) ATIVIDADES: Gerência do projeto, redação de alguns artefatos, redação do Relatório Final, organização dos boards e issues e elaboração
 de algumas modelagens:
 DESENVOLVEDOR: Lucas Bacciotti (lbm5);
