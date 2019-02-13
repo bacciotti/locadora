@@ -1,24 +1,16 @@
 **O QUE FALTA FAZER**  
 **1) Arquivo 1 - RELATÓRIO FINAL**  
-a) Falta fazer: 6. VISÃO DE IMPLANTAÇÃO  
+a) Falta fazer: **6. VISÃO DE IMPLANTAÇÃO**  
 Quem deve fazer: desenvolvedores (Diego e Mothé)  
 O que é: Visão e instruções de implantação do sistema. Um release notes com os erros, falhas e faltas conhecidos também é bem visto. Site onde ele está implantado e/ou um vídeo de demonstração promovendo o produto (pode estar no youtube ou outro serviço semelhante).    
 
-b) Falta terminar: 7. VISÃO DE USO  
+b) Falta terminar: **7. VISÃO DE USO** 
 Quem deve fazer: Lucas, quando o front estiver finalizado, pois usarei prints do sistema em produção.  
 O que é: Guia de uso da solução do ponto de vista de todos os stakeholders identificados.      
-
-**2) Arquivo 2 - POST-MORTEM**  
-Falta fazer ele todo.  
-Quem deve fazer: Carlos  
 
 **3) Arquivo 3 - PROCESSO DE DESENVOLVIMENTO**  
 Falta fazer: concluir o danado.  
 Quem deve fazer: desenvolvedores (Diego e Mothé)  
-
-**4) Revisão geral do projeto**  
-Falta: revisar.  
-Quem deve fazer: Todos  
 
 ------------------------------------------------------------------
 
