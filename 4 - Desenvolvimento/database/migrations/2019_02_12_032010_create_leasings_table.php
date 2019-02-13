@@ -20,6 +20,7 @@ class CreateLeasingsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('booking_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->tinyInteger('status')->default('1');
             });
     }
 

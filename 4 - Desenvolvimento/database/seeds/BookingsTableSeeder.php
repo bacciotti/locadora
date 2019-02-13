@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Genre;
+use App\Models\Booking;
 
 class BookingsTableSeeder extends Seeder
 {
@@ -12,12 +12,15 @@ class BookingsTableSeeder extends Seeder
      */
     public function run()
     {
-        //DB::table('genres')->delete();
+        //DB::table('bookings')->delete();
 
-        Genre::create(['name'=>'Ação']);
-        Genre::create(['name'=>'Aventura']);
-        Genre::create(['name'=>'Ficção']);
-        Genre::create(['name'=>'Romance']);
-        Genre::create(['name'=>'Terror']);
+        Booking::create([
+            'date'=>'2001-12-21',
+            'user_id'=>1,
+        ]);
+        Booking::create([
+            'date'=>'2001-12-22',
+            'user_id'=>2,
+        ]);
     }
 }

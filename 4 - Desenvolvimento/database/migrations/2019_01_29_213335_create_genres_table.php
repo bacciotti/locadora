@@ -16,6 +16,7 @@ class CreateGenresTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('name')->nullable();
+            $table->tinyInteger('status')->default('1');
             });
     }
 

@@ -20,6 +20,7 @@ class CreateDistributorsTable extends Migration
             $table->text('address')->nullable();
             $table->double('phone')->unsigned();
             $table->string('contact_person')->nullable();
+            $table->tinyInteger('status')->default('1');
             });
     }
 

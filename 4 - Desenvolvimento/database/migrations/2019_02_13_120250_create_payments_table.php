@@ -20,6 +20,7 @@ class CreatePaymentsTable extends Migration
             $table->integer('value')->nullable();
             $table->integer('leasing_id')->unsigned();
             $table->foreign('leasing_id')->references('id')->on('leasings');
+            $table->tinyInteger('status')->default('1');
             });
     }
 

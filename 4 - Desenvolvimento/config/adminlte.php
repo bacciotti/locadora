@@ -157,6 +157,11 @@ return [
             'url'   => 'admin/leasings',
             'icon'  => 'film',
         ],
+        [
+            'text'  => 'Pagamentos',
+            'url'   => 'admin/payments',
+            'icon'  => 'film',
+        ],
         'CONFIGURAÇÕES',
         [
             'text' => 'Perfil',

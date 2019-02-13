@@ -23,6 +23,7 @@ class CreateItemsTable extends Migration
             $table->foreign('media_type_id')->references('id')->on('media_types')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('distributor_id')->references('id')->on('distributors')->onDelete('cascade')->onUpdate('cascade');
+            $table->tinyInteger('status')->default('1');
             });
     }
 

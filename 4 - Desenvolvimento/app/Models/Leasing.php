@@ -27,16 +27,16 @@ class Leasing extends Model
      */
     protected $fillable = ['date_time_leasing', 'date_time_devolution', 'user_id', 'booking_id'];
 
-    public function users()
-    {
-        return $this->hasOne(User::class);
+    public function users() {
+        return $this->belongsTo(User::class);
     }
-    public function bookings()
-    {
-        return $this->hasMany(Booking::class);
+    public function bookings() {
+        return $this->belongsTo(Booking::class);
     }
-    public function items()
-    {
+    public function items() {
         return $this->belongsToMany(Item::class);
+    }
+    public function payments() {
+        return $this->hasMany(Payment::class);
     }
 }

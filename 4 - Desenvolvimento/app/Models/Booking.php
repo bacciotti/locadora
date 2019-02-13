@@ -27,13 +27,13 @@ class Booking extends Model
      */
     protected $fillable = ['date_time', 'user_id'];
 
-    public function movies() {
-        return $this->belongsToMany(Movie::class);
-    }
     public function user() {
         return $this->belongsTo(User::class);
     }
     public function leasings() {
-        return $this->belongsToMany(Leasing::class);
+        return $this->hasOne(Leasing::class);
+    }
+    public function movies() {
+        return $this->belongsToMany(Movie::class);
     }
 }

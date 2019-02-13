@@ -18,7 +18,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>#</th><th>Descrição</th><th>Ações</th>
+                <th>#</th><th>Nome</th><th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +27,6 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->name }}</td>
                 <td>
-                    <a href="{{ url('/admin/genres/' . $item->id) }}" title="Ver Gênero"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
                     <a href="{{ url('/admin/genres/' . $item->id . '/edit') }}" title="Editar Gênero"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
 
                     <form method="POST" action="{{ url('/admin/genres' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">

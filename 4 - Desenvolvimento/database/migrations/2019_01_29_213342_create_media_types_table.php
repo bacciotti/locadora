@@ -17,6 +17,7 @@ class CreateMediaTypesTable extends Migration
             $table->timestamps();
             $table->string('name')->nullable();
             $table->integer('price')->nullable();
+            $table->tinyInteger('status')->default('1');
             });
     }
 

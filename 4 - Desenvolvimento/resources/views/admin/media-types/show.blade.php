@@ -24,7 +24,7 @@
                     <tr>
                         <th>ID</th><td>{{ $mediatype->id }}</td>
                     </tr>
-                    <tr><th>Descrição</th><td> {{ $mediatype->name }} </td></tr>
+                    <tr><th>Nome</th><td> {{ $mediatype->name }} </td></tr>
                     <tr><th>Preço</th><td> {{ $mediatype->price }} </td></tr>
                 </tbody>
             </table>

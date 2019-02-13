@@ -24,7 +24,7 @@
                     <tr>
                         <th>ID</th><td>{{ $genre->id }}</td>
                     </tr>
-                    <tr><th>Descrição</th><td> {{ $genre->name }} </td></tr>
+                    <tr><th>Nome</th><td> {{ $genre->name }} </td></tr>
                 </tbody>
             </table>
         </div>

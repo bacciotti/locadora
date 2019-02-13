@@ -23,6 +23,7 @@ class CreateMoviesTable extends Migration
             $table->string('countries')->nullable();
             $table->string('director')->nullable();
             $table->text('cast')->nullable();
+            $table->tinyInteger('status')->default('1');
             });
     }
 
