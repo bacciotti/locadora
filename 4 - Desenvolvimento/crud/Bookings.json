@@ -1,8 +1,8 @@
 {
     "fields": [
         {
-            "name": "date_time",
-            "type": "datetime"
+            "name": "date",
+            "type": "date"
         },
         {
             "name": "user_id",
@@ -35,7 +35,7 @@
     ],
     "validations": [
         {
-            "field": "date_time",
+            "field": "date",
             "rules": "required"
         },
         {

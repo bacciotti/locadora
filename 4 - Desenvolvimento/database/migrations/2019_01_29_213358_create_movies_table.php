@@ -17,12 +17,12 @@ class CreateMoviesTable extends Migration
             $table->timestamps();
             $table->string('original_title')->nullable();
             $table->string('pt_br_tittle')->nullable();
-            $table->string('countries')->nullable();
-            $table->integer('year')->nullable();
-            $table->string('director')->nullable();
-            $table->string('cast')->nullable();
             $table->text('sinopse')->nullable();
             $table->string('duration')->nullable();
+            $table->integer('year')->nullable();
+            $table->string('countries')->nullable();
+            $table->string('director')->nullable();
+            $table->text('cast')->nullable();
             });
     }
 

@@ -1,8 +1,8 @@
 {
     "fields": [
         {
-            "name": "date_time_leasing",
-            "type": "datetime"
+            "name": "expected_date_devolution",
+            "type": "date"
         },
         {
             "name": "date_time_devolution",
@@ -55,7 +55,7 @@
     ],
     "validations": [
         {
-            "field": "date_time_leasing",
+            "field": "expected_date_devolution",
             "rules": "required"
         },
         {

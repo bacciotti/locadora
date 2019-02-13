@@ -11,6 +11,7 @@ composer update
 
 Projeto existente - Criar tabelas no banco de dados:
 php artisan migrate
+php artisan migrate:refresh --seed
 
 Projeto existente - Criar dados fictícios no banco de dados:
 php artisan db:seed --class=GenresTableSeeder

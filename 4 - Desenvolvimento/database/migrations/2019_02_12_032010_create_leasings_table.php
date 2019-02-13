@@ -15,7 +15,7 @@ class CreateLeasingsTable extends Migration
         Schema::create('leasings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->dateTime('date_time_leasing')->nullable();
+            $table->date('expected_date_devolution')->nullable();
             $table->dateTime('date_time_devolution')->nullable();
             $table->integer('user_id')->unsigned();
             $table->integer('booking_id')->nullable();
