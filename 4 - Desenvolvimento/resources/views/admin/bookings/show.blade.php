@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Booking - Ver')
+@section('title', 'Reserva - Ver')
 
 @section('content_header')
-    <h1>Booking</h1>
+    <h1>Reserva</h1>
 @stop
 
 @section('content')
@@ -24,7 +24,8 @@
                     <tr>
                         <th>ID</th><td>{{ $booking->id }}</td>
                     </tr>
-                    <tr><th> Date Time </th><td> {{ $booking->date_time }} </td></tr><tr><th> User Id </th><td> {{ $booking->user_id }} </td></tr>
+                    <tr><th> Usuário </th><td> {{ $booking->user_id }} </td></tr>
+                    <tr><th> Date </th><td> {{ $booking->date }} </td></tr>
                 </tbody>
             </table>
         </div>

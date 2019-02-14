@@ -28,6 +28,10 @@
                     <tr><th>Título Original</th><td> {{ $movie->original_title }} </td></tr>
                     <tr><th>Sinopse</th><td> {{ $movie->sinopse }} </td></tr>
                     <tr><th>Duração</th><td> {{ $movie->duration }} </td></tr>
+                    <tr><th>Ano</th><td> {{ $movie->year }} </td></tr>
+                    <tr><th>País</th><td> {{ $movie->countries }} </td></tr>
+                    <tr><th>Diretor</th><td> {{ $movie->director }} </td></tr>
+                    <tr><th>Elenco</th><td> {{ $movie->cast }} </td></tr>
                 </tbody>
             </table>
         </div>

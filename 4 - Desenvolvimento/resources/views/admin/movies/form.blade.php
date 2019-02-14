@@ -19,7 +19,7 @@
     {!! $errors->first('duration', '<p class="help-block">:message</p>') !!}
 </div>
 <div class="form-group {{ $errors->has('genres_id') ? 'has-error' : ''}}">
-    <label for="genres" class="control-label">{{ 'Gênero' }}</label>
+    <label for="genres" class="control-label">{{ 'Gêneros' }}</label>
     <select id="genres" class="form-control select2" name="genres[]" multiple>
         @foreach($genres as $genre)
             <option value="{{ isset($genre->id) ? $genre->id : ''}}">{{ $genre->name }}</option>

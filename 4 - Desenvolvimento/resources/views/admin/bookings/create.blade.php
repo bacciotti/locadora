@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Booking - Novo')
+@section('title', 'Reserva - Nova')
 
 @section('content_header')
-    <h1>Novo Booking</h1>
+    <h1>Nova Reserva</h1>
 @stop
 
 @section('content')

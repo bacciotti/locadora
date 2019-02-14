@@ -23,7 +23,7 @@ class BookingsController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $bookings = Booking::where('date_time', 'LIKE', "%$keyword%")
+            $bookings = Booking::where('date', 'LIKE', "%$keyword%")
                 ->orWhere('user_id', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
@@ -56,7 +56,7 @@ class BookingsController extends Controller
     {
         $booking = new Booking();
 
-        $booking->date_time = $request->date_time;
+        $booking->date = $request->date;
         $booking->user_id = $request->user_id;
 
         $booking->save();
@@ -107,7 +107,7 @@ class BookingsController extends Controller
     {
         $booking = Booking::findOrFail($id);
 
-        $booking->date_time = $request->date_time;
+        $booking->date = $request->date;
         $booking->user_id = $request->user_id;
 
         $booking->save();

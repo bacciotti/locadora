@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Bookings')
+@section('title', 'Reservas')
 
 @section('content_header')
-    <h1>Bookings</h1>
+    <h1>Reservas</h1>
 @stop
 
 @section('content')
@@ -18,14 +18,18 @@
     <table class="table">
         <thead>
             <tr>
-                <th>#</th><th>Date Time</th><th>User Id</th><th>Ações</th>
+                <th>#</th>
+                <th>Usuário</th>
+                <th>Data</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
         @foreach($bookings as $item)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $item->date_time }}</td><td>{{ $item->user_id }}</td>
+                <td>{{ $item->user_id }}</td>
+                <td>{{ $item->date }}</td>
                 <td>
                     <a href="{{ url('/admin/bookings/' . $item->id) }}" title="Ver Booking"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
                     <a href="{{ url('/admin/bookings/' . $item->id . '/edit') }}" title="Editar Booking"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
