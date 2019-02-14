@@ -25,13 +25,20 @@ class ItemsController extends Controller
 
         if (!empty($keyword)) {
             $items = Item::where('date_acquisition', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('serial_number', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('media_type_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('movie_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('distributor_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $items = Item::latest()->paginate($perPage);
+            $items = Item::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.items.index', compact('items'));
@@ -121,7 +128,11 @@ class ItemsController extends Controller
      */
     public function destroy($id)
     {
-        Item::destroy($id);
+        //Item::destroy($id);
+        
+        $item = Item::findOrFail($id);
+        $item->status = 0;
+        $item->save();
 
         return redirect('admin/items')->with('flash_message', 'Item deleted!');
     }

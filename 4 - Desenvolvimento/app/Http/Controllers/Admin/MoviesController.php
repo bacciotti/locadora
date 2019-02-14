@@ -23,16 +23,26 @@ class MoviesController extends Controller
 
         if (!empty($keyword)) {
             $movies = Movie::where('original_title', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('pt_br_tittle', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('countries', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('year', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('director', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('cast', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('sinopse', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('duration', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $movies = Movie::latest()->paginate($perPage);
+            $movies = Movie::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.movies.index', compact('movies'));
@@ -146,9 +156,11 @@ class MoviesController extends Controller
     public function destroy($id)
     {
         $movie = Movie::findOrFail($id);
+        //$movie->destroy($id);
+        //$movie->genres()->detach();
 
-        $movie->destroy($id);
-        $movie->genres()->detach();
+        $movie->status = 0;
+        $movie->save();
 
         return redirect('admin/movies')->with('flash_message', 'Movie deleted!');
     }

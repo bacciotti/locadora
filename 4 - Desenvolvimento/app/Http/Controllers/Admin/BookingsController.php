@@ -24,10 +24,14 @@ class BookingsController extends Controller
 
         if (!empty($keyword)) {
             $bookings = Booking::where('date', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('user_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $bookings = Booking::latest()->paginate($perPage);
+            $bookings = Booking::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.bookings.index', compact('bookings'));
@@ -129,7 +133,11 @@ class BookingsController extends Controller
      */
     public function destroy($id)
     {
-        Booking::destroy($id);
+        //Booking::destroy($id);
+        
+        $booking = Booking::findOrFail($id);
+        $booking->status = 0;
+        $booking->save();
 
         return redirect('admin/bookings')->with('flash_message', 'Booking deleted!');
     }

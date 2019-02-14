@@ -22,12 +22,18 @@ class PaymentsController extends Controller
 
         if (!empty($keyword)) {
             $payments = Payment::where('type', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('date_time', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('value', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('leasing_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $payments = Payment::latest()->paginate($perPage);
+            $payments = Payment::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.payments.index', compact('payments'));
@@ -126,7 +132,11 @@ class PaymentsController extends Controller
      */
     public function destroy($id)
     {
-        Payment::destroy($id);
+        //Payment::destroy($id);
+        
+        $payment = Payment::findOrFail($id);
+        $payment->status = 0;
+        $payment->save();
 
         return redirect('admin/payments')->with('flash_message', 'Payment deleted!');
     }

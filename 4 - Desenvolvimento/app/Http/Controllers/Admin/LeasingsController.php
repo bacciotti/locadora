@@ -26,12 +26,18 @@ class LeasingsController extends Controller
 
         if (!empty($keyword)) {
             $leasings = Leasing::where('date_time_leasing', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('date_time_devolution', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('user_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('booking_id', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $leasings = Leasing::latest()->paginate($perPage);
+            $leasings = Leasing::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.leasings.index', compact('leasings'));
@@ -146,7 +152,11 @@ class LeasingsController extends Controller
      */
     public function destroy($id)
     {
-        Leasing::destroy($id);
+        //Leasing::destroy($id);
+        
+        $leasing = Leasing::findOrFail($id);
+        $leasing->status = 0;
+        $leasing->save();
 
         return redirect('admin/leasings')->with('flash_message', 'Leasing deleted!');
     }

@@ -1,9 +1,9 @@
 <div class="form-group {{ $errors->has('type') ? 'has-error' : ''}}">
     <label for="type" class="control-label">{{ 'Type' }}</label>
     <div class="radio">
-    <label><input name="type" type="radio" value="0" {{ (isset($payment) && 0 == $payment->type) ? 'checked' : '' }}> Dinheiro</label> 
-    <label><input name="type" type="radio" value="1" @if (isset($payment)) {{ (1 == $payment->type) ? 'checked' : '' }} @else {{ 'checked' }} @endif> Cartão</label> 
-    <label><input name="type" type="radio" value="2" @if (isset($payment)) {{ (2 == $payment->type) ? 'checked' : '' }} @else {{ 'checked' }} @endif> Cheque</label> 
+    <label><input name="type" type="radio" value="0" @if (isset($payment)) {{ (0 == $payment->type) ? 'checked' : '' }} @else {{ 'checked' }} @endif> Dinheiro</label>&nbsp;
+    <label><input name="type" type="radio" value="1" {{ (isset($payment) && 1 == $payment->type) ? 'checked' : '' }}> Cartão</label>&nbsp;
+    <label><input name="type" type="radio" value="2" {{ (isset($payment) && 2 == $payment->type) ? 'checked' : '' }}> Cheque</label>
 </div>
     {!! $errors->first('type', '<p class="help-block">:message</p>') !!}
 </div>

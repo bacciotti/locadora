@@ -22,10 +22,14 @@ class MediaTypesController extends Controller
 
         if (!empty($keyword)) {
             $mediatypes = MediaType::where('name', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('price', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $mediatypes = MediaType::latest()->paginate($perPage);
+            $mediatypes = MediaType::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.media-types.index', compact('mediatypes'));
@@ -114,7 +118,11 @@ class MediaTypesController extends Controller
      */
     public function destroy($id)
     {
-        MediaType::destroy($id);
+        //MediaType::destroy($id);
+        
+        $mediatype = MediaType::findOrFail($id);
+        $mediatype->status = 0;
+        $mediatype->save();
 
         return redirect('admin/media-types')->with('flash_message', 'MediaType deleted!');
     }

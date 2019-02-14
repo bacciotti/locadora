@@ -22,13 +22,20 @@ class DistributorsController extends Controller
 
         if (!empty($keyword)) {
             $distributors = Distributor::where('corporate_name', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('cnpj', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('address', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('phone', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->orWhere('contact_person', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $distributors = Distributor::latest()->paginate($perPage);
+            $distributors = Distributor::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.distributors.index', compact('distributors'));
@@ -130,7 +137,11 @@ class DistributorsController extends Controller
      */
     public function destroy($id)
     {
-        Distributor::destroy($id);
+        //Distributor::destroy($id);
+        
+        $distributor = Distributor::findOrFail($id);
+        $distributor->status = 0;
+        $distributor->save();
 
         return redirect('admin/distributors')->with('flash_message', 'Distributor deleted!');
     }

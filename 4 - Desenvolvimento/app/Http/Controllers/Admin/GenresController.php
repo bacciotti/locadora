@@ -22,9 +22,12 @@ class GenresController extends Controller
 
         if (!empty($keyword)) {
             $genres = Genre::where('name', 'LIKE', "%$keyword%")
+                ->where('status', "1")
                 ->latest()->paginate($perPage);
         } else {
-            $genres = Genre::latest()->paginate($perPage);
+            $genres = Genre::latest()
+                ->where('status', "1")
+                ->paginate($perPage);
         }
 
         return view('admin.genres.index', compact('genres'));
@@ -107,7 +110,11 @@ class GenresController extends Controller
      */
     public function destroy($id)
     {
-        Genre::destroy($id);
+        //Genre::destroy($id);
+        
+        $genre = Genre::findOrFail($id);
+        $genre->status = 0;
+        $genre->save();
 
         return redirect('admin/genres')->with('flash_message', 'Genre deleted!');
     }
