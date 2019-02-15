@@ -53,7 +53,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Fechamento Locação - Nº: {{$item->id}}</h4>
+                <h4 class="modal-title" id="myModalLabel">Fechamento Locação - Nº: {{isset($item->id)}}</h4>
             </div>
             <form method="POST" action="{{route('payments.store')}}" accept-charset="UTF-8" enctype="multipart/form-data">
 
