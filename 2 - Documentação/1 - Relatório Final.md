@@ -1,18 +1,5 @@
-**O QUE FALTA FAZER**  
-**1) Arquivo 1 - RELATÓRIO FINAL**  
-a) Falta fazer: **6. VISÃO DE IMPLANTAÇÃO**  
-Quem deve fazer: desenvolvedores (Diego e Mothé)  
-O que é: Visão e instruções de implantação do sistema. Um release notes com os erros, falhas e faltas conhecidos também é bem visto. Site onde ele está implantado e/ou um vídeo de demonstração promovendo o produto (pode estar no youtube ou outro serviço semelhante).    
 
-b) Falta terminar: **7. VISÃO DE USO** 
-Quem deve fazer: Lucas, quando o front estiver finalizado, pois usarei prints do sistema em produção.  
-O que é: Guia de uso da solução do ponto de vista de todos os stakeholders identificados.      
-
-**3) Arquivo 3 - PROCESSO DE DESENVOLVIMENTO**  
-Falta fazer: concluir o danado.  
-Quem deve fazer: desenvolvedores (Diego e Mothé)  
-
-------------------------------------------------------------------
+#RELATÓRIO FINAL DE PROJETO#
 
 ### ÍNDICE
 **1. SIGLAS UTILIZADAS**  
@@ -20,8 +7,8 @@ Quem deve fazer: desenvolvedores (Diego e Mothé)
 **3. GERÊNCIA DE CONFIGURAÇÃO E AMBIENTE**    
 **4. CARACTERÍSTICAS DA APLICAÇÃO**   
 **5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)**
-- **5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO**  
-- **5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE**  
+- **5.1 METODOLOGIA DE GERENCIAMENTO DE SOFTWARE**  
+- **5.2 METODOLOGIA DE DESENVOLVIMENTO DE PROJETO**  
 - **5.3 FASES**  
 
 **6. VISÃO DE IMPLANTAÇÃO**    
@@ -109,7 +96,7 @@ Link para C9: https://c9.io
 
 ### 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA)
 
-#### 5.1 METODOLOGIA DE GERENCIAMENTO DE PROJETO
+#### 5.1 METODOLOGIA DE GERENCIAMENTO DE SOFTWARE
 A metodologia de desenvolvimento de software escolhida pela equipe é a Cascata (ou Waterfall). Entende-se que esta metodologia é mais aplicável neste projeto pelos fatores a seguir:
 
 * a. Os membros da equipe possuem experiência neste modelo em questão. O entendimento e a posterior implantação de uma nova modalidade de desenvolvimento implicaria em possíveis atrasos no cronograma.
@@ -128,7 +115,7 @@ Por fim, conforme sugestão no enunciado do projeto, a ferramenta Kanban (aba Pr
 
 O Kanban oferece um board (quadro) que pode ser dividido visualmente. A equipe optou por seguir a sugestão do professor e fazer a divisão em To-Do (a fazer), In progress (sendo realizado) e Done (feito). Além disso, labels (etiquetas) foram utilizadas para definir cada uma das tarefas (issues): Priority 1 para as tarefas de prioridade mais alta, Priority 2 para as tarefas de prioridade média e Priority 3 para as tarefas de baixa prioridade. Etiquetas com o nome da fase ou tipo também foram adicionadas: Documentation para as issues referentes a Documentação, Development para Desenvolvimento e assim por diante. O board que utilizaremos para gerenciar o projeto como um todo é o board "Tasks".
 
-#### 5.2 METODOLOGIA DE DESENVOLVIMENTO DE SOFTWARE
+#### 5.2 METODOLOGIA DE DESENVOLVIMENTO DE PROJETO
 A metodologia de gerenciamento de projeto escolhida pela equipe em reunião foi a DP - Dirigida a Plano. Os seguintes fatores justificam a escolha:
 * a. Em acordo entre os membros da equipe, sentiu-se a necessidade de se ter um Gerente de Projetos para ser facilitador: organizar o cronograma, cobrar as entregas da equipe, entender o contexto do problema, dividir as tarefas, auxiliar em todas as fases do projeto, estimar prazos, mobilizar o time, entre outros.
 * b. O projeto possui grande documentação: atas de reuniões, diversas estórias de usuários, artefatos modelados, relatórios, etc.
