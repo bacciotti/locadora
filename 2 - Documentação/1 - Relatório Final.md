@@ -189,6 +189,31 @@ Tecnologia para o ambiente de implantação (SaaS/PaaS):  https://www.heroku.com
 Link:  http://locadora-imperial.herokuapp.com
 
 ### 6. VISÃO DE IMPLANTAÇÃO  
+Na implatação do sistema escolhemos o Heroku que é uma plataforma como serviço (PaaS) que permite aos desenvolvedores criar, executar e operar aplicativos em nuvem. O Heroku disponibiliza um ambiente de execução de aplicações onde é possível escalar uma aplicação, sem ter contato com o sistema operacional e gerenciamento de hardware, apenas utilizamos o serviço.
+
+Para escalar a aplicação é preciso criar uma conta Heroku e instalar no computador um software chamado Heroku Toolbelt, necessário para executar comandos no terminal e enviar a aplicação para o servidor. Após a instalação no terminal digitamos o comando "Heroku login" para autenticar as credenciais de acesso e em seguida digitamos o comando "heroku create locadora-imperial", em seguinda o sistema retorno o link do projeto que será utilizado para o acesso (http://locadora-imperial.herokuapp.com.) Nesse momento estamos pronto para fazer o deploy do aplicação.
+
+Deploy da Aplicação  
+
+Para o deploy da aplicação precisamos vincular o repositorio do nosso computador com o servidor Heroku, para isso entramos na pasta do sistema via comando terminal e digitamos o comando "heroku git:clone -a locadora-imperial" e em seguida digitamos o comando "heroku git push heroku develop:master", nesse processo irá compactar e enviar para o servidor o projeto. O Heroku tem capacidade de identificar qual é o tipo de linguagem está sendo usada no projeto. Neste caso irá identificar que é PHP e que possui um arquivo chamado "composer.json", e será instalado automaticamente as dependencias no servidor. A aplicação não estará em funcionamento, pois precisamos configurar um arquivo chamado Procfile e as váriáveis de ambiente no Heroku. 
+
+Arquivo Procfile e Variáveis de Ambiente
+
+Na raiz da aplicação é necessário criar um arquivo chamado "Procfile", onde possui as configurações necessáriás para configurar a pasta do projeto com os serviço do Apache. Também é necessário configurar as váriáveis de ambiente principalmente com relação ao banco de dados. Elas podem ser configuradas de duas formas, pode ser pelo dashboard do heroku via web ou via terminal.
+ 
+- Interface Web
+
+Para configurar as variaveis de ambiente devemos acessar a conta no heroku e entrar dentro do projeto em especifico, logo após acessar a aba "Settings" e ir na opção "Config Vars" e clicar no botão Reveal Config Vars. Nos campos da tela adicionar o nome e o conteudo de cada variável utilizada no arquivo .env do projeto Laravel.
+
+- Terminal  
+
+Para enviar as configurações via terminal deve ser digitado o seguinte comando "heroku config:set DB_CONNECTION: mysql", neste caso irá criar o nome da variável como "DB_CONNECTION" e o conteúdo como "mysql". Após essas alterações deve ser feito o commit na maquina e enviar para o repositório do heroku.
+
+Banco de dados
+
+Como o Heroku é um PaaS ele não possui banco de dados em seus serviços e para isso podemos adicionar um addon que são aplicações externas que podem ser vinculas ao Heroku, neste projeto utilizamos o ClearDB Mysql. Para criar o banco é necessário digitar o comando no terminal "heroku addons:create cleardb:ignite", será criado o banco de dados com as informações sobre o mesmo e para verificar essas informações é preciso digitar no terminal o seguinte comando "heroku config", onde será gerado um link com informações sobre o acesso ao banco. No link que mostra os parametros são so seguinte, primeiro é usuário, segundo a senha, terceiro endereço da url quarto nome do banco. Essas informações devem ser configurados nas variáveis de ambiente e também no arquivo .env do projeto.
+
+Após essas configurações executar o comando no terminal "heroku run php artisan migrate". Este comando cria as tabelas no banco de dados da aplicação. Logo após basta acessar o sistema pelo endereço http://locadora-imperial.herokuapp.com, que estará disponível para o uso.
 
 ### 7. VISÃO DE USO  
 Ao acessar o sistema da Locadora Imperial, em http://locadora-imperial.herokuapp.com, o usuário deve clicar em Registrar, no canto superior direito, caso ainda não tenha feito seu registro, ou em Login, também no canto superior direito, caso já possua um usuário e uma senha. Desta forma o usuário entrará na parte administrativa do site.  
