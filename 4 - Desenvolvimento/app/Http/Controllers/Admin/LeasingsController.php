@@ -9,6 +9,7 @@ use App\Models\Booking;
 use App\Models\Item;
 use App\Models\Leasing;
 use App\Models\Movie;
+use App\Models\Payment;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -56,7 +57,8 @@ class LeasingsController extends Controller
         $bookings = Booking::all();
         $users = User::all();
         $movies = Movie::all();
-        return view('admin.leasings.create', compact('items', 'users', 'bookings', 'movies'));
+        $payment = Payment::all();
+        return view('admin.leasings.create', compact('items', 'users', 'bookings', 'movies', 'payment'));
     }
 
     /**
@@ -71,7 +73,7 @@ class LeasingsController extends Controller
 
         $leasing = new Leasing();
 
-        $leasing->date_time_leasing = $request->date_time_leasing;
+        $leasing->expected_date_devolution = $request->expected_date_devolution;
         $leasing->date_time_devolution = $request->date_time_devolution;
         $leasing->user_id = $request->user_id;
         $leasing->booking_id = $request->booking_id;
@@ -126,9 +128,10 @@ class LeasingsController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $leasing = Leasing::findOrFail($id);
 
-        $leasing->date_time_leasing = $request->date_time_leasing;
+        $leasing->expected_date_devolution = $request->expected_date_devolution;
         $leasing->date_time_devolution = $request->date_time_devolution;
         $leasing->user_id = $request->user_id;
         $leasing->booking_id = $request->booking_id;

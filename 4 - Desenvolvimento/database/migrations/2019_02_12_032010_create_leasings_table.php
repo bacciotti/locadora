@@ -16,7 +16,7 @@ class CreateLeasingsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->date('expected_date_devolution')->nullable();
-            $table->dateTime('date_time_devolution')->nullable();
+            $table->date('date_time_devolution')->nullable();
             $table->integer('user_id')->unsigned();
             $table->integer('booking_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');

@@ -1,11 +1,12 @@
-<div class="form-group {{ $errors->has('date_time_leasing') ? 'has-error' : ''}}">
-    <label for="date_time_leasing" class="control-label">{{ 'Date Time Leasing' }}</label>
-    <input class="form-control" name="date_time_leasing" type="datetime-local" id="date_time_leasing" value="{{ isset($leasing->date_time_leasing) ? $leasing->date_time_leasing : ''}}" >
-    {!! $errors->first('date_time_leasing', '<p class="help-block">:message</p>') !!}
+
+<div class="form-group {{ $errors->has('expected_date_devolution') ? 'has-error' : ''}}">
+    <label for="expected_date_devolution" class="control-label">{{ 'Data Devolução Experada' }}</label>
+    <input class="form-control" name="expected_date_devolution" type="date" id="expected_date_devolution" value="{{ isset($leasing->expected_date_devolution) ? $leasing->expected_date_devolution : ''}}" >
+    {!! $errors->first('expected_date_devolution', '<p class="help-block">:message</p>') !!}
 </div>
 <div class="form-group {{ $errors->has('date_time_devolution') ? 'has-error' : ''}}">
-    <label for="date_time_devolution" class="control-label">{{ 'Date Time Devolution' }}</label>
-    <input class="form-control" name="date_time_devolution" type="datetime-local" id="date_time_devolution" value="{{ isset($leasing->date_time_devolution) ? $leasing->date_time_devolution : ''}}" >
+    <label for="expected_date_devolution" class="control-label">{{ 'Data de Devolução' }}</label>
+    <input class="form-control" name="date_time_devolution" type="date" id="date_time_devolution" value="{{ isset($leasing->date_time_devolution) ? $leasing->date_time_devolution : ''}}" >
     {!! $errors->first('date_time_devolution', '<p class="help-block">:message</p>') !!}
 </div>
 
@@ -36,4 +37,5 @@
 
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Salvar</button>
+
 </div>

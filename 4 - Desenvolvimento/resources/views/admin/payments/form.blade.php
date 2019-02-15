@@ -9,7 +9,7 @@
 </div>
 <div class="form-group {{ $errors->has('date_time') ? 'has-error' : ''}}">
     <label for="date_time" class="control-label">{{ 'Date Time' }}</label>
-    <input class="form-control" name="date_time" type="datetime-local" id="date_time" value="{{ isset($payment->date_time) ? $payment->date_time : ''}}" required>
+    <input class="form-control" name="date_time" type="date" id="date_time" value="{{ isset($payment->date_time) ? $payment->date_time : ''}}" required>
     {!! $errors->first('date_time', '<p class="help-block">:message</p>') !!}
 </div>
 <div class="form-group {{ $errors->has('value') ? 'has-error' : ''}}">
@@ -22,7 +22,6 @@
     <input class="form-control" name="leasing_id" type="number" id="leasing_id" value="{{ isset($payment->leasing_id) ? $payment->leasing_id : ''}}" required>
     {!! $errors->first('leasing_id', '<p class="help-block">:message</p>') !!}
 </div>
-
 
 <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Salvar</button>
