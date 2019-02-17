@@ -1,3 +1,5 @@
+###PROCESSO DE DESENVOLVIMENTO
+
 O time de desenvolvimento, formado por Diego, Welington e Gustavo, foi liderado pelo integrante Diego com Auxilio do Gerente de Projetos, Lucas.  
 
 Dentre as Metodologias de Desenvolvimento de Software apresentadas em sala de aula nossa equipe escolheu o Modelo Cascata que apresenta uma entrega mais consistente com a nossa necessidade de projeto, mas embora utilizados os princípios destas metodologias, também se fez uso de conceitos da metodologia Ágil quando necessário, principalmente ao final do projeto onde foi necessário corrigir o software diretamente, sem intervir nos Diagramas de Classe e Entidade Relacional.  
