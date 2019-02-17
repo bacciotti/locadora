@@ -218,7 +218,7 @@ Após essas configurações executar o comando no terminal "heroku run php artis
 ### 7. VISÃO DE USO  
 Ao acessar o sistema da Locadora Imperial, em http://locadora-imperial.herokuapp.com, o usuário deve clicar em Registrar, no canto superior direito, caso ainda não tenha feito seu registro, ou em Login, também no canto superior direito, caso já possua um usuário e uma senha. Desta forma o usuário entrará na parte administrativa do site.  
 
-Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20Login:Registro.png  
+Ver: https://github.com/bacciotti/locadora/blob/master/6%20-%20Telas/1%20-%20LoginRegistro.png  
 
 Na página de registro o usuário deve preencher seus dados pessoais e clicar no botão Registrar. Um e-mail será enviado ao endereço cadastrado informando sobre a ativação da nova conta.  
 
