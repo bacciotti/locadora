@@ -19,19 +19,9 @@ class UserTest extends TestCase
             'password' => bcrypt(123456),
             'enrolment_number' => '1200660'
         ]);
-
-        $userProfile = UserProfile::create([
-            'user_id' => $user->id,
-            'gender' => 'M',
-            'cpf' => '06744148977',
-            'zip' => 'home_phone',
-        ])
-
+        
 
         $this->assertDatabaseHas('users', ['name' => 'Admin User']);
-        $this->assertDatabaseHas('user_profile', [
-            'user_id' => $user->id,
-            'address'])
 
     }
 }
