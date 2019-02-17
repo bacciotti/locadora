@@ -1,4 +1,4 @@
-###PROCESSO DE DESENVOLVIMENTO
+### PROCESSO DE DESENVOLVIMENTO
 
 O time de desenvolvimento, formado por Diego, Welington e Gustavo, foi liderado pelo integrante Diego com Auxilio do Gerente de Projetos, Lucas.  
 
