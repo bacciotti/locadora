@@ -19,7 +19,7 @@ class UserTest extends TestCase
             'password' => bcrypt(123456),
             'enrolment_number' => '1200660'
         ]);
-        
+
 
         $this->assertDatabaseHas('users', ['name' => 'Admin User']);
 
