@@ -245,7 +245,6 @@ Além disso, é possível notar que, sempre que há um campo de busca, tem-se um
 
 Mais fotografias de telas do sistema podem ser encontradas em: https://github.com/bacciotti/locadora/tree/master/6%20-%20Telas  
 
-** Finalizar quando as outras telas estiverem prontas. **  
 
 ### 8. REVISÃO DO PROJETO  
 A equipe tentou tornar o andamento do projeto o mais prático possível. Depois de várias reuniões (presenciais e a distância) e várias tecnologias e metodologias cogitadas, optou-se pelo uso de Laravel (framework PHP), Cascata para Gerenciamento do Projeto, Boards Kanban como ferramenta de gerenciamento, para divisão das tarefas e responsabilidades e Dirigida a Plano como metodologia de desenvolvimento. Mais detalhes sobre as metodologias estão na seção 5. VISÃO E ANÁLISE DO PROJETO (ARQUITETURA).  
