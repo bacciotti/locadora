@@ -188,7 +188,10 @@ Os detalhes das tecnologias utilizadas podem ser vistas no tópico **3. GERÊNCI
 Tecnologia para o ambiente de implantação (SaaS/PaaS):  https://www.heroku.com/
 Link:  http://locadora-imperial.herokuapp.com
 
-### 6. VISÃO DE IMPLANTAÇÃO  
+### 6. VISÃO DE IMPLANTAÇÃO
+
+Link vídeo Youtube: https://youtu.be/SdEv5Aywab0
+
 Na implatação do sistema escolhemos o Heroku que é uma plataforma como serviço (PaaS) que permite aos desenvolvedores criar, executar e operar aplicativos em nuvem. O Heroku disponibiliza um ambiente de execução de aplicações onde é possível escalar uma aplicação, sem ter contato com o sistema operacional e gerenciamento de hardware, apenas utilizamos o serviço.
 
 Para escalar a aplicação é preciso criar uma conta Heroku e instalar no computador um software chamado Heroku Toolbelt, necessário para executar comandos no terminal e enviar a aplicação para o servidor. Após a instalação no terminal digitamos o comando "Heroku login" para autenticar as credenciais de acesso e em seguida digitamos o comando "heroku create locadora-imperial", em seguinda o sistema retorno o link do projeto que será utilizado para o acesso (http://locadora-imperial.herokuapp.com.) Nesse momento estamos pronto para fazer o deploy do aplicação.
