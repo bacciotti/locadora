@@ -1,4 +1,4 @@
-#### POST-MORTEM ####
+### POST-MORTEM ###
   
   
 **1) Período: data de início - data de término da iteração** .    
@@ -27,11 +27,11 @@ Algumas User Stories não foram codificadas,  para citar alguns exemplos podemos
 
 Como as tarefas foram divididas em gráficos Kanban, conforme explicado no Relatório Final, pode-se observar todas as tarefas pendentes (e também as concluídas) no nosso gráfico através do link https://github.com/bacciotti/locadora/projects.
 
-O principal fator de impedimento para a conclusão das tarefas foi o tempo, pois o planejamento, que no início pareceu completo e detalhado o suficiente para ser seguido, após alguns imprevistos precisou ser reorganizado e alguns itens precisaram ser feitos às pressas.
+O principal fator de impedimento para a conclusão das tarefas foi o tempo, pois o planejamento, que no início pareceu completo e detalhado o suficiente para ser seguido, após alguns imprevistos precisou ser reorganizado e alguns itens precisaram ser feitos às pressas.  
+  
+A camada de view (Visão) do Usuário não foi devidamente concluída, isso evidenciou o planejamento e distribuição de tarefas entre os desenvolvedores de maneira errada em alguns aspectos.
   
 **4) Lições aprendidas (Post Mortem / Rationale)**  
 Achamos que estávamos organizados e corretamente planejados, porém ao final do projeto muitas tarefas se acumularam e precisaram ser concluídas com urgência. Alguns desenvolvedores tiveram ideias diferentes na hora de desenvolver o mesmo módulo, o que mostra uma falta de esclarecimento do projeto nas reuniões de desenvolvimento. Isso pode ser melhorado para um próximo projeto.
    
 Percebemos também que qualquer problema pessoal com um membro da equipe pode atrapalhar ou gerar atrasos nas entregas. Outrossim, tivemos ainda a experiência de um dos membros da equipe sair de férias no meio do projeto, o que também foi um aprendizado para o resto da equipe, que teve de realizar reuniões emergenciais para reorganizar o cronograma. Fazer com que todos os membros da equipe preencham e compartilhem com a equipe uma agenda com todas as suas férias e compromissos importantes também pode ficar como aprendizado para futuros projetos.
-
-#### FIM DO ARQUIVO DE POST-MORTEM ####
