@@ -29,7 +29,9 @@ Como as tarefas foram divididas em gráficos Kanban, conforme explicado no Relat
 
 O principal fator de impedimento para a conclusão das tarefas foi o tempo, pois o planejamento, que no início pareceu completo e detalhado o suficiente para ser seguido, após alguns imprevistos precisou ser reorganizado e alguns itens precisaram ser feitos às pressas.  
   
-A camada de view (Visão) do Usuário não foi devidamente concluída, isso evidenciou o planejamento e distribuição de tarefas entre os desenvolvedores de maneira errada em alguns aspectos.
+A camada de view (Visão) do Usuário não foi devidamente concluída, isso evidenciou o planejamento e distribuição de tarefas entre os desenvolvedores de maneira errada em alguns aspectos.  
+  
+Alguns testes solicitados ainda não foram implementados.
   
 **4) Lições aprendidas (Post Mortem / Rationale)**  
 Achamos que estávamos organizados e corretamente planejados, porém ao final do projeto muitas tarefas se acumularam e precisaram ser concluídas com urgência. Alguns desenvolvedores tiveram ideias diferentes na hora de desenvolver o mesmo módulo, o que mostra uma falta de esclarecimento do projeto nas reuniões de desenvolvimento. Isso pode ser melhorado para um próximo projeto.
