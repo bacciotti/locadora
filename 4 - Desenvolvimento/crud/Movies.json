@@ -1,0 +1,71 @@
+{
+    "fields": [
+        {
+            "name": "original_title",
+            "type": "string"
+        },
+        {
+            "name": "pt_br_tittle",
+            "type": "string"
+        },
+        {
+            "name": "sinopse",
+            "type": "text"
+        },
+        {
+            "name": "duration",
+            "type": "string"
+        },
+        {
+            "name": "year",
+            "type": "number"
+        },
+        {
+            "name": "countries",
+            "type": "string"
+        },
+        {
+            "name": "director",
+            "type": "string"
+        },
+        {
+            "name": "cast",
+            "type": "text"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "genres",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Genre"
+        },
+        {
+            "name": "bookings",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Booking"
+        },
+        {
+            "name": "items",
+            "type": "hasMany",
+            "class": "App\\Models\\Item"
+        }
+    ],
+    "validations": [
+        {
+            "field": "original_title",
+            "rules": "required"
+        },
+        {
+            "field": "sinopse",
+            "rules": "required"
+        },
+        {
+            "field": "duration",
+            "rules": "min:2|max:5"
+        },
+        {
+            "field": "year",
+            "rules": "min:4|max:4"
+        }
+    ]
+}

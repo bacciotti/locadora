@@ -1,0 +1,53 @@
+{
+    "fields": [
+        {
+            "name": "corporate_name",
+            "type": "string"
+        },
+        {
+            "name": "cnpj",
+            "type": "number"
+        },
+        {
+            "name": "address",
+            "type": "text"
+        },
+        {
+            "name": "phone",
+            "type": "number"
+        },
+        {
+            "name": "contact_person",
+            "type": "string"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "item",
+            "type": "hasMany",
+            "class": "App\\Models\\Item"
+        }
+    ],
+    "validations": [
+        {
+            "field": "corporate_name",
+            "rules": "required"
+        },
+        {
+            "field": "cnpj",
+            "rules": "required|unique:distributors|min:14|max:14"
+        },
+        {
+            "field": "address",
+            "rules": "required"
+        },
+        {
+            "field": "phone",
+            "rules": "required|unique:distributors|min:8|max:12"
+        },
+        {
+            "field": "contact_person",
+            "rules": "required"
+        }
+    ]
+}

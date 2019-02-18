@@ -1,0 +1,21 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "movies",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Movie"
+        }
+    ],
+    "validations": [
+        {
+            "field": "name|unique",
+            "rules": "required"
+        }
+    ]
+}

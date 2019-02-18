@@ -1,0 +1,46 @@
+{
+    "fields": [
+        {
+            "name": "date",
+            "type": "date"
+        },
+        {
+            "name": "user_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "user_id",
+            "references": "id",
+            "on": "users"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "class": "App\\Models\\User"
+        },
+        {
+            "name": "leasing",
+            "type": "hasOne",
+            "class": "App\\Models\\Leasing"
+        },
+        {
+            "name": "movies",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Movie"
+        }
+    ],
+    "validations": [
+        {
+            "field": "date",
+            "rules": "required"
+        },
+        {
+            "field": "user_id",
+            "rules": "required"
+        }
+    ]
+}

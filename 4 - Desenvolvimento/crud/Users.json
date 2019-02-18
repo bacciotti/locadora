@@ -1,0 +1,108 @@
+{
+    "fields": [
+        {
+            "name": "cpf",
+            "type": "number"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "password",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "inscription_num",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "select",
+            "options": {
+                "m": "Male",
+                "f": "Female"
+            }
+        },
+        {
+            "name": "birth_date",
+            "type": "date"
+        },
+        {
+            "name": "address",
+            "type": "text"
+        },
+        {
+            "name": "work_place",
+            "type": "string"
+        },
+        {
+            "name": "home_phone",
+            "type": "number"
+        },
+        {
+            "name": "work_phone",
+            "type": "number"
+        },
+        {
+            "name": "mobile_phone",
+            "type": "number"
+        },
+        {
+            "name": "holder_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "holder_id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "booking",
+            "type": "hasMany",
+            "class": "App\\Models\\Booking"
+        },
+        {
+            "name": "leasing",
+            "type": "hasMany",
+            "class": "App\\Models\\Leasing"
+        },
+        {
+            "name": "holder",
+            "type": "belongsTo",
+            "class": "App\\Models\\Client"
+        },
+        {
+            "name": "dependent",
+            "type": "hasMany",
+            "class": "App\\Models\\Client"
+        }
+    ],
+    "validations": [
+        {
+            "field": "cpf",
+            "rules": "required|unique:users|min:11|max:11"
+        },
+        {
+            "field": "home_phone",
+            "rules": "required|min:11|max:11"
+        },
+        {
+            "field": "work_phone",
+            "rules": "required|min:11|max:11"
+        },
+        {
+            "field": "mobile_phone",
+            "rules": "required|min:11|max:11"
+        }
+    ]
+}

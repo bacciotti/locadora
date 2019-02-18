@@ -1,0 +1,74 @@
+{
+    "fields": [
+        {
+            "name": "expected_date_devolution",
+            "type": "date"
+        },
+        {
+            "name": "date_time_devolution",
+            "type": "datetime"
+        },
+        {
+            "name": "user_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "booking_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "user_id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "booking_id",
+            "references": "id",
+            "on": "bookings",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "class": "App\\Models\\User"
+        },
+        {
+            "name": "booking",
+            "type": "belongsTo",
+            "class": "App\\Models\\Booking"
+        },
+        {
+            "name": "items",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Item"
+        },
+        {
+            "name": "payment",
+            "type": "hasMany",
+            "class": "App\\Models\\Payment"
+        }
+    ],
+    "validations": [
+        {
+            "field": "expected_date_devolution",
+            "rules": "required"
+        },
+        {
+            "field": "date_time_devolution",
+            "rules": "required"
+        },
+        {
+            "field": "user_id",
+            "rules": "required"
+        },
+        {
+            "field": "booking_id",
+            "rules": "required"
+        }
+    ]
+}

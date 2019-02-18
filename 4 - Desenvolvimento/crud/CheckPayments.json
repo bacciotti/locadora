@@ -1,0 +1,60 @@
+{
+    "fields": [
+        {
+            "name": "payment_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "bank",
+            "type": "number"
+        },
+        {
+            "name": "agency",
+            "type": "number"
+        },
+        {
+            "name": "account_number",
+            "type": "number"
+        },
+        {
+            "name": "check_number",
+            "type": "number"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "payment_id",
+            "references": "id",
+            "on": "payments"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "payment",
+            "type": "belongsTo",
+            "class": "App\\Models\\Payment"
+        }
+    ],
+    "validations": [
+        {
+            "field": "payment_id",
+            "rules": "required"
+        },
+        {
+            "field": "bank",
+            "rules": "required|max:5"
+        },
+        {
+            "field": "agency",
+            "rules": "required|max:5"
+        },
+        {
+            "field": "account_number",
+            "rules": "required|min:3"
+        },
+        {
+            "field": "check_number",
+            "rules": "required|min:3"
+        }
+    ]
+}

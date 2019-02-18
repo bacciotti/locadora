@@ -1,0 +1,88 @@
+{
+    "fields": [
+        {
+            "name": "date_acquisition",
+            "type": "date"
+        },
+        {
+            "name": "serial_number",
+            "type": "string"
+        },
+        {
+            "name": "media_type_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "movie_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "distributor_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "media_type_id",
+            "references": "id",
+            "on": "media_types",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "movie_id",
+            "references": "id",
+            "on": "movies",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "distributor_id",
+            "references": "id",
+            "on": "distributors",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "media_type",
+            "type": "belongsTo",
+            "class": "App\\Models\\MediaType"
+        },
+        {
+            "name": "movie",
+            "type": "belongsTo",
+            "class": "App\\Models\\Movie"
+        },
+        {
+            "name": "distributor",
+            "type": "belongsTo",
+            "class": "App\\Models\\Distributor"
+        },
+        {
+            "name": "leasings",
+            "type": "belongsToMany",
+            "class": "App\\Models\\Leasing"
+        }
+    ],
+    "validations": [
+        {
+            "field": "date_acquisition",
+            "rules": "required"
+        },
+        {
+            "field": "serial_number",
+            "rules": "required"
+        },
+        {
+            "field": "media_type_id",
+            "rules": "required"
+        },
+        {
+            "field": "movie_id",
+            "rules": "required"
+        },
+        {
+            "field": "distributor_id",
+            "rules": "required"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+Iniciar aplicação:
+php artisan serve --host=192.168.0.1 --port=8080
+php artisan serve --port=8001
+
+Criar projeto Laravel:
+composer create-project --prefer-dist laravel/laravel <NOME>
+
+Projeto existente - Construir "VENDOR":
+composer install
+composer update
+
+Projeto existente - Criar tabelas no banco de dados:
+php artisan migrate
+php artisan migrate:refresh --seed
+
+Projeto existente - Criar dados fictícios no banco de dados:
+php artisan db:seed --class=GenresTableSeeder
+
+Projeto existente - Gerar novas chaves de criptografia:
+php artisan key:generate
+
+Habilitar/Desabilitar comunicação SSL:
+composer config -g secure-http false
+composer config -g secure-http true
+
+composer create-project --prefer-dist laravel/laravel LocadoraImperial
+composer create-project laravel/laravel=5.5 laravel55
+
+---
+LocadoraImperial
+locadoraimperial
+
+--- Instalar laravel-starter-kit
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+npm install
+- Iniciar
+npm run dev
+php artisan serve
+
+
+--- Instalar laravelJoshAdmin
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed --class=AdminSeeder
+npm install
+yarn install
+bower install
+- Iniciar
+npm run dev
+php artisan serve
+
+--- Instalar laravel54infyom
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+- Outros
+php artisan serve
+php artisan vendor:publish
+php artisan infyom:publish
+php artisan infyom.publish:layout
+php artisan infyom:api $MODEL_NAME
+php artisan infyom:scaffold $MODEL_NAME
+php artisan infyom:api_scaffold $MODEL_NAME 
+
+--- Instalar laravel57voyager
+composer require tcg/voyager
+composer install
+php artisan voyager:install --with-dummy
+- Publicar
+php artisan vendor:publish
+- Iniciar
+php artisan serve
