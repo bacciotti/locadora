@@ -28,12 +28,10 @@
         @foreach($bookings as $item)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $item->user_id }}</td>
-                <td>{{ $item->date }}</td>
+                <td>{{ $item->name }}</td>
+                <td>{{ date( 'd/m/Y' , strtotime($item->date)) }}</td>
                 <td>
-                    <a href="{{ url('/admin/bookings/' . $item->id) }}" title="Ver Booking"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
                     <a href="{{ url('/admin/bookings/' . $item->id . '/edit') }}" title="Editar Booking"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
-
                     <form method="POST" action="{{ url('/admin/bookings' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                         {{ method_field('DELETE') }}
                         {{ csrf_field() }}

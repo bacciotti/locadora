@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Site;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -13,7 +13,7 @@ use App\Models\Payment;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class LeasingsController extends Controller
+class SiteLeasingsController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Site;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -11,7 +11,7 @@ use App\Models\Distributor;
 use App\Models\Item;
 use Illuminate\Http\Request;
 
-class ItemsController extends Controller
+class SiteItemsController extends Controller
 {
     /**
      * Display a listing of the resource.

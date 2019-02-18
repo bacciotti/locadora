@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Site;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -10,7 +10,7 @@ use App\Models\Movie;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class BookingsController extends Controller
+class SiteBookingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -38,7 +38,7 @@ class BookingsController extends Controller
                 ->paginate($perPage);
         }
 
-        return view('admin.bookings.index', compact('bookings'));
+        return view('site.bookings.index', compact('bookings'));
     }
 
     /**
@@ -50,7 +50,7 @@ class BookingsController extends Controller
     {
         $users = User::all();
         $movies = Movie::all();
-        return view('admin.bookings.create', compact('movies','users'));
+        return view('site.bookings.create', compact('movies','users'));
     }
 
     /**
@@ -70,7 +70,7 @@ class BookingsController extends Controller
         $booking->save();
         $booking->movies()->sync($request->movies, false);
 
-        return redirect('admin/bookings')->with('flash_message', 'Booking added!');
+        return redirect('bookings')->with('flash_message', 'Booking added!');
     }
 
     /**
@@ -84,7 +84,7 @@ class BookingsController extends Controller
     {
         $booking = Booking::findOrFail($id);
 
-        return view('admin.bookings.show', compact('booking'));
+        return view('site.bookings.show', compact('booking'));
     }
 
     /**
@@ -100,7 +100,7 @@ class BookingsController extends Controller
         $users = User::all();
         $movies = Movie::all();
 
-        return view('admin.bookings.edit', compact('booking','movies','users'));
+        return view('site.bookings.edit', compact('booking','movies','users'));
     }
 
     /**
@@ -125,7 +125,7 @@ class BookingsController extends Controller
             $booking->movies()->sync(array());
         }
 
-        return redirect('admin/bookings')->with('flash_message', 'Booking updated!');
+        return redirect('bookings')->with('flash_message', 'Booking updated!');
     }
 
     /**
@@ -143,6 +143,6 @@ class BookingsController extends Controller
         $booking->status = 0;
         $booking->save();
 
-        return redirect('admin/bookings')->with('flash_message', 'Booking deleted!');
+        return redirect('bookings')->with('flash_message', 'Booking deleted!');
     }
 }

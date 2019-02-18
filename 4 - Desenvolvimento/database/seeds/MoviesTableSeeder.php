@@ -26,7 +26,7 @@ class MoviesTableSeeder extends Seeder
         ]);
         Movie::create([
             'original_title'=>'Title Origin 2',
-            'pt_br_tittle'=>'Titulo em PT-BR UM',
+            'pt_br_tittle'=>'Titulo em PT-BR DOIS',
             'countries'=>'Espanha',
             'year'=>2002,
             'director'=>'Lucas',
@@ -36,7 +36,7 @@ class MoviesTableSeeder extends Seeder
         ]);
         Movie::create([
             'original_title'=>'Title Origin 3',
-            'pt_br_tittle'=>'Titulo em PT-BR UM',
+            'pt_br_tittle'=>'Titulo em PT-BR TRES',
             'countries'=>'Paraguai',
             'year'=>2003,
             'director'=>'Diego',

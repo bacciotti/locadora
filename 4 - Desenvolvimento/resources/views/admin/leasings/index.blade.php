@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Leasings')
+@section('title', 'Locações')
 
 @section('content_header')
-    <h1>Leasings</h1>
+    <h1>Locações</h1>
 @stop
 
 @section('content')
@@ -18,28 +18,33 @@
     <table class="table">
         <thead>
             <tr>
-                <th>#</th><th>Data Devolução Experada</th><th>Data e Hora Devolução</th><th>User Id</th><th>Status</th><th>Ações</th>
+                <th>#</th>
+                <th>Usuário</th>
+                <th>Data de Locação</th>
+                <th>Previsão de Devolução</th>
+                <th>Data de Devolução</th>
+                <th>Status</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
         @foreach($leasings as $item)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $item->expected_date_devolution }}</td><td>{{ $item->date_time_devolution }}</td><td>{{ $item->user_id }}</td>
+                <td>{{ $item->name }}</td>
+                <td>{{ date( 'd/m/Y' , strtotime($item->created_at)) }}</td>
+                <td>{{ date( 'd/m/Y' , strtotime($item->expected_date_devolution)) }}</td>
+                <td>{{ isset($item->date_time_devolution) ? date( 'd/m/Y' , strtotime($item->date_time_devolution)) : '' }}</td>
                 <td>{{ "Devolvido" }}</td>
                 <td>
-                    <a href="{{ url('/admin/leasings/' . $item->id) }}" title="Ver Leasing"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
                     <a href="{{ url('/admin/leasings/' . $item->id . '/edit') }}" title="Editar Leasing"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
-
                     <form method="POST" action="{{ url('/admin/leasings' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                         {{ method_field('DELETE') }}
                         {{ csrf_field() }}
                         <button type="submit" class="btn btn-danger btn-sm" title="Excluir Leasing" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Excluir</button>
                     </form>
                     <button class="btn btn-success btn-sm" data-mytitle="{{$item->title}}" data-catid={{$item->id}} data-toggle="modal" data-target="#edit"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Fechamento</button></a>
-
                 </td>
-
             </tr>
         @endforeach
         </tbody>
@@ -111,8 +116,6 @@
                             <input type="text" class="form-control" name="cheque" id="cheque" value="" disabled>
                         </div>
                     </div>
-
-
 
                 </div>
                 <div class="modal-footer">
