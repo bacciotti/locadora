@@ -22,21 +22,24 @@ class UsersTableSeeder extends Seeder
         });
 
         factory(\App\Models\User::class)->create([
+            'email'=> 'cliente@gmail.com',
             'enrolment_number' => 100001,
             'status' => 1,
             'userable_type' => User::ROLE_CLIENT,
         ]);
 
         factory(\App\Models\User::class)->create([
+            'email'=> 'dependente@gmail.com',
             'enrolment_number' => 100002,
             'status' => 1,
-            'userable_type' => User::ROLE_CLIENT,
+            'userable_type' => User::ROLE_DEPENDENT,
         ]);
 
         factory(\App\Models\User::class)->create([
+            'email'=> 'wemomax@gmail.com',
             'enrolment_number' => 100003,
             'status' => 1,
-            'userable_type' => User::ROLE_CLIENT,
+            'userable_type' => User::ROLE_ADMIN,
         ]);
     }
 }

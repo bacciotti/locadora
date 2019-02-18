@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Locação - Novo')
+@section('title', 'Filme - Editar')
 
 @section('content_header')
-    <h1>Nova Locação</h1>
+    <h1>Editar Filme</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/leasings') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/movies') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -20,9 +20,10 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/admin/leasings') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+        <form method="POST" action="{{ url('/admin/movies/' . $movie->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+            {{ method_field('PATCH') }}
             {{ csrf_field() }}
-            @include ('admin.leasings.form', ['formMode' => 'create'])
+            @include ('admin.movies.form', ['formMode' => 'edit'])
         </form>
     </div>
 </div>
@@ -35,5 +36,6 @@
 @section('js')
     <script>
         $('.select2').select2();
+        $('#genres').val({!! json_encode($movie->genres()->allRelatedIds() ) !!}).trigger('change');
     </script>
 @endsection

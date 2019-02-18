@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Locação - Novo')
+@section('title', 'Movie - Novo')
 
 @section('content_header')
-    <h1>Nova Locação</h1>
+    <h1>Novo Filme</h1>
 @stop
 
 @section('content')
-<a href="{{ url('/admin/leasings') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
+<a href="{{ url('/admin/movies') }}" title="Voltar"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button></a>
 <br /><br />
 
 <div class="container">
@@ -20,9 +20,9 @@
             </ul>
         @endif
 
-        <form method="POST" action="{{ url('/admin/leasings') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+        <form method="POST" action="{{ url('/admin/movies') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
             {{ csrf_field() }}
-            @include ('admin.leasings.form', ['formMode' => 'create'])
+            @include ('admin.movies.form', ['formMode' => 'create'])
         </form>
     </div>
 </div>

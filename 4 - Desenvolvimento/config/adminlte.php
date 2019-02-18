@@ -28,11 +28,14 @@ return [
     | You can use basic HTML here if you want. The logo has also a mini
     | variant, used for the mini side bar. Make it 3 letters or so
     |
+<div class="logo-icon-container">
+<img width="40" height="40" src="logotipo/logotipo1_256x256.png" alt="Logo Icon">
+</div>
     */
 
     'logo' => '<b>Locadora</b>Imperial',
 
-    'logo_mini' => '<b>Imperial</b>',
+    'logo_mini' => '<img width="40" height="40" src="/logotipo/logotipo1_256x256.png" alt="Logo Icon">',
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +88,7 @@ return [
     |
     */
 
-    'dashboard_url' => 'admin',
+    'dashboard_url' => '',
 
     'logout_url' => 'admin/logout',
 
@@ -112,7 +115,7 @@ return [
         [
             'text'  => 'Painel de Controle',
             'url'   => 'admin',
-            'icon'  => 'home',
+            'icon'  => 'dashboard',
             //'label' => 4,
             //'label_color'   => 'success',
         ],
@@ -143,7 +146,7 @@ return [
             'icon'  => 'film',
         ],
         [
-            'text'  => 'Items',
+            'text'  => 'Itens',
             'url'   => 'admin/items',
             'icon'  => 'film',
         ],

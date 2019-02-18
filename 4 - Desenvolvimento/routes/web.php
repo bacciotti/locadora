@@ -11,9 +11,21 @@
 |
 */
 
+//Site Inicio
 Route::get('/', function () {
-    return view('welcome');
+    return view('site');
 });
+
+//Route::get('/site', 'SiteController@index')->name('site');
+
+//Site opções
+Route::resource('movies', 'Site\\SiteMoviesController');
+Route::resource('bookings', 'Site\\SiteBookingsController');
+
+//Admin Inicio
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+// Usuário, Login, Cadastro, Perfil, Cliente
 Route::prefix('admin')->group(function(){
     Auth::routes();
 
@@ -27,9 +39,6 @@ Route::prefix('admin')->group(function(){
         'as' => 'admin.',
         'middleware' => ['auth', 'can:admin']
     ], function(){
-        Route::name('dashboard')->get('/dashboard', function () {
-            return "Estou no dashboard";
-        });
         Route::group(['prefix' => 'users', 'as' => 'users.'], function () {
             Route::group(['prefix' => '/{user}/profile'], function () {
                 Route::name('profile.edit')->get('', 'UserProfileController@edit');
@@ -40,9 +49,7 @@ Route::prefix('admin')->group(function(){
     });
 });
 
-
-Route::get('/admin', 'AdminController@index')->name('admin');
-
+//Admin opções
 Route::resource('admin/genres', 'Admin\\GenresController');
 Route::resource('admin/media-types', 'Admin\\MediaTypesController');
 Route::resource('admin/movies', 'Admin\\MoviesController');
